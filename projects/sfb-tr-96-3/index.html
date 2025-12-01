@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Model Predictive Parameter and State Estimation and Optimal Sensor Placement | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/sfb-tr-96-3/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Model Predictive Parameter and State Estimation and Optimal Sensor Placement
+		</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2019-07-01</span>
+	<br>
+
+
+
+	<span> End: 2023-06-30</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a>, <a href="https://www.tu-chemnitz.de/mathematik/wire/prof.php"target="_blank" rel="noopener" class="external">Martin Stoll</a></span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/alumni/anaumann/">Andreas Naumann</a>, <a href="https://www.tu-chemnitz.de/mathematik/wire/people/buenger.php"target="_blank" rel="noopener" class="external">Alexandra Bünger</a></span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Collaborative Research Center funding scheme
+		
+	</span>
+	<br>
+
+
+
+	<span> Part of: Thermo-Energetic Design of Machine Tools
+	
+		(<a href="https://transregio96.webspace.tu-dresden.de/"target="_blank" rel="noopener" class="external">SFB Transregio 96</a>) </span>
+	
+	<br>
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p><a href="../../projects/sfb-tr-96-2"title="In Phase II">In Phase II</a> we developed an efficient, self-calibrating identification method to estimate the temperature state of a machine tool as well as the resulting TCP displacement, using as few temperature sensors as possible.
+This model-driven approach requires uncertain and, in general, time-dependent parameters such as heat exchange coefficients between machine bed and the environment to be permanently adjusted.
+To this end, we developed and implemented a data assimilation method to simultaneously estimate parameters and temperature states.
+In order to meet the requirement of using only a small number of temperature sensors while, at the same time, improving the estimation precision, we developed optimal experimental design methods.
+Robust optimization methods were used to obtain good reconstruction results independently of the operating point.
+The methods were verified using measurements obtained from the machine bed integrator.
+In order to reduce the computational effort, we compared several model order reduction techniques in the context of sensor placement.</p>
+<p>It is the goal of the project in phase III to master <strong>spatially</strong> as well as <strong>temporally bly varying parameters and heat sources</strong>.
+These occur, e.g., from the usage of lubricating coolants and due to the deployment of shavings during processing.
+To achieve this goal, we will need to develop tailored <strong>estimators</strong> to <strong>quantify the uncertainties</strong> and, on the other hand, devise modern mathematical methods such as <strong>space/time tensor methods</strong> in order to guarantee the real time capabilities of the digital machine image.
+Moreover, we will take into account displacement and strain measurements in the TCP estimation in addition to temperature measurements, which constitutes a significant extension to the data assimilation and optimal sensor placement methods.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-INCOLLECTION">
+	<li class="publication-item" id="NaumannRiedelHerzog:2025:1">
+	<div class="publication-author"> <a href="../../team/alumni/anaumann/">Andreas Naumann</a>, <a href="../../team/alumni/iriedel/">Ilka Riedel</a> and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+	<div class="publication-title"> Datenassimilation und optimale Sensorplatzierung </div>
+	<div class="publication-ref-info">
+		
+			<span> Thermo-energetische Gestaltung von Werkzeugmaschinen, p.189-197, </span>
+		
+		<span class="publication-year"> 2025 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/978-3-658-45180-6_12">doi:10.1007/978-3-658-45180-6_12</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INCOLLECTION{NaumannRiedelHerzog:2025:1,
+  AUTHOR = {Naumann, Andreas and Riedel, Ilka and Herzog, Roland},
+  PUBLISHER = {Springer Fachmedien Wiesbaden},
+  BOOKTITLE = {Thermo-energetische Gestaltung von Werkzeugmaschinen},
+  DATE = {2025},
+  DOI = {10.1007/978-3-658-45180-6_12},
+  PAGES = {189--197},
+  TITLE = {Datenassimilation und optimale Sensorplatzierung},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="RudolphSauerzapfThiemNaumannBeitelschmidt:2025:1">
+	<div class="publication-author"> Holger Rudolph, Stefan Sauerzapf, Xaver Thiem, <a href="../../team/alumni/anaumann/">Andreas Naumann</a> and Michael Beitelschmidt </div>
+	
+	
+	
+	<div class="publication-title"> Strukturmodelle von Werkzeugmaschinen </div>
+	<div class="publication-ref-info">
+		
+			<span> Thermo-energetische Gestaltung von Werkzeugmaschinen, p.19-45, </span>
+		
+		<span class="publication-year"> 2025 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/978-3-658-45180-6_2">doi:10.1007/978-3-658-45180-6_2</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INCOLLECTION{RudolphSauerzapfThiemNaumannBeitelschmidt:2025:1,
+  AUTHOR = {Rudolph, Holger and Sauerzapf, Stefan and Thiem, Xaver and Naumann, Andreas and Beitelschmidt, Michael},
+  EDITOR = {Brecher, Christian},
+  PUBLISHER = {Springer Fachmedien Wiesbaden},
+  BOOKTITLE = {Thermo-energetische Gestaltung von Werkzeugmaschinen},
+  DATE = {2025},
+  DOI = {10.1007/978-3-658-45180-6_2},
+  PAGES = {19--45},
+  TITLE = {Strukturmodelle von Werkzeugmaschinen},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Naumann:2025:1">
+	<div class="publication-author"> <a href="../../team/alumni/anaumann/">Andreas Naumann</a> </div>
+	
+	
+	
+	<div class="publication-title"> Effiziente transiente thermo-elastische Simulation von Werkzeugmaschinen </div>
+	<div class="publication-ref-info">
+		
+			<span> Thermo-energetische Gestaltung von Werkzeugmaschinen, p.235-244, </span>
+		
+		<span class="publication-year"> 2025 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/978-3-658-45180-6_15">doi:10.1007/978-3-658-45180-6_15</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INCOLLECTION{Naumann:2025:1,
+  AUTHOR = {Naumann, Andreas},
+  PUBLISHER = {Springer Fachmedien Wiesbaden},
+  BOOKTITLE = {Thermo-energetische Gestaltung von Werkzeugmaschinen},
+  DATE = {2025},
+  DOI = {10.1007/978-3-658-45180-6_15},
+  PAGES = {235--244},
+  TITLE = {Effiziente transiente thermo-elastische Simulation von Werkzeugmaschinen},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="BuengerHerzogNaumannStoll:2024:1">
+	<div class="publication-author"> Alexandra Bünger, <a href="../../team/rherzog/">Roland Herzog</a>, <a href="../../team/alumni/anaumann/">Andreas Naumann</a> and Martin Stoll </div>
+	
+	
+	
+	<div class="publication-title"> Uncertainty propagation of initial conditions in thermal models </div>
+	<div class="publication-ref-info">
+		
+			<span> International Journal for Computational Methods in Engineering Science and Mechanics 25(6), p.475-488, </span>
+		
+		<span class="publication-year"> 2024 </span> <br>
+	</div>
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2306.12736">arXiv:2306.12736</a>
+		</div>
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1080/15502287.2024.2408291">doi:10.1080/15502287.2024.2408291</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{BuengerHerzogNaumannStoll:2024:1,
+  AUTHOR = {Bünger, Alexandra and Herzog, Roland and Naumann, Andreas and Stoll, Martin},
+  PUBLISHER = {Informa UK Limited},
+  DATE = {2024-10},
+  DOI = {10.1080/15502287.2024.2408291},
+  EPRINT = {2306.12736},
+  EPRINTTYPE = {arXiv},
+  JOURNALTITLE = {International Journal for Computational Methods in Engineering Science and Mechanics},
+  NUMBER = {6},
+  PAGES = {475--488},
+  TITLE = {Uncertainty propagation of initial conditions in thermal models},
+  VOLUME = {25},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="NaumannNaumannBertaggiaGeistGlaenzelHerzogZontarBrecherDix:2023:1">
+	<div class="publication-author"> Christian Naumann, <a href="../../team/alumni/anaumann/">Andreas Naumann</a>, Nico Bertaggia, Alexander Geist, Janine Glänzel, <a href="../../team/rherzog/">Roland Herzog</a>, Daniel Zontar, Christian Brecher and Martin Dix </div>
+	
+	
+	
+	<div class="publication-title"> Hybrid thermal error compensation combining integrated deformation sensor and regression analysis based models for complex machine tool designs </div>
+	<div class="publication-ref-info">
+		
+			<span> 3rd International Conference on Thermal Issues in Machine Tools (ICTIMT2023), p.28-40, </span>
+		
+		<span class="publication-year"> 2023 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/978-3-031-34486-2_3">doi:10.1007/978-3-031-34486-2_3</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{NaumannNaumannBertaggiaGeistGlaenzelHerzogZontarBrecherDix:2023:1,
+  AUTHOR = {Naumann, Christian and Naumann, Andreas and Bertaggia, Nico and Geist, Alexander and Glänzel, Janine and Herzog, Roland and Zontar, Daniel and Brecher, Christian and Dix, Martin},
+  PUBLISHER = {Springer International Publishing},
+  BOOKTITLE = {3rd International Conference on Thermal Issues in Machine Tools (ICTIMT2023)},
+  DATE = {2023},
+  DOI = {10.1007/978-3-031-34486-2_3},
+  PAGES = {28--40},
+  SERIES = {Lecture Notes in Production Engineering},
+  TITLE = {Hybrid thermal error compensation combining integrated deformation sensor and regression analysis based models for complex machine tool designs},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="NaumannSaakSauerzapfVettermannBeitelschmidtHerzog:2022:1">
+	<div class="publication-author"> <a href="../../team/alumni/anaumann/">Andreas Naumann</a>, Jens Saak, Stefan Sauerzapf, Julia Vettermann, Michael Beitelschmidt and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+	<div class="publication-title"> Advanced open source data formats for geometrically and physically coupled systems </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings of Asian Modelica Conference 2022, </span>
+		
+		<span class="publication-year"> 2022 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.3384/ecp19381">doi:10.3384/ecp19381</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{NaumannSaakSauerzapfVettermannBeitelschmidtHerzog:2022:1,
+  AUTHOR = {Naumann, Andreas and Saak, Jens and Sauerzapf, Stefan and Vettermann, Julia and Beitelschmidt, Michael and Herzog, Roland},
+  EDITOR = {Shen, Tielong and Gao, Rui and Hirano, Yutaka},
+  PUBLISHER = {Linköping University Electronic Press},
+  BOOKTITLE = {Proceedings of Asian Modelica Conference 2022},
+  DATE = {2022-11},
+  DOI = {10.3384/ecp19381},
+  TITLE = {Advanced open source data formats for geometrically and physically coupled systems},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogNaumann:2021:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a> and <a href="../../team/alumni/anaumann/">Andreas Naumann</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal sensor placement for stochastic sources in machine tools </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings in Applied Mathematics and Mechanics 21(1), </span>
+		
+		<span class="publication-year"> 2021 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/pamm.202100089">doi:10.1002/pamm.202100089</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogNaumann:2021:1,
+  AUTHOR = {Herzog, Roland and Naumann, Andreas},
+  PUBLISHER = {Wiley},
+  DATE = {2021-12},
+  DOI = {10.1002/pamm.202100089},
+  JOURNALTITLE = {Proceedings in Applied Mathematics and Mechanics},
+  NUMBER = {1},
+  TITLE = {Optimal sensor placement for stochastic sources in machine tools},
+  VOLUME = {21},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="SauerzapfNaumannBeitelschmidt:2021:1">
+	<div class="publication-author"> Stefan Sauerzapf, <a href="../../team/alumni/anaumann/">Andreas Naumann</a> and Michael Beitelschmidt </div>
+	
+	
+	
+	<div class="publication-title"> Building models for coupled thermo elastic problems in different software architectures using a new model exchange format </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings in Applied Mathematics and Mechanics 21(1), </span>
+		
+		<span class="publication-year"> 2021 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/pamm.202100035">doi:10.1002/pamm.202100035</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{SauerzapfNaumannBeitelschmidt:2021:1,
+  AUTHOR = {Sauerzapf, Stefan and Naumann, Andreas and Beitelschmidt, Michael},
+  PUBLISHER = {Wiley},
+  DATE = {2021-12},
+  DOI = {10.1002/pamm.202100035},
+  JOURNALTITLE = {Proceedings in Applied Mathematics and Mechanics},
+  NUMBER = {1},
+  TITLE = {Building models for coupled thermo elastic problems in different software architectures using a new model exchange format},
+  VOLUME = {21},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="BrecherHerzogSpierlingNaumannTzanetos:2021:1">
+	<div class="publication-author"> Christian Brecher, <a href="../../team/rherzog/">Roland Herzog</a>, Robert Spierling, <a href="../../team/alumni/anaumann/">Andreas Naumann</a> and Filippos Tzanetos </div>
+	
+	
+	
+	<div class="publication-title"> Optimal positioning methods of integral deformation sensors --- expert knowledge versus mathematical optimization </div>
+	<div class="publication-ref-info">
+		
+			<span> MM Science Journal 2021(3), p.4628-4635, </span>
+		
+		<span class="publication-year"> 2021 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.17973/MMSJ.2021_7_2021069">doi:10.17973/MMSJ.2021_7_2021069</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{BrecherHerzogSpierlingNaumannTzanetos:2021:1,
+  AUTHOR = {Brecher, Christian and Herzog, Roland and Spierling, Robert and Naumann, Andreas and Tzanetos, Filippos},
+  PUBLISHER = {MM Publishing},
+  DATE = {2021-04-21},
+  DOI = {10.17973/MMSJ.2021_7_2021069},
+  EVENTTITLE = {2nd International Conference on Thermal Issues in Machine Tools (ICTIMT)},
+  JOURNALTITLE = {MM Science Journal},
+  NUMBER = {3},
+  PAGES = {4628--4635},
+  TITLE = {Optimal positioning methods of integral deformation sensors --- expert knowledge versus mathematical optimization},
+  VOLUME = {2021},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="VettermannSauerzapfNaumannSaakBennerBeitelschmidtHerzog:2021:1">
+	<div class="publication-author"> Julia Vettermann, Stefan Sauerzapf, <a href="../../team/alumni/anaumann/">Andreas Naumann</a>, Jens Saak, Peter Benner, Michael Beitelschmidt and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+	<div class="publication-title"> Model order reduction methods for coupled machine tool models </div>
+	<div class="publication-ref-info">
+		
+			<span> MM Science Journal 2021(3), p.4652-4659, </span>
+		
+		<span class="publication-year"> 2021 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.17973/MMSJ.2021_7_2021072">doi:10.17973/MMSJ.2021_7_2021072</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{VettermannSauerzapfNaumannSaakBennerBeitelschmidtHerzog:2021:1,
+  AUTHOR = {Vettermann, Julia and Sauerzapf, Stefan and Naumann, Andreas and Saak, Jens and Benner, Peter and Beitelschmidt, Michael and Herzog, Roland},
+  PUBLISHER = {MM Publishing},
+  DATE = {2021-04-20},
+  DOI = {10.17973/MMSJ.2021_7_2021072},
+  EVENTTITLE = {2nd International Conference on Thermal Issues in Machine Tools (ICTIMT)},
+  JOURNALTITLE = {MM Science Journal},
+  NUMBER = {3},
+  PAGES = {4652--4659},
+  TITLE = {Model order reduction methods for coupled machine tool models},
+  VOLUME = {2021},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="NaumannHerzog:2021:1">
+	<div class="publication-author"> <a href="../../team/alumni/anaumann/">Andreas Naumann</a> and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal sensor placement for thermo-elastic coupled machine models </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings in Applied Mathematics and Mechanics 20(1), </span>
+		
+		<span class="publication-year"> 2021 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/pamm.202000255">doi:10.1002/pamm.202000255</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{NaumannHerzog:2021:1,
+  AUTHOR = {Naumann, Andreas and Herzog, Roland},
+  PUBLISHER = {Wiley},
+  DATE = {2021-01},
+  DOI = {10.1002/pamm.202000255},
+  JOURNALTITLE = {Proceedings in Applied Mathematics and Mechanics},
+  NUMBER = {1},
+  TITLE = {Optimal sensor placement for thermo-elastic coupled machine models},
+  VOLUME = {20},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="BrecherHerzogSpierlingTzanetosNaumann:2020:1">
+	<div class="publication-author"> Christian Brecher, <a href="../../team/rherzog/">Roland Herzog</a>, Robert Spierling, Filippos Tzanetos and <a href="../../team/alumni/anaumann/">Andreas Naumann</a> </div>
+	
+	
+	
+	<div class="publication-title"> Evaluation of optimal positioning methods of integral deformation sensors for the correction of thermal errors in machine tools </div>
+	<div class="publication-ref-info">
+		
+			<span> Conference Proceedings on Thermal Issues 2020, p.26-29, </span>
+		
+		<span class="publication-year"> 2020 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a href="https://www.euspen.eu/knowledge-base/TI20137.pdf"target="_blank" rel="noopener" class="external">https://www.euspen.eu/knowledge-base/TI20137.pdf</a>
+		</div>
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{BrecherHerzogSpierlingTzanetosNaumann:2020:1,
+  AUTHOR = {Brecher, Christian and Herzog, Roland and Spierling, Robert and Tzanetos, Filippos and Naumann, Andreas},
+  LOCATION = {Aachen, Germany},
+  URL = {https://www.euspen.eu/knowledge-base/TI20137.pdf},
+  BOOKTITLE = {Conference Proceedings on Thermal Issues 2020},
+  DATE = {2020-02-26},
+  EVENTTITLE = {euspen Special Interest Group Meeting on Thermal Issues},
+  PAGES = {26--29},
+  TITLE = {Evaluation of optimal positioning methods of integral deformation sensors for the correction of thermal errors in machine tools},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="SauerzapfVettermannNaumannSaakBeitelschmidtBenner:2020:1">
+	<div class="publication-author"> Stefan Sauerzapf, Julia Vettermann, <a href="../../team/alumni/anaumann/">Andreas Naumann</a>, Jens Saak, Michael Beitelschmidt and Peter Benner </div>
+	
+	
+	
+	<div class="publication-title"> Simulation of the thermal behavior of machine tools for efficient machine development and online correction of the tool center point (TCP)-displacement </div>
+	<div class="publication-ref-info">
+		
+			<span> Conference Proceedings on Thermal Issues 2020, p.135-138, </span>
+		
+		<span class="publication-year"> 2020 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a href="https://www.euspen.eu/knowledge-base/TI20125.pdf"target="_blank" rel="noopener" class="external">https://www.euspen.eu/knowledge-base/TI20125.pdf</a>
+		</div>
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{SauerzapfVettermannNaumannSaakBeitelschmidtBenner:2020:1,
+  AUTHOR = {Sauerzapf, Stefan and Vettermann, Julia and Naumann, Andreas and Saak, Jens and Beitelschmidt, Michael and Benner, Peter},
+  LOCATION = {Aachen, Germany},
+  URL = {https://www.euspen.eu/knowledge-base/TI20125.pdf},
+  BOOKTITLE = {Conference Proceedings on Thermal Issues 2020},
+  DATE = {2020-02-26},
+  EVENTTITLE = {euspen Special Interest Group Meeting on Thermal Issues},
+  PAGES = {135--138},
+  TITLE = {Simulation of the thermal behavior of machine tools for efficient machine development and online correction of the tool center point (TCP)-displacement},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

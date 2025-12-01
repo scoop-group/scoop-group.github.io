@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule EUCCO2023-general "mailto:eucco2023@uni-heidelberg.de?subject=EUCCO2023"
+RewriteRule EUCCO2023-abstracts "mailto:eucco2023@uni-heidelberg.de?subject=Abstract submission"
+RewriteRule EUCCO2023-travel-support "mailto:eucco2023@uni-heidelberg.de?subject=Travel support application"
+RewriteRule advances2025 "mailto:scoop@iwr.uni-heidelberg.de?subject=Advances in Continuous Optimization"

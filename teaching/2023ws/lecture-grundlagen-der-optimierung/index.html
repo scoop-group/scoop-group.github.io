@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Grundlagen der Optimierung | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/teaching/2023ws/lecture-grundlagen-der-optimierung/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../../news">News</a> </li>
+			
+				<li> <a href="../../../team">Team</a> </li>
+			
+				<li> <a href="../../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../../publications">Publications</a> </li>
+			
+				<li> <a href="../../../talks">Talks</a> </li>
+			
+				<li> <a href="../../../software">Software</a> </li>
+			
+				<li> <a href="../../../projects">Projects</a> </li>
+			
+				<li> <a href="../../../events">Events</a> </li>
+			
+				<li> <a href="../../../theses">Theses</a> </li>
+			
+				<li> <a href="../../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+		
+			<h1>Grundlagen der Optimierung</h1>
+		
+		<div class="metadata">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+				
+					
+					
+					
+						
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+			
+				
+				
+				
+					<span> Semester: 2023 WS</span>
+					<br>
+				
+				
+				
+				
+					<span> Veranstaltungstyp: Vorlesung</span>
+					<br>
+				
+
+				
+				
+					<span> Sprachen: Deutsch</span>
+					<br>
+				
+
+				
+				
+					<span> Verantwortlich: <span class="teachers-list"><a href="../../../team/eherberg/">Evelyn Herberg</a></span></span>
+				<br>
+
+				
+				
+				
+					<span> AssistentInnen: <span class="assistants-list"><a href="../../../team/alumni/mhashemi/">Masoumeh Hashemi</a>, Viktor Stein</span>
+</span>
+				<br>
+				
+				
+				
+				
+				<span> Kontakt: <a href="../../../forwards/teachingContact/scoop-teaching-GDO" >E-Mail senden</a></span>
+				<br>
+				
+				
+				
+				
+					<span> Webseiten zu diesem Kurs: </span>
+				
+
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1722">MÜSLI</a>, <a href="https://moodle.uni-heidelberg.de/course/view.php?id=18251">Moodle</a>, 
+
+
+
+
+
+
+
+
+
+	
+
+
+<a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.veranstnr=11BMAV0420%2c11BMAU0420&veranstaltung.semester=20232&P_start=0&P_anzahl=50&P.sort=veranstaltung.dtxt&_form=display">LSF</a><br>
+				
+				
+				
+					<span> Prüfungstermine: <a href="#pr%c3%bcfung"title="16. Februar 2024">16. Februar 2024</a> </span>
+					<br>
+				
+			
+		</div>
+	</header>
+	<hr>
+	<article>
+		<h2> Kursinformationen </h2>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#beschreibung">Beschreibung</a></li>
+    <li><a href="#vorkenntnisse">Vorkenntnisse</a></li>
+    <li><a href="#konzept-und-angebote">Konzept und Angebote</a></li>
+    <li><a href="#termine-und-zeitplan">Termine und Zeitplan</a></li>
+    <li><a href="#übungsbetrieb">Übungsbetrieb</a></li>
+    <li><a href="#registrierung">Registrierung</a></li>
+    <li><a href="#prüfung">Prüfung</a>
+      <ul>
+        <li><a href="#format">Format</a></li>
+        <li><a href="#termine-und-zeiten">Termine und Zeiten</a></li>
+        <li><a href="#anmeldung">Anmeldung</a></li>
+        <li><a href="#abmeldung">Abmeldung</a></li>
+        <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+        <li><a href="#hilfsmittel">Hilfsmittel</a></li>
+      </ul>
+    </li>
+    <li><a href="#inhaltliches-material-zur-veranstaltung">Inhaltliches Material zur Veranstaltung</a>
+      <ul>
+        <li><a href="#skript">Skript</a></li>
+        <li><a href="#übungsaufgaben">Übungsaufgaben</a></li>
+        <li><a href="#programmieraufgaben">Programmieraufgaben</a></li>
+        <li><a href="#literatur">Literatur</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		<h2 id="beschreibung">
+	Beschreibung
+	<a href="#beschreibung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>In dieser Lehrveranstaltung werden die grundlegenden Begriffe und Techniken für die Untersuchung und Lösung von unrestringierten, linearen sowie konvexen Optimierungsaufgaben in mehreren Variablen erarbeitet.</p>
+<h2 id="vorkenntnisse">
+	Vorkenntnisse
+	<a href="#vorkenntnisse" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Empfohlen sind der vorherige oder zeitgleiche Besuch der Veranstaltungen Analysis I und II (MA1/ MA2) und Lineare Algebra I (MA4).
+Wünschenswert sind grundlegende Programmierkenntnisse.</p>
+<h2 id="konzept-und-angebote">
+	Konzept und Angebote
+	<a href="#konzept-und-angebote" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Diese Veranstaltung setzt sich aus verschiedenen Angeboten zusammen.
+Die zentralen Komponenten sind dabei:</p>
+<ul>
+<li>Das Skript zur Vorlesung</li>
+<li>Die Vorlesungstermine zu 2x2h pro Woche</li>
+<li>Die Übungsaufgaben</li>
+<li>Die Übungsgruppen</li>
+<li>Die Prüfungen am Ende des Semesters</li>
+</ul>
+<p><em>Achtung:</em> Anders als in den vergangenen zwei Jahren wird diese Vorlesung einem klassischen frontalen Vorlesungskonzept folgen.</p>
+<h2 id="termine-und-zeitplan">
+	Termine und Zeitplan
+	<a href="#termine-und-zeitplan" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Informationen zu den &ldquo;Vorlesungsterminen&rdquo; finden Sie im 
+
+
+
+
+
+
+
+
+
+	
+
+
+<a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.veranstnr=11BMAV0420%2c11BMAU0420&veranstaltung.semester=20232&P_start=0&P_anzahl=50&P.sort=veranstaltung.dtxt&_form=display">LSF</a>.
+Die Informationen für die Termine im Übungsbetrieb finden Sie im <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1722">MÜSLI</a>.</p>
+<p>Einen Überblick über den zeitlichen Ablauf können Sie sich anhand des <a href="./schedule.pdf"title="Veranstaltungskalenders">Veranstaltungskalenders</a> verschaffen.</p>
+<h2 id="übungsbetrieb">
+	Übungsbetrieb
+	<a href="#%c3%bcbungsbetrieb" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Die zentrale Komponente des Übungsbetriebs ist ein wöchentliches Übungsblatt mit Aufgaben zum Material der jeweiligen Inhaltswoche.
+Blatt 0 ist ein Präsenzübungsblatt.
+Alle weiteren Blätter sollen in Kleingruppen (maximal 3 Personen) innerhalb einer Woche bearbeitet und von den Teilnehmenden über <a href="https://moodle.uni-heidelberg.de/course/view.php?id=18251">Moodle</a> zur Bewertung eingereicht werden.</p>
+<p>Die Lösungen der Hausaufgaben werden in den Übungen diskutiert.
+Wir veröffentlichen <strong>keine</strong> Musterlösungen zu den Hausaufgaben.</p>
+<h2 id="registrierung">
+	Registrierung
+	<a href="#registrierung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Um sich für den Kurs zu registrieren, melden Sie sich bitte im <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1722">MÜSLI</a> für eine Übungsgruppe an.
+Bitte registrieren Sie sich hier auch, wenn Sie nicht vor haben, am Übungsbetrieb teilzunehmen, so können wir die Teilnehmerzahlen besser abschätzen.</p>
+<p>Achtung(!): Die Registrierung im Kurs ist nicht gleichzeitig eine Anmeldung zur Prüfung.
+Mehr Informationen hierzu gibt es im Abschnitt <a href="#pr%c3%bcfung"title="Prüfung">Prüfung</a></p>
+<h2 id="prüfung">
+	Prüfung
+	<a href="#pr%c3%bcfung" class="h-anchor" aria-hidden="true">#</a>
+</h2><h3 id="format">
+	Format
+	<a href="#format" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Zu dieser Veranstaltung bieten wir Ihnen zu zwei Terminen (zeitnah nach Ende des Semesters und gegen Ende der vorlesungsfreien Zeit) je eine schriftliche Prüfungen von ca 120 min Bearbeitungsdauer an.
+Sie haben die Möglichkeit, an bis zu zwei dieser Prüfungen teilzunehmen.
+Sollten Sie an dem ersten Termin die Prüfung ablegen und nicht bestehen, so können Sie zum zweiten Termin einen zweiten Versuch setzen.
+Sollten Sie an dem zweiten Termin die erste Prüfung ablegen, und nicht bestehen, so werden sie bis zum nächsten Durchlauf des Kurses auf einen Zweitversuch warten müssen.
+Bestehen Sie Ihren ersten Versuch, dann haben Sie grundsätzlich keine Möglichkeit, eine weitere Prüfung für diese Veranstaltung abzulegen.</p>
+<h3 id="termine-und-zeiten">
+	Termine und Zeiten
+	<a href="#termine-und-zeiten" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Der erste Prüfungstermin ist der 16. Februar 2024 von 10:00 bis 12:00 Uhr.
+Bitte erscheinen Sie pünktlich, um einen reibungslosen Ablauf zu ermöglichen.</p>
+<p>Der zweite Prüfungstermin wird noch bekanntgegeben.</p>
+<h3 id="anmeldung">
+	Anmeldung
+	<a href="#anmeldung" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Sie können sich in <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1722">MÜSLI</a> verbindlich zur Prüfung anmelden.</p>
+<h3 id="abmeldung">
+	Abmeldung
+	<a href="#abmeldung" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Sie können bis zu 7 Tage vor der Prüfung Ihre vorher angemeldete Teilnahme stornieren.
+Wenn Sie eine angemeldete Prüfung nicht ablegen oder nicht mindestens 7 Tage vor dem jeweiligen Termin stornieren, so müssen Sie entweder eine Prüfungsunfähigkeitsbescheinigung für den entsprechenden Termin vorlegen, ansonsten wird das Prüfungsamt über einen Fehlversuch informiert.</p>
+<p>Sollten Sie sich für eine Prüfung anmelden aber die <a href="#zulassung"title="Prüfungsvoraussetzungen">Prüfungsvoraussetzungen</a> nicht erfüllen, so ist Ihre Anmeldung nicht gültig aber zählt nicht als Fehlversuch.</p>
+<h3 id="voraussetzungen">
+	Voraussetzungen
+	<a href="#voraussetzungen" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Um bei uns eine Prüfung abzulegen, müssen Sie mindestens eine der folgenden Voraussetzungen erfüllen:</p>
+<ol>
+<li>Sie haben sich bereits in vorherigen Semestern für die Prüfung in dieser Veranstaltung qualifiziert und melden uns <a href="../../../forwards/teachingContact/scoop-teaching-GDO" >per E-Mail</a> wann und von wem Sie zugelassen wurden bis zum 2024-01-14.</li>
+<li>Sie haben erfolgreich am Übungsbetrieb der Veranstaltung in diesem Semester im folgenden Sinn teilgenommen:
+<ul>
+<li>Auf jedem bis auf höchstens einem der wöchentlichen, theoretischen Übungsblätter haben Sie jede Aufgabe sinnvoll bearbeitet, wobei sinnvolle Bearbeitung bedeutet, dass Sie wenigstens einen Lösungsansatz skizziert haben und die Aufgabe mit dem Material der Vorlesung in Bezug gesetzt haben. (Das Übungsblatt 0 zählt nicht dazu.)</li>
+</ul>
+</li>
+</ol>
+<p>Ob und wie lang eine bei uns erworbene Prüfungszulassung in den Folgesemestern ihre Gültigkeit behält, ist von den DozentInnen der Folgesemestern abhängig.</p>
+<h3 id="hilfsmittel">
+	Hilfsmittel
+	<a href="#hilfsmittel" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Als Hilfsmittel ist ein Lineal und je TeilnehmerIn ein beliebig (auch beidseitig) beschriebener/bedruckter DinA4-Bogen mit Notizen zulässig.
+Dieser Notizzettel muss mit Ihrem Namen beschriftet sein.</p>
+<h2 id="inhaltliches-material-zur-veranstaltung">
+	Inhaltliches Material zur Veranstaltung
+	<a href="#inhaltliches-material-zur-veranstaltung" class="h-anchor" aria-hidden="true">#</a>
+</h2><h3 id="skript">
+	Skript
+	<a href="#skript" class="h-anchor" aria-hidden="true">#</a>
+</h3><p><a href="./grundlagen-der-optimierung-skript.pdf"title="Skript bis inkl. Woche 14">Skript bis inkl. Woche 14</a></p>
+<h3 id="übungsaufgaben">
+	Übungsaufgaben
+	<a href="#%c3%bcbungsaufgaben" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./exercise-00.pdf"title="Übungsblatt 0">Übungsblatt 0</a></li>
+<li><a href="./exercise-01.pdf"title="Übungsblatt 1">Übungsblatt 1</a></li>
+<li><a href="./exercise-02.pdf"title="Übungsblatt 2">Übungsblatt 2</a></li>
+<li><a href="./exercise-03.pdf"title="Übungsblatt 3">Übungsblatt 3</a></li>
+<li><a href="./exercise-04.pdf"title="Übungsblatt 4">Übungsblatt 4</a></li>
+<li><a href="./exercise-05.pdf"title="Übungsblatt 5">Übungsblatt 5</a></li>
+<li><a href="./exercise-06.pdf"title="Übungsblatt 6">Übungsblatt 6</a></li>
+<li><a href="./exercise-07.pdf"title="Übungsblatt 7">Übungsblatt 7</a></li>
+<li><a href="./exercise-08.pdf"title="Übungsblatt 8">Übungsblatt 8</a></li>
+<li><a href="./exercise-09.pdf"title="Übungsblatt 9">Übungsblatt 9</a></li>
+<li><a href="./exercise-10.pdf"title="Übungsblatt 10">Übungsblatt 10</a></li>
+<li><a href="./exercise-11.pdf"title="Übungsblatt 11">Übungsblatt 11</a></li>
+<li><a href="./exercise-12.pdf"title="Übungsblatt 12">Übungsblatt 12</a></li>
+<li><a href="./exercise-13.pdf"title="Übungsblatt 13">Übungsblatt 13</a></li>
+</ul>
+<h3 id="programmieraufgaben">
+	Programmieraufgaben
+	<a href="#programmieraufgaben" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="../../../../../intro-jupyter"title="Kurzanleitung zu Jupyter notebooks">Kurzanleitung zu Jupyter notebooks</a></li>
+<li><a href="./programmierung_gradientenverfahren.zip"title="Programmierübung 1 (zip)">Programmierübung 1 (zip)</a></li>
+<li><a href="./helpful_functions.zip"title="Hilfreiche Funktionen zur Programmierübung 1 (zip)">Hilfreiche Funktionen zur Programmierübung 1 (zip)</a></li>
+<li><a href="./programmierung_newton_verfahren.zip"title="Programmierübung 2 (zip)">Programmierübung 2 (zip)</a></li>
+<li><a href="./programmierung_simplex.zip"title="Programmierübung 3 (zip)">Programmierübung 3 (zip)</a></li>
+</ul>
+<h3 id="literatur">
+	Literatur
+	<a href="#literatur" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Die Lehrveranstaltung kommt ohne zusätzliche Literatur aus.
+Wenn Sie jedoch Begleitliteratur wünschen, so können wir folgende Bücher empfehlen:</p>
+<ul>
+<li>zu Kapitel 1: <a href="https://link.springer.com/book/10.1007/978-3-642-58582-1"target="_blank" rel="noopener" class="external">Geiger, Kanzow: Numerische Verfahren zur Lösung unrestringierter Optimierungsaufgaben</a></li>
+<li>zu Kapitel 2 &amp; 3: <a href="https://link.springer.com/book/10.1007/978-3-642-56004-0"target="_blank" rel="noopener" class="external">Geiger, Kanzow: Theorie und Numerik restringierter Optimierungsaufgaben</a></li>
+<li>zu Kapitel 1 &amp; 2: <a href="https://link.springer.com/book/10.1007/978-0-387-40065-5"target="_blank" rel="noopener" class="external">Nocedal, Wright: Numerical Optimization</a></li>
+<li>zu Kapitel 2: <a href="https://link.springer.com/book/10.1007/978-1-4614-7630-6"target="_blank" rel="noopener" class="external">Vanderbei: Linear Programming</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1137/1.9781611974997"target="_blank" rel="noopener" class="external">Beck: First-Order Methods in Optimization</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1515/9781400873173"target="_blank" rel="noopener" class="external">Rockafellar: Convex Analysis</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1007/978-3-662-58855-0"target="_blank" rel="noopener" class="external">Jarre, Stoer: Optimierung</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1007/978-3-662-02796-7"target="_blank" rel="noopener" class="external">Hiriart-Urruty, Lemaréchal: Convex Analysis and Minimization Algorithms I</a></li>
+</ul>
+
+	</article>
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

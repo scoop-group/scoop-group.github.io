@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Grundlagen der Optimierung | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/teaching/2024ws/lecture-grundlagen-der-optimierung/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../../news">News</a> </li>
+			
+				<li> <a href="../../../team">Team</a> </li>
+			
+				<li> <a href="../../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../../publications">Publications</a> </li>
+			
+				<li> <a href="../../../talks">Talks</a> </li>
+			
+				<li> <a href="../../../software">Software</a> </li>
+			
+				<li> <a href="../../../projects">Projects</a> </li>
+			
+				<li> <a href="../../../events">Events</a> </li>
+			
+				<li> <a href="../../../theses">Theses</a> </li>
+			
+				<li> <a href="../../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+		
+			<h1>Grundlagen der Optimierung</h1>
+		
+		<div class="metadata">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+				
+					
+					
+					
+						
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+			
+				
+				
+				
+					<span> Semester: 2024 WS</span>
+					<br>
+				
+				
+				
+				
+					<span> Veranstaltungstyp: Vorlesung</span>
+					<br>
+				
+
+				
+				
+					<span> Sprachen: Deutsch</span>
+					<br>
+				
+
+				
+				
+					<span> Verantwortlich: <span class="teachers-list"><a href="../../../team/rherzog/">Roland Herzog</a>, <a href="../../../team/gm%C3%BCller/">Georg Müller</a></span></span>
+				<br>
+
+				
+				
+				
+					<span> AssistentInnen: <span class="assistants-list"><a href="../../../team/nhaaf/">Nico Haaf</a></span>
+</span>
+				<br>
+				
+				
+				
+				
+				<span> Kontakt: <a href="../../../forwards/teachingContact/scoop-teaching-GDO" >E-Mail senden</a></span>
+				<br>
+				
+				
+				
+				
+					<span> Webseiten zu diesem Kurs: </span>
+				
+
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1906">MÜSLI</a>, <a href="https://mampf.mathi.uni-heidelberg.de/lectures/210 ">MaMpf</a>, heiCO(<a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/360932'>1100113004</a>, <a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/360937'>1100113005</a>)<br>
+				
+				
+				
+					<span> Prüfungstermine: <a href="#pr%c3%bcfung"title="Ersttermin 2025-02-12, Zweittermin TBA">Ersttermin 2025-02-12, Zweittermin TBA</a> </span>
+					<br>
+				
+			
+		</div>
+	</header>
+	<hr>
+	<article>
+		<h2> Kursinformationen </h2>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#beschreibung">Beschreibung</a></li>
+    <li><a href="#vorkenntnisse">Vorkenntnisse</a></li>
+    <li><a href="#konzept-und-angebote">Konzept und Angebote</a></li>
+    <li><a href="#termine-und-zeitplan">Termine und Zeitplan</a></li>
+    <li><a href="#übungsbetrieb">Übungsbetrieb</a></li>
+    <li><a href="#registrierung-für-die-kursteilnahme">Registrierung für die Kursteilnahme</a></li>
+    <li><a href="#prüfung">Prüfung</a>
+      <ul>
+        <li><a href="#format">Format</a></li>
+        <li><a href="#termine-und-zeiten">Termine und Zeiten</a></li>
+        <li><a href="#anmeldung-und-abmeldung-zur-prüfung">Anmeldung und Abmeldung zur Prüfung</a></li>
+        <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+        <li><a href="#einsicht">Einsicht</a></li>
+      </ul>
+    </li>
+    <li><a href="#inhaltliches-material-zur-veranstaltung">Inhaltliches Material zur Veranstaltung</a>
+      <ul>
+        <li><a href="#skript">Skript</a></li>
+        <li><a href="#übungsaufgaben">Übungsaufgaben</a></li>
+        <li><a href="#literatur">Literatur</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		<h2 id="beschreibung">
+	Beschreibung
+	<a href="#beschreibung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>In dieser Lehrveranstaltung werden die grundlegenden Begriffe und Techniken für die Untersuchung und Lösung von unrestringierten, linearen sowie konvexen Optimierungsaufgaben in mehreren Variablen erarbeitet.</p>
+<h2 id="vorkenntnisse">
+	Vorkenntnisse
+	<a href="#vorkenntnisse" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Empfohlen sind der vorherige oder zeitgleiche Besuch der Veranstaltungen Analysis I und II (MA1/ MA2) und Lineare Algebra I (MA4).
+Wünschenswert sind grundlegende Programmierkenntnisse.</p>
+<h2 id="konzept-und-angebote">
+	Konzept und Angebote
+	<a href="#konzept-und-angebote" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Diese Veranstaltung setzt sich aus verschiedenen Angeboten zusammen.
+Die zentralen Komponenten sind dabei:</p>
+<ul>
+<li>Das Skript zur Vorlesung</li>
+<li>Die Vorlesungstermine zu 2x2h pro Woche</li>
+<li>Die Übungsaufgaben</li>
+<li>Die Übungsgruppen</li>
+<li>Die Prüfungen am Ende des Semesters</li>
+</ul>
+<p>Diese Veranstaltung folgt daher anders als 2021 und 2022 einem klassischen frontalen Vorlesungskonzept.</p>
+<ul>
+<li><a href="./Organisatorisches.pdf"title="Informationen zur Lehrveranstaltung">Informationen zur Lehrveranstaltung</a></li>
+</ul>
+<h2 id="termine-und-zeitplan">
+	Termine und Zeitplan
+	<a href="#termine-und-zeitplan" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Einen Überblick über den zeitlichen Ablauf (inklusive aller Termintage) können Sie sich anhand des <a href="./schedule.pdf"title="Veranstaltungskalenders">Veranstaltungskalenders</a> verschaffen.
+Weitere Informationen zu den Vorlesungsterminen finden Sie im heiCO(<a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/360932'>1100113004</a>, <a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/360937'>1100113005</a>).
+Weitere Informationen für die Termine im Übungsbetrieb finden Sie in <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1906">MÜSLI</a>.</p>
+<h2 id="übungsbetrieb">
+	Übungsbetrieb
+	<a href="#%c3%bcbungsbetrieb" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Die zentrale Komponente des Übungsbetriebs ist ein wöchentliches Übungsblatt mit Aufgaben zum Material der jeweiligen Inhaltswoche.
+Die Übungsblätter sollen in Kleingruppen von mindestens 2 und maximal 3 Personen bis zur jeweiligen Abgabefrist (jeweils eine Woche Bearbeitungszeit) von den Teilnehmenden bearbeitet und über <a href="https://mampf.mathi.uni-heidelberg.de/lectures/210 ">MaMpf</a>
+ zur Bewertung eingereicht werden.
+Nach Ablauf der Bearbeitungszeit veröffentlichen wir Musterlösungen zu den Übungsaufgaben.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Auf den Übungsblättern finden Sie 3-4 Hausaufgaben und meist eine Auswahl von Zusatzaufgaben.
+Zu bearbeiten sind jeweils die Hausaufgaben, diese werden vollständig bewertet.
+Außerdem wird bis zu einer weiteren Zusatzaufgabe auf jedem Übungsblatt bewertet und diese Punkte als Bonuspunkte in die schlussendliche Bewertung aufgenommen.
+Sie sind herzlich eingeladen, weitere Zusatzaufgaben zu bearbeiten.
+Bitte haben Sie jedoch Verständnis, dass wir aus Kapazitätsgründen nicht mehr Abgaben bewerten können.</p>
+<h2 id="registrierung-für-die-kursteilnahme">
+	Registrierung für die Kursteilnahme
+	<a href="#registrierung-f%c3%bcr-die-kursteilnahme" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Um sich für die Teilnahme am Kurs zu registrieren, melden Sie sich bitte im <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1906">MÜSLI</a> für eine Übungsgruppe an.
+Bitte registrieren Sie sich hier auch, wenn Sie nicht vorhaben sollten, am Übungsbetrieb teilzunehmen.
+So können wir die Teilnehmerzahlen besser abschätzen.</p>
+<p>Achtung(!): Die Registrierung im Kurs ist nicht gleichzeitig eine Anmeldung zur Prüfung.
+Mehr Informationen hierzu gibt es im Abschnitt <a href="#pr%c3%bcfung"title="Prüfung">Prüfung</a></p>
+<h2 id="prüfung">
+	Prüfung
+	<a href="#pr%c3%bcfung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Zu dieser Veranstaltung bieten wir Ihnen zu zwei Terminen (am 12.02.2025 und gegen Ende der darauffolgenden vorlesungsfreien Zeit) je eine schriftliche Prüfung an.
+Sie dürfen genau dann an der ersten Prüfung teilnehmen, wenn Sie die <a href="#voraussetzungen"title="Zulassungsvoraussetzungen zur Prüfung">Zulassungsvoraussetzungen zur Prüfung</a> erfüllen.
+Sie dürfen genau dann an der zweiten Prüfung teilnehmen, wenn Sie die <a href="#voraussetzungen"title="Zulassungsvoraussetzungen zur Prüfung">Zulassungsvoraussetzungen zur Prüfung</a> erfüllen und nicht bereits am ersten Termin bestanden haben.
+Falls Sie am ersten Termin die Prüfung ablegen und diese nicht bestehen, so können Sie sich also noch einmal zum zweiten Termin anmelden.
+Auch, wenn Sie am ersten Termin nicht teilnehmen, können Sie sich zum zweiten Termin anmelden.
+Für jeden der Prüfungstermine, den Sie wahrnehmen möchten, müssen Sie sich separat anmelden (<a href="#anmeldung-zur-pr%c3%bcfung"title="Anmeldung zur Prüfung">Anmeldung zur Prüfung</a>).
+Jedesmal, wenn wir die Anmeldemöglichkeit für einen Klausurtermin freigegeben wird, geben wir Ihnen Bescheid.</p>
+<p>Für jede der Klausuren gilt:
+Wenn Sie Ihre <a href="#voraussetzungen"title="Zulassung zur Prüfung">Zulassung zur Prüfung</a> erreicht haben und Sie zur Klausur angemeldet sind, dann wird Ihre Klausurnote die gemeldete Modulnote sein.
+Wenn Sie Ihre <a href="#voraussetzungen"title="Zulassung zur Prüfung">Zulassung zur Prüfung</a> erreicht haben, sich zur Klausur anmelden, aber dann fristgerecht wieder abmelden, dann haben Sie das Modul nicht beendet und für Sie wird keine Teilnahme an dem Klausurtermin gemeldet.
+Auch wenn Sie die <a href="#voraussetzungen"title="Zulassung zur Prüfung">Zulassung zur Prüfung</a> nicht erreicht haben, haben Sie das Modul nicht beendet und erhalten keine Modulnote, selbst dann, wenn Sie sich zur Klausur angemeldet haben sollten.</p>
+<h3 id="format">
+	Format
+	<a href="#format" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Die reguläre Bearbeitungszeit der Klausuren beträgt jeweils 120 Minuten.
+Das einzige zulässige Hilfsmittel für die Bearbeitung der Klausur wird ein beliebig (auch doppelseitig) beschriebenes oder bedrucktes DIN-A4 Blatt sein.
+(Insbesondere sollte es Ihnen möglich sein, Ihr Blatt &ndash; bis auf Brillen und Kontaktlinsen &ndash; ohne technische Hilfsmittel lesen zu können.)
+Elektronische Hilfsmittel (Smartphones, -watches etc.) werden vom Tisch entfernt werden müssen.</p>
+<h3 id="termine-und-zeiten">
+	Termine und Zeiten
+	<a href="#termine-und-zeiten" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Der erste Prüfungstermin ist der 12. Februar 2025 von 09:00 bis 11:00 Uhr.
+Den Prüfungsort finden Sie in heiCO hinterlegt.</p>
+<h3 id="anmeldung-und-abmeldung-zur-prüfung">
+	Anmeldung und Abmeldung zur Prüfung
+	<a href="#anmeldung-und-abmeldung-zur-pr%c3%bcfung" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Sie können sich in heiCO(<a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/360932'>1100113004</a>, <a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/360937'>1100113005</a>) verbindlich zur Prüfung anmelden, sobald dort die Prüfung angelegt ist, und sich dann auch selbstständigt wieder abmelden.
+Es gelten die in heiCO(<a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/360932'>1100113004</a>, <a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/360937'>1100113005</a>) hinterlegten An- und Abmeldefristen.
+Bitte beachten Sie, dass Sie auch für den Kurs und die Übungen in heiCO angemeldet sein müssen, um sich prüfen zu lassen.
+Wenn Sie eine angemeldete Prüfung nicht ablegen oder nicht fristgerecht stornieren, so müssen Sie entweder eine Prüfungsunfähigkeitsbescheinigung für den entsprechenden Termin vorlegen, ansonsten wird das Prüfungsamt über einen nichtangetretenen Fehlversuch informiert.</p>
+<p>Sollten Sie sich für eine Prüfung anmelden aber die <a href="#zulassung"title="Prüfungsvoraussetzungen">Prüfungsvoraussetzungen</a> nicht erfüllen, so ist Ihre Anmeldung nicht gültig aber zählt nicht als Fehlversuch.</p>
+<h3 id="voraussetzungen">
+	Voraussetzungen
+	<a href="#voraussetzungen" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Um bei uns eine Prüfung abzulegen, müssen Sie mindestens eine der folgenden Voraussetzungen erfüllen:</p>
+<ol>
+<li>Sie haben in unserem Kurs eine Prüfungszulassung erworben, indem Sie mindestens die Hälfte der auf den ersten 12 Hausaufgabenzetteln erreichbaren Punkte erreicht haben.
+Ob und wie lang eine bei uns erworbene Prüfungszulassung in den Folgesemestern ihre Gültigkeit behält, ist von den DozentInnen der Folgesemestern abhängig.</li>
+<li>Sie haben sich bereits im vorherigen Jahr für die Prüfung in dieser Veranstaltung qualifiziert.</li>
+</ol>
+<h3 id="einsicht">
+	Einsicht
+	<a href="#einsicht" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Ihre Klausur vom Ersttermin können Sie persönlich gegen Vorlage Ihres Studierendenausweises am Do 2025-02-13 zwischen 09:30 und 11:00 im SR 10 des Mathematikons einsehen.
+Fotos sind nicht zulässig.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="inhaltliches-material-zur-veranstaltung">
+	Inhaltliches Material zur Veranstaltung
+	<a href="#inhaltliches-material-zur-veranstaltung" class="h-anchor" aria-hidden="true">#</a>
+</h2><ul>
+<li><a href="../../../../../intro-jupyter"title="Kurzanleitung zu Jupyter notebooks">Kurzanleitung zu Jupyter notebooks</a></li>
+</ul>
+<h3 id="skript">
+	Skript
+	<a href="#skript" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./grundlagen-der-optimierung-skript.pdf"title="Skript (2024-10-10)">Skript (2024-10-10)</a></li>
+<li><a href="./grundlagen-der-optimierung-skript-20241218.pdf"title="Skript (2024-12-18)">Skript (2024-12-18)</a></li>
+<li><a href="./grundlagen-der-optimierung-skript-20250125.pdf"title="Skript (2025-01-25)">Skript (2025-01-25)</a>: Korrekturen insbesondere im Beweis von Satz 16.27</li>
+<li><a href="./grundlagen-der-optimierung-skript-20250128.pdf"title="Skript (2025-01-28)">Skript (2025-01-28)</a>: Version inklusive aller Verbesserungen</li>
+</ul>
+<h3 id="übungsaufgaben">
+	Übungsaufgaben
+	<a href="#%c3%bcbungsaufgaben" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./exercise-01.pdf"title="Übungsblatt 01">Übungsblatt 01</a>
+&ndash; <a href="./exercise-01-solutions.pdf"title="Lösungen 01">Lösungen 01</a></li>
+<li><a href="./exercise-02.pdf"title="Übungsblatt 02">Übungsblatt 02</a>
+&ndash; <a href="./exercise-02-solutions.pdf"title="Lösungen 02">Lösungen 02</a></li>
+<li><a href="./exercise-03.pdf"title="Übungsblatt 03">Übungsblatt 03</a>
+&ndash; <a href="./exercise-03-solutions.pdf"title="Lösungen 03">Lösungen 03</a></li>
+<li><a href="./exercise-04.pdf"title="Übungsblatt 04">Übungsblatt 04</a>
+&ndash; <a href="./exercise-04-solutions.pdf"title="Lösungen 04">Lösungen 04</a></li>
+<li><a href="./exercise-05.pdf"title="Übungsblatt 05">Übungsblatt 05</a>
+&ndash; <a href="./exercise-05-solutions.pdf"title="Lösungen 05">Lösungen 05</a></li>
+<li><a href="./exercise-06.pdf"title="Übungsblatt 06">Übungsblatt 06</a>
+&ndash; <a href="./exercise-06-solutions.pdf"title="Lösungen 06">Lösungen 06</a></li>
+<li><a href="./exercise-07.pdf"title="Übungsblatt 07">Übungsblatt 07</a>
+&ndash; <a href="./exercise-07-solutions.pdf"title="Lösungen 07">Lösungen 07</a></li>
+<li><a href="./exercise-08.pdf"title="Übungsblatt 08">Übungsblatt 08</a>
+&ndash; <a href="./exercise-08-solutions.pdf"title="Lösungen 08">Lösungen 08</a></li>
+<li><a href="./exercise-09.pdf"title="Übungsblatt 09">Übungsblatt 09</a>
+&ndash; <a href="./exercise-09-solutions.pdf"title="Lösungen 09">Lösungen 09</a></li>
+<li><a href="./exercise-10.pdf"title="Übungsblatt 10">Übungsblatt 10</a>
+&ndash; <a href="./exercise-10-solutions.pdf"title="Lösungen 10">Lösungen 10</a></li>
+<li><a href="./exercise-11.pdf"title="Übungsblatt 11">Übungsblatt 11</a>
+&ndash; <a href="./exercise-11-solutions.pdf"title="Lösungen 11">Lösungen 11</a></li>
+<li><a href="./exercise-12.pdf"title="Übungsblatt 12">Übungsblatt 12</a>
+&ndash; <a href="./exercise-12-solutions.pdf"title="Lösungen 12">Lösungen 12</a></li>
+<li><a href="./exercise-13.pdf"title="Übungsblatt 13">Übungsblatt 13</a>
+&ndash; <a href="./exercise-13-solutions.pdf"title="Lösungen 13">Lösungen 13</a></li>
+<li><a href="./exercise-14.pdf"title="Übungsblatt 14">Übungsblatt 14</a>
+&ndash; <a href="./exercise-14-solutions.pdf"title="Lösungen 14">Lösungen 14</a></li>
+</ul>
+<h3 id="literatur">
+	Literatur
+	<a href="#literatur" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Die Lehrveranstaltung kommt ohne zusätzliche Literatur aus.
+Wenn Sie jedoch Begleitliteratur wünschen, so können wir folgende Bücher empfehlen:</p>
+<ul>
+<li>zu Kapitel 1: <a href="https://link.springer.com/book/10.1007/978-3-642-58582-1"target="_blank" rel="noopener" class="external">Geiger, Kanzow: Numerische Verfahren zur Lösung unrestringierter Optimierungsaufgaben</a></li>
+<li>zu Kapitel 2 &amp; 3: <a href="https://link.springer.com/book/10.1007/978-3-642-56004-0"target="_blank" rel="noopener" class="external">Geiger, Kanzow: Theorie und Numerik restringierter Optimierungsaufgaben</a></li>
+<li>zu Kapitel 1 &amp; 2: <a href="https://link.springer.com/book/10.1007/978-0-387-40065-5"target="_blank" rel="noopener" class="external">Nocedal, Wright: Numerical Optimization</a></li>
+<li>zu Kapitel 2: <a href="https://link.springer.com/book/10.1007/978-1-4614-7630-6"target="_blank" rel="noopener" class="external">Vanderbei: Linear Programming</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1137/1.9781611974997"target="_blank" rel="noopener" class="external">Beck: First-Order Methods in Optimization</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1515/9781400873173"target="_blank" rel="noopener" class="external">Rockafellar: Convex Analysis</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1007/978-3-662-58855-0"target="_blank" rel="noopener" class="external">Jarre, Stoer: Optimierung</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1007/978-3-662-02796-7"target="_blank" rel="noopener" class="external">Hiriart-Urruty, Lemaréchal: Convex Analysis and Minimization Algorithms I</a></li>
+</ul>
+
+	</article>
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

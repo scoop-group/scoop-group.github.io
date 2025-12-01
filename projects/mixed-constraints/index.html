@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Second Order Sufficient Conditions and the SQP Method for Optimal Control Problems with Mixed Constraints | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/mixed-constraints/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Second Order Sufficient Conditions and the SQP Method for Optimal Control Problems with Mixed Constraints
+		</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2005-09-01</span>
+	<br>
+
+
+
+	<span> End: 2008-08-31</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a>, <a href="https://www.uni-due.de/mathematik/agroesch/roesch"target="_blank" rel="noopener" class="external">Arnd Rösch</a></span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/alumni/nmetla/">Nataliya Metla</a></span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.fwf.ac.at/"target="_blank" rel="noopener" class="external">FWF</a>
+			within the 
+			Individual Research Grant funding scheme
+		
+	</span>
+	<br>
+
+
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p>Many technical processes are described by partial differential equations.
+The optimization of such processes or identification of material parameters leads to <strong>optimal control problems</strong> for partial differential equations.
+Naturally, some quantities of the process have to be restricted to admissible ranges.
+The scope of this project covers optimal control of elliptic and parabolic partial differential equations with <strong>pointwise inequality constraints</strong> in space and time.</p>
+<p>Typically, nonlinear functions are involved in real-life problems.
+In turn, necessary and sufficient optimality conditions of nonlinear optimal control problems contain first and second  derivatives of these nonlinearities.
+<strong>Sufficient optimality conditions</strong> can ensure <strong>stability under perturbations</strong> of the solutions of the investigated  optimal control problems.
+Moreover, they represent the key to prove <strong>convergence of fast and efficient numerical methods</strong>.</p>
+<p>Until now, sufficient optimality conditions, stability results, and  convergence of fast numerical methods are only known in case the pointwise inequality constraints affect solely the controls of the system.
+In contrast, real-life problems contain typically both, <strong>pointwise inequality constraints</strong> for <strong>controls</strong> and process quantities, i.e., <strong>states</strong>.
+Inequality constraints for process quantities alone lead to mathematical problems which are far from being solved.</p>
+<p>In this project, we will establish sufficient optimality conditions and  we will prove stability results and  convergence of the SQP-method for <strong>mixed constrained optimal control problems</strong>.
+Pointwise inequality conditions containing controls and process quantities are simultaneously involved in such constraints.
+These theory developed in this project will guarantee <strong>reliable numerical results</strong>
+for arbitrary fine discretizations of the involved partial differential equations.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-ARTICLE">
+	<li class="publication-item" id="AltGriesseMetlaRoesch:2010:1">
+	<div class="publication-author"> Walter Alt, <a href="../../team/rherzog/">Roland Griesse</a>, <a href="../../team/alumni/nmetla/">Nataliya Metla</a> and Arnd Rösch </div>
+	
+	
+	
+	<div class="publication-title"> Lipschitz stability for elliptic optimal control problems with mixed control-state constraints </div>
+	<div class="publication-ref-info">
+		
+			<span> Optimization 59(6), p.833-849, </span>
+		
+		<span class="publication-year"> 2010 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1080/02331930902863749">doi:10.1080/02331930902863749</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{AltGriesseMetlaRoesch:2010:1,
+  AUTHOR = {Alt, Walter and Griesse, Roland and Metla, Nataliya and Rösch, Arnd},
+  DATE = {2010},
+  DOI = {10.1080/02331930902863749},
+  JOURNALTITLE = {Optimization},
+  NUMBER = {6},
+  PAGES = {833--849},
+  TITLE = {Lipschitz stability for elliptic optimal control problems with mixed control-state constraints},
+  VOLUME = {59},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="GriesseMetlaRoesch:2010:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Griesse</a>, <a href="../../team/alumni/nmetla/">Nataliya Metla</a> and Arnd Rösch </div>
+	
+	
+	
+	<div class="publication-title"> Local quadratic convergence of SQP for elliptic optimal control problems with mixed control-state constraints </div>
+	<div class="publication-ref-info">
+		
+			<span> Control and Cybernetics 39(3), p.717-738, </span>
+		
+		<span class="publication-year"> 2010 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{GriesseMetlaRoesch:2010:1,
+  AUTHOR = {Griesse, Roland and Metla, Nataliya and Rösch, Arnd},
+  DATE = {2010},
+  JOURNALTITLE = {Control and Cybernetics},
+  NUMBER = {3},
+  PAGES = {717--738},
+  TITLE = {Local quadratic convergence of SQP for elliptic optimal control problems with mixed control-state constraints},
+  VOLUME = {39},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="GriesseWachsmuth:2009:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Griesse</a> and Daniel Wachsmuth </div>
+	
+	
+	
+	<div class="publication-title"> Sensitivity analysis and the adjoint update strategy for optimal control problems with mixed control-state constraints </div>
+	<div class="publication-ref-info">
+		
+			<span> Computational Optimization and Applications 44(1), p.57-81, </span>
+		
+		<span class="publication-year"> 2009 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/s10589-008-9181-x">doi:10.1007/s10589-008-9181-x</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{GriesseWachsmuth:2009:1,
+  AUTHOR = {Griesse, Roland and Wachsmuth, Daniel},
+  DATE = {2009},
+  DOI = {10.1007/s10589-008-9181-x},
+  JOURNALTITLE = {Computational Optimization and Applications},
+  NUMBER = {1},
+  PAGES = {57--81},
+  TITLE = {Sensitivity analysis and the adjoint update strategy for optimal control problems with mixed control-state constraints},
+  VOLUME = {44},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Metla:2008:1">
+	<div class="publication-author"> <a href="../../team/alumni/nmetla/">Nataliya Metla</a> </div>
+	
+	
+	
+	<div class="publication-title"> The Sequential Quadratic Programming Method for Elliptic Control Problems with Mixed Control-State Constraints </div>
+	<div class="publication-ref-info">
+		
+			<span> Ph.D. thesis, Johannes Kepler University Linz, </span>
+		
+		<span class="publication-year"> 2008 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a href="https://lisss.jku.at/permalink/f/1l2ai6m/ULI_alma2138944000003340"target="_blank" rel="noopener" class="external">https://lisss.jku.at/permalink/f/1l2ai6m/ULI_alma2138944000003340</a>
+		</div>
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@THESIS{Metla:2008:1,
+  AUTHOR = {Metla, Nataliya},
+  INSTITUTION = {Johannes Kepler University Linz},
+  URL = {https://lisss.jku.at/permalink/f/1l2ai6m/ULI_alma2138944000003340},
+  DATE = {2008-08},
+  TITLE = {The Sequential Quadratic Programming Method for Elliptic Control Problems with Mixed Control-State Constraints},
+  TYPE = {phdthesis},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="GriesseMetlaRoesch:2008:2">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Griesse</a>, <a href="../../team/alumni/nmetla/">Nataliya Metla</a> and Arnd Rösch </div>
+	
+	
+	
+	<div class="publication-title"> Convergence analysis of the SQP method for nonlinear mixed-constrained elliptic optimal control problems </div>
+	<div class="publication-ref-info">
+		
+			<span> Journal of Applied Mathematics and Mechanics 88(10), p.776-792, </span>
+		
+		<span class="publication-year"> 2008 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/zamm.200800036">doi:10.1002/zamm.200800036</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{GriesseMetlaRoesch:2008:2,
+  AUTHOR = {Griesse, Roland and Metla, Nataliya and Rösch, Arnd},
+  DATE = {2008},
+  DOI = {10.1002/zamm.200800036},
+  JOURNALTITLE = {Journal of Applied Mathematics and Mechanics},
+  NUMBER = {10},
+  PAGES = {776--792},
+  TITLE = {Convergence analysis of the SQP method for nonlinear mixed-constrained elliptic optimal control problems},
+  VOLUME = {88},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Griesse:2006:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Griesse</a> </div>
+	
+	
+	
+	<div class="publication-title"> Lipschitz stability of solutions to some state-constrained elliptic optimal control problems </div>
+	<div class="publication-ref-info">
+		
+			<span> Journal of Analysis and its Applications 25, p.435-455, </span>
+		
+		<span class="publication-year"> 2006 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.4171/ZAA/1300">doi:10.4171/ZAA/1300</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{Griesse:2006:1,
+  AUTHOR = {Griesse, Roland},
+  DATE = {2006},
+  DOI = {10.4171/ZAA/1300},
+  JOURNALTITLE = {Journal of Analysis and its Applications},
+  PAGES = {435--455},
+  TITLE = {Lipschitz stability of solutions to some state-constrained elliptic optimal control problems},
+  VOLUME = {25},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="RoeschTroeltzsch:2006:1">
+	<div class="publication-author"> Arnd Rösch and Fredi Tröltzsch </div>
+	
+	
+	
+	<div class="publication-title"> Existence of regular Lagrange multipliers for a nonlinear elliptic optimal control problem with pointwise control-state constraints </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Control and Optimization 45(2), p.548-564, </span>
+		
+		<span class="publication-year"> 2006 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/050625114">doi:10.1137/050625114</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{RoeschTroeltzsch:2006:1,
+  AUTHOR = {Rösch, Arnd and Tröltzsch, Fredi},
+  DATE = {2006},
+  DOI = {10.1137/050625114},
+  JOURNALTITLE = {SIAM Journal on Control and Optimization},
+  NUMBER = {2},
+  PAGES = {548--564},
+  TITLE = {Existence of regular Lagrange multipliers for a nonlinear elliptic optimal control problem with pointwise control-state constraints},
+  VOLUME = {45},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="RoeschTroeltzsch:2006:2">
+	<div class="publication-author"> Arnd Rösch and Fredi Tröltzsch </div>
+	
+	
+	
+	<div class="publication-title"> Sufficient second-order optimality conditions for an elliptic optimal control problem with pointwise control-state constraints </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Optimization 17(3), p.776-794, </span>
+		
+		<span class="publication-year"> 2006 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/050625850">doi:10.1137/050625850</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{RoeschTroeltzsch:2006:2,
+  AUTHOR = {Rösch, Arnd and Tröltzsch, Fredi},
+  DATE = {2006},
+  DOI = {10.1137/050625850},
+  JOURNALTITLE = {SIAM Journal on Optimization},
+  NUMBER = {3},
+  PAGES = {776--794},
+  TITLE = {Sufficient second-order optimality conditions for an elliptic optimal control problem with pointwise control-state constraints},
+  VOLUME = {17},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/FWF.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

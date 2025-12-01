@@ -1,0 +1,29 @@
+RewriteEngine on
+RewriteRule scoop-teaching-gen "mailto:scoop-teaching@uni-heidelberg.de"
+RewriteRule scoop-teaching-MML "mailto:scoop-teaching@uni-heidelberg.de?subject=Seminar Mathematical Machine Learning"
+RewriteRule scoop-teaching-GDO "mailto:scoop-teaching@uni-heidelberg.de?subject=Grundlagen der Optimierung"
+RewriteRule scoop-teaching-EIN "mailto:scoop-teaching@uni-heidelberg.de?subject=Einführung in die Numerik"
+RewriteRule scoop-teaching-AKDO "mailto:scoop-teaching@uni-heidelberg.de?subject=Seminar Ausgewählte Kapitel der Optimierung"
+RewriteRule scoop-teaching-AGDM"mailto:scoop-teaching@uni-heidelberg.de?subject=Seminar Axiomatische Grundlagen der Mathematik"
+RewriteRule scoop-teaching-WTDN "mailto:scoop-teaching@uni-heidelberg.de?subject=Seminar Weiterführende Themen der Numerik"
+RewriteRule scoop-teaching-ITO "mailto:scoop-teaching@uni-heidelberg.de?subject=Introduction to Optimization"
+RewriteRule scoop-teaching-IPK "mailto:Andreas.Naumann@uni-heidelberg.de?subject=Programmierkurs IPK"
+RewriteRule scoop-teaching-IPK-Loesung "mailto:Andreas.Naumann@uni-heidelberg.de?subject=Programmierkurs IPK, Lösungen"
+RewriteRule scoop-teaching-TIO "mailto:scoop-teaching@uni-heidelberg.de?subject=Seminar Topics in Optimization"
+RewriteRule scoop-teaching-NLO "mailto:scoop-teaching@uni-heidelberg.de?subject=Nonlinear Optimization"
+RewriteRule scoop-teaching-MOPTA "mailto:scoop-teaching@uni-heidelberg.de?subject=Mopta Competition"
+RewriteRule scoop-teaching-DDG "mailto:scoop-teaching@uni-heidelberg.de?subject=Seminar Discrete Differential Geometry"
+RewriteRule scoop-teaching-SPOfA "mailto:scoop-teaching@uni-heidelberg.de?subject=Software Praktikum - Optimierung für Anfänger"
+RewriteRule scoop-teaching-SPOfA "mailto:scoop-teaching@uni-heidelberg.de?subject=Software Praktikum für Anfänger"
+RewriteRule scoop-teaching-SPOfF "mailto:scoop-teaching@uni-heidelberg.de?subject=Software Praktikum für Fortgeschrittene"
+RewriteRule scoop-teaching-SP "mailto:scoop-teaching@uni-heidelberg.de?subject=Software Praktikum
+RewriteRule scoop-teaching-LA "mailto:scoop-teaching@uni-heidelberg.de?subject=Lineare Algebra
+RewriteRule scoop-teaching-IDO "mailto:scoop-teaching@uni-heidelberg.de?subject=Infinite-Dimensional Optimization
+
+RewriteRule scoop-teaching-exam-registration-GDO "mailto:scoop@iwr.uni-heidelberg.de?subject=Prüfungsanmeldung Grundlagen der Optimierung"
+RewriteRule scoop-teaching-exam-registration-NLO "mailto:scoop@iwr.uni-heidelberg.de?subject=Prüfungsanmeldung Nichtlineare Optimierung"
+RewriteRule scoop-teaching-exam-registration-IDO "mailto:scoop@iwr.uni-heidelberg.de?subject=Exam Registration Infinite Dimensional Optimization"
+
+RewriteRule hgs-short-course "mailto:hgs@iwr.uni-heidelberg.de?subject=Short course Introduction to Optimization"
+
+RewriteRule scoop-teaching-LA-Job-Offer "mailto:scoop-teaching@uni-heidelberg.de?subject=Studentische Hilfskraftstellen Lineare Algebra"

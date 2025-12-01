@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Correction Algorithms and High Dimensional Characteristic Diagrams | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/sfb-tr-96-1/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Correction Algorithms and High Dimensional Characteristic Diagrams
+		</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2011-07-01</span>
+	<br>
+
+
+
+	<span> End: 2015-06-30</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a>, Ulrich Priber</span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/alumni/iriedel/">Ilka Riedel</a>, Christian Naumann</span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Collaborative Research Center funding scheme
+		
+	</span>
+	<br>
+
+
+
+	<span> Part of: Thermo-Energetic Design of Machine Tools
+	
+		(<a href="https://transregio96.webspace.tu-dresden.de/"target="_blank" rel="noopener" class="external">SFB Transregio 96</a>) </span>
+	
+	<br>
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p>Die zeitabhängige Berücksichtigung der thermischen Situation von Werkzeugmaschinen erfordert <strong>online-taugliche Methoden</strong> zur Korrektur der Werkzeugposition im Bearbeitungsprozess.
+Höherdimensionale Kennfelder, berechnet durch Smoothed Grid Regression (SGR), sind dafür sehr gut geeignet und werden auf der Basis von FE-Simulationsdaten angelernt.
+In der thermischen Situation der Werkzeugmaschine begründete Eingangsgrößen, deren Auswahl, Normierung sowie Relevanz Gegenstand der Untersuchungen sein werden, führen mittels der Kennfelder zu produktionsrelevanten Korrekturgrößen, z.B. für die Position des Tool Center Points (TCP).
+Die <strong>Sensitivitätsanalyse</strong> für die zugrunde liegenden FE-Modelle ist dabei ein wichtiges und notwendiges Hilfsmittel zur Reduktion der großen Anzahl potentieller Einflussgrößen.
+Die Kennfeldmethode und die Sensitivitätsanalyse werden dafür im Rahmen dieses Projektes problemspezifisch weiterentwickelt.</p>
+<p>Das Ziel der Forschungsarbeiten ist die Erhöhung der Bearbeitungsgenauigkeit von Werkzeugmaschinen, die durch thermische Einflüsse beeinträchtigt ist.
+Für die Modellierung sind Methoden erforderlich, die örtlich (3D) und zeitlich die thermische Situation beschreiben.
+Physikalisch begründete Modellansätze in der Form von FE-Modellen für ausgewählte Baugruppen von Werkzeugmaschinen sind die Grundlage der Untersuchungen.
+Sie sind der Ausgangspunkt für eine Sensitivitätsanalyse, mit deren Hilfe diejenigen Eingangsgrößen (z.B. Temperaturmesspunkte) ermittelt werden, die auf die relevanten Ausgangsgrößen (thermisch verursachte Verschiebungen) signifikanten Einfluss haben.</p>
+<p>Mit dem anschließenden Entwurf <strong>mehrdimensionaler Kennfelder</strong> wird ein robustes und bei Bedarf lokal zu verfeinerndes Werkzeug eingesetzt, das nicht an spezielle Maschinenkonzepte gebunden ist, sondern für die Beschreibung allgemeiner nichtlinearer Zusammenhänge auf der Basis mehrdimensionaler punktueller Datenfelder im <a href="https://www.iwu.fraunhofer.de"target="_blank" rel="noopener" class="external">Fraunhofer IWU</a> entwickelt wurde.
+Für den Einsatz der Kennfeldmethode für die Beschreibung des thermo-mechanischen Verhaltens sind Forschungsarbeiten zur Erweiterung der Methode auf eine höhere Anzahl von Eingangsdimensionen und zur Verringerung des Zeitaufwandes für die Kennfeldberechnung durch moderne Vorkonditionierungstechniken geplant.
+Die Sensitivitätsanalyse stellt ein sehr allgemeines Werkzeug zur Beurteilung qualitativer und quantitativer Zusammenhänge zwischen Eingangs- und Ausgangsgrößen dar, die durch Differentialgleichungen bzw. FE-Modelle verknüpft sind.
+Sie erlaubt eine Beurteilung des Einflusses verschiedener Eingangsgrößen.
+Dies gelingt effizient durch den Einsatz eines sogenannten adjungierten FE-Modells.
+Mithilfe der berechneten Sensitivitäten erfolgt die <strong>Auswahl der signifikanten Temperaturmesspunkte</strong> und anderer Einflussgrößen, die in die Kennfeldmodellierung sowie in reduzierte FE-Modelle Eingang finden werden.
+Damit sind wesentliche Voraussetzungen für den erfolgreichen Einsatz von höherdimensionalen Kennfeldern hergestellt.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-INPROCEEDINGS">
+	<li class="publication-item" id="NaumannRiedelIhlenfeldtPriber:2016:1">
+	<div class="publication-author"> Christian Naumann, <a href="../../team/alumni/iriedel/">Ilka Riedel</a>, Steffen Ihlenfeldt and Ulrich Priber </div>
+	
+	
+	
+	<div class="publication-title"> Characteristic diagram based correction algorithms for the thermo-elastic deformation of machine tools </div>
+	<div class="publication-ref-info">
+		
+			<span> Procedia CIRP 41, p.801-805, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1016/j.procir.2015.12.029">doi:10.1016/j.procir.2015.12.029</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{NaumannRiedelIhlenfeldtPriber:2016:1,
+  AUTHOR = {Naumann, Christian and Riedel, Ilka and Ihlenfeldt, Steffen and Priber, Ulrich},
+  PUBLISHER = {Elsevier BV},
+  DATE = {2016},
+  DOI = {10.1016/j.procir.2015.12.029},
+  JOURNALTITLE = {Procedia CIRP},
+  PAGES = {801--805},
+  TITLE = {Characteristic diagram based correction algorithms for the thermo-elastic deformation of machine tools},
+  VOLUME = {41},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogRiedel:2015:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a> and <a href="../../team/alumni/iriedel/">Ilka Riedel</a> </div>
+	
+	
+	
+	<div class="publication-title"> Sequentially optimal sensor placement in thermoelastic models for real time applications </div>
+	<div class="publication-ref-info">
+		
+			<span> Optimization and Engineering 16(4), p.737-766, </span>
+		
+		<span class="publication-year"> 2015 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/s11081-015-9275-0">doi:10.1007/s11081-015-9275-0</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogRiedel:2015:1,
+  AUTHOR = {Herzog, Roland and Riedel, Ilka},
+  PUBLISHER = {Springer US},
+  DATE = {2015},
+  DOI = {10.1007/s11081-015-9275-0},
+  JOURNALTITLE = {Optimization and Engineering},
+  NUMBER = {4},
+  PAGES = {737--766},
+  TITLE = {Sequentially optimal sensor placement in thermoelastic models for real time applications},
+  VOLUME = {16},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="NaumannRiedelPriberHerzog:2015:1">
+	<div class="publication-author"> Christian Naumann, <a href="../../team/alumni/iriedel/">Ilka Riedel</a>, Ulrich Priber and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+	<div class="publication-title"> Correction algorithms and high-dimensional characteristic diagrams </div>
+	<div class="publication-ref-info">
+		
+			<span> Thermo-Energetic Design of Machine Tools, Lecture Notes in Production Engineering, p.159-174, </span>
+		
+		<span class="publication-year"> 2015 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/978-3-319-12625-8_14">doi:10.1007/978-3-319-12625-8_14</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INCOLLECTION{NaumannRiedelPriberHerzog:2015:1,
+  AUTHOR = {Naumann, Christian and Riedel, Ilka and Priber, Ulrich and Herzog, Roland},
+  EDITOR = {Großmann, Knut},
+  PUBLISHER = {Springer International Publishing},
+  BOOKTITLE = {Thermo-Energetic Design of Machine Tools},
+  DATE = {2015},
+  DOI = {10.1007/978-3-319-12625-8_14},
+  PAGES = {159--174},
+  SERIES = {Lecture Notes in Production Engineering},
+  TITLE = {Correction algorithms and high-dimensional characteristic diagrams},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogRiedel:2014:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a> and <a href="../../team/alumni/iriedel/">Ilka Riedel</a> </div>
+	
+	
+	
+	<div class="publication-title"> Comparison of two suboptimal sensor placement strategies in thermo-elastic models </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings in Applied Mathematics and Mechanics 14(1), p.881-882, </span>
+		
+		<span class="publication-year"> 2014 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/pamm.201410421">doi:10.1002/pamm.201410421</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogRiedel:2014:1,
+  AUTHOR = {Herzog, Roland and Riedel, Ilka},
+  DATE = {2014},
+  DOI = {10.1002/pamm.201410421},
+  JOURNALTITLE = {Proceedings in Applied Mathematics and Mechanics},
+  NUMBER = {1},
+  PAGES = {881--882},
+  TITLE = {Comparison of two suboptimal sensor placement strategies in thermo-elastic models},
+  VOLUME = {14},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Richter:2014:1">
+	<div class="publication-author"> Jörn Richter </div>
+	
+	
+	
+	<div class="publication-title"> Modellierung des Wärmeübergangs im Luftspalt elektrischer Maschinen </div>
+	<div class="publication-ref-info">
+		
+			<span> Diploma thesis, Technische Universität Chemnitz, Germany, </span>
+		
+		<span class="publication-year"> 2014 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@THESIS{Richter:2014:1,
+  AUTHOR = {Richter, Jörn},
+  INSTITUTION = {Technische Universität Chemnitz, Germany},
+  DATE = {2014},
+  TITLE = {Modellierung des Wärmeübergangs im Luftspalt elektrischer Maschinen},
+  TYPE = {Diploma thesis},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Etling:2012:1">
+	<div class="publication-author"> <a href="../../team/alumni/tetling/">Tommy Etling</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimale Versuchsplanung für die Bestimmung von Parametern bei Wärmeübergangsexperimenten </div>
+	<div class="publication-ref-info">
+		
+			<span> Diploma thesis, Technische Universität Chemnitz, Germany, </span>
+		
+		<span class="publication-year"> 2012 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@THESIS{Etling:2012:1,
+  AUTHOR = {Etling, Tommy},
+  INSTITUTION = {Technische Universität Chemnitz, Germany},
+  DATE = {2012},
+  TITLE = {Optimale Versuchsplanung für die Bestimmung von Parametern bei Wärmeübergangsexperimenten},
+  TYPE = {Diploma thesis},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Model Predictive Parameter and State Estimation and Optimal Sensor Placement | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/sfb-tr-96-2/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Model Predictive Parameter and State Estimation and Optimal Sensor Placement
+		</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2015-07-01</span>
+	<br>
+
+
+
+	<span> End: 2019-06-30</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a></span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/alumni/iriedel/">Ilka Riedel</a></span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Collaborative Research Center funding scheme
+		
+	</span>
+	<br>
+
+
+
+	<span> Part of: Thermo-Energetic Design of Machine Tools
+	
+		(<a href="https://transregio96.webspace.tu-dresden.de/"target="_blank" rel="noopener" class="external">SFB Transregio 96</a>) </span>
+	
+	<br>
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p>In this subproject we consider the <strong>online and self-calibrating identification of relevant parameters</strong> in transient thermo-elastic FE models.
+These parameters can include, for instance, heat transfer coefficients as well as heat inputs due to the machining process and electrical drives.
+Their knowledge is of paramount importance in particular for the subprojects developing online correction strategies.
+We will develop <strong>model-predictive parameter and state estimation schemes</strong>, which are using a moving time horizon to adapt the estimated parameters and state to measured temperature (or, when available, displacement) data.</p>
+<p>These techniques will be developed under the specific operating conditions of machine tools, i.e., having available only a limited number of measurements, high dimensional thermo-elastic FE models, and they will take into account the pose dependence.
+Parameter models developed in other subprojects will serve as so-called background information and stabilize the estimation process.
+Initial experiments are showing this procedure to be very robust and capable of reconstructing time-dependent changes in heat transfer coefficients by means of only a few temperature measurements.
+In actual machine geometries, it will be important to place the temperature sensors intelligently, and we will further develop our <strong>optimal sensor placement techniques</strong> in order to make best use of the available sensors also in these nonlinear identification settings.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-ARTICLE">
+	<li class="publication-item" id="BennerHerzogLangRiedelSaak:2019:1">
+	<div class="publication-author"> Peter Benner, <a href="../../team/rherzog/">Roland Herzog</a>, Norman Lang, <a href="../../team/alumni/iriedel/">Ilka Riedel</a> and Jens Saak </div>
+	
+	
+	
+	<div class="publication-title"> Comparison of model order reduction methods for optimal sensor placement for thermo-elastic models </div>
+	<div class="publication-ref-info">
+		
+			<span> Engineering Optimization 51(3), p.465-483, </span>
+		
+		<span class="publication-year"> 2019 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1080/0305215X.2018.1469133">doi:10.1080/0305215X.2018.1469133</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{BennerHerzogLangRiedelSaak:2019:1,
+  AUTHOR = {Benner, Peter and Herzog, Roland and Lang, Norman and Riedel, Ilka and Saak, Jens},
+  DATE = {2019},
+  DOI = {10.1080/0305215X.2018.1469133},
+  JOURNALTITLE = {Engineering Optimization},
+  NUMBER = {3},
+  PAGES = {465--483},
+  TITLE = {Comparison of model order reduction methods for optimal sensor placement for thermo-elastic models},
+  VOLUME = {51},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="BennerHerzogLangRiedelSaak:2018:1">
+	<div class="publication-author"> Peter Benner, <a href="../../team/rherzog/">Roland Herzog</a>, Norman Lang, <a href="../../team/alumni/iriedel/">Ilka Riedel</a> and Jens Saak </div>
+	
+	
+	
+	<div class="publication-title"> Optimal sensor placement based on model order reduction </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings of the 1st Conference on Thermal Issues in Machine Tools, p.355-365, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a href="https://www.verlag-wiss-scripten.de/Shop/Detail.html?&amp;PR_ID=326"target="_blank" rel="noopener" class="external">https://www.verlag-wiss-scripten.de/Shop/Detail.html?&PR_ID=326</a>
+		</div>
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{BennerHerzogLangRiedelSaak:2018:1,
+  AUTHOR = {Benner, Peter and Herzog, Roland and Lang, Norman and Riedel, Ilka and Saak, Jens},
+  PUBLISHER = {Verlag Wissenschaftliche Scripten},
+  URL = {https://www.verlag-wiss-scripten.de/Shop/Detail.html?&amp;PR_ID=326},
+  BOOKTITLE = {Proceedings of the 1st Conference on Thermal Issues in Machine Tools},
+  DATE = {2018},
+  PAGES = {355--365},
+  TITLE = {Optimal sensor placement based on model order reduction},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogRiedelUcinski:2018:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, <a href="../../team/alumni/iriedel/">Ilka Riedel</a> and Dariusz Uciński </div>
+	
+	
+	
+	<div class="publication-title"> Optimal sensor placement for joint parameter and state estimation problems in large-scale dynamical systems with applications to thermo-mechanics </div>
+	<div class="publication-ref-info">
+		
+			<span> Optimization and Engineering 19(3), p.591-627, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/s11081-018-9391-8">doi:10.1007/s11081-018-9391-8</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogRiedelUcinski:2018:1,
+  AUTHOR = {Herzog, Roland and Riedel, Ilka and Uciński, Dariusz},
+  DATE = {2018},
+  DOI = {10.1007/s11081-018-9391-8},
+  JOURNALTITLE = {Optimization and Engineering},
+  NUMBER = {3},
+  PAGES = {591--627},
+  TITLE = {Optimal sensor placement for joint parameter and state estimation problems in large-scale dynamical systems with applications to thermo-mechanics},
+  VOLUME = {19},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogRiedel:2017:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a> and <a href="../../team/alumni/iriedel/">Ilka Riedel</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimale Sensorplatzierung und Online-Zustands- und Parameter-Identifikation </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings of the 5th Colloquium of SFB/Transregio 96, </span>
+		
+		<span class="publication-year"> 2017 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{HerzogRiedel:2017:1,
+  AUTHOR = {Herzog, Roland and Riedel, Ilka},
+  BOOKTITLE = {Proceedings of the 5th Colloquium of SFB/Transregio 96},
+  DATE = {2017},
+  TITLE = {Optimale Sensorplatzierung und Online-Zustands- und Parameter-Identifikation},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="GlaenzelHerzogIhlenfeldtMeyerUnger:2016:1">
+	<div class="publication-author"> Janine Glänzel, <a href="../../team/rherzog/">Roland Herzog</a>, Steffen Ihlenfeldt, Arnd Meyer and Roman Unger </div>
+	
+	
+	
+	<div class="publication-title"> Simulation-based correction approach for thermo-elastic workpiece deformations during milling process </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings of the 7th HPC 2016 - CIRP Conference on High Performance Cutting 46, p.103-106, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1016/j.procir.2016.03.178">doi:10.1016/j.procir.2016.03.178</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{GlaenzelHerzogIhlenfeldtMeyerUnger:2016:1,
+  AUTHOR = {Glänzel, Janine and Herzog, Roland and Ihlenfeldt, Steffen and Meyer, Arnd and Unger, Roman},
+  PUBLISHER = {Elsevier},
+  BOOKTITLE = {Proceedings of the 7th HPC 2016 - CIRP Conference on High Performance Cutting},
+  DATE = {2016},
+  DOI = {10.1016/j.procir.2016.03.178},
+  PAGES = {103--106},
+  TITLE = {Simulation-based correction approach for thermo-elastic workpiece deformations during milling process},
+  VOLUME = {46},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogRiedelKauschingerSchroeder:2016:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, <a href="../../team/alumni/iriedel/">Ilka Riedel</a>, Bernd Kauschinger and Steffen Schroeder </div>
+	
+	
+	
+	<div class="publication-title"> Parameteridentifikation in thermo-elastischen Systemen </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings of the 4th Colloquium of SFB/Transregio 96, p.55-82, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{HerzogRiedelKauschingerSchroeder:2016:1,
+  AUTHOR = {Herzog, Roland and Riedel, Ilka and Kauschinger, Bernd and Schroeder, Steffen},
+  BOOKTITLE = {Proceedings of the 4th Colloquium of SFB/Transregio 96},
+  DATE = {2016},
+  PAGES = {55--82},
+  TITLE = {Parameteridentifikation in thermo-elastischen Systemen},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="JalilzadehGalaeh:2016:1">
+	<div class="publication-author"> Saber Jalilzadeh-Galaeh </div>
+	
+	
+	
+	<div class="publication-title"> Identifikation der Topologie eines Wärmenetzwerkes (ein Vergleich zwischen kontinuierlichen und diskreten Optimierungstechniken) </div>
+	<div class="publication-ref-info">
+		
+			<span> mathesis, Technische Universität Chemnitz, Germany, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@THESIS{JalilzadehGalaeh:2016:1,
+  AUTHOR = {Jalilzadeh-Galaeh, Saber},
+  INSTITUTION = {Technische Universität Chemnitz, Germany},
+  DATE = {2016},
+  TITLE = {Identifikation der Topologie eines Wärmenetzwerkes (ein Vergleich zwischen kontinuierlichen und diskreten Optimierungstechniken)},
+  TYPE = {mathesis},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Landwehrjohann:2016:1">
+	<div class="publication-author"> Luca Landwehrjohann </div>
+	
+	
+	
+	<div class="publication-title"> Verfahren zur optimalen Platzierung von Messpunkten zur Parameteridentifikation in zeitabhängigen Systemen </div>
+	<div class="publication-ref-info">
+		
+			<span> bathesis, Technische Universität Chemnitz, Germany, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@THESIS{Landwehrjohann:2016:1,
+  AUTHOR = {Landwehrjohann, Luca},
+  INSTITUTION = {Technische Universität Chemnitz, Germany},
+  DATE = {2016},
+  TITLE = {Verfahren zur optimalen Platzierung von Messpunkten zur Parameteridentifikation in zeitabhängigen Systemen},
+  TYPE = {bathesis},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Obaid:2016:1">
+	<div class="publication-author"> Hussain Obaid </div>
+	
+	
+	
+	<div class="publication-title"> Identifikationsaufgaben auf Wärmenetzwerken </div>
+	<div class="publication-ref-info">
+		
+			<span> mathesis, Technische Universität Chemnitz, Germany, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@THESIS{Obaid:2016:1,
+  AUTHOR = {Obaid, Hussain},
+  INSTITUTION = {Technische Universität Chemnitz, Germany},
+  DATE = {2016},
+  TITLE = {Identifikationsaufgaben auf Wärmenetzwerken},
+  TYPE = {mathesis},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

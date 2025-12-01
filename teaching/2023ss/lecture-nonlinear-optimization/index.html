@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Nonlinear Optimization | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/teaching/2023ss/lecture-nonlinear-optimization/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../../news">News</a> </li>
+			
+				<li> <a href="../../../team">Team</a> </li>
+			
+				<li> <a href="../../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../../publications">Publications</a> </li>
+			
+				<li> <a href="../../../talks">Talks</a> </li>
+			
+				<li> <a href="../../../software">Software</a> </li>
+			
+				<li> <a href="../../../projects">Projects</a> </li>
+			
+				<li> <a href="../../../events">Events</a> </li>
+			
+				<li> <a href="../../../theses">Theses</a> </li>
+			
+				<li> <a href="../../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+		
+			<h1>Nonlinear Optimization</h1>
+		
+		<div class="metadata">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+				
+			
+				
+				
+				
+					<span> Semester: 2023 SS</span>
+					<br>
+				
+				
+				
+				
+					<span> Class type: Lecture</span>
+					<br>
+				
+
+				
+				
+					<span> Languages: English</span>
+					<br>
+				
+
+				
+				
+					<span> Teachers: <span class="teachers-list"><a href="../../../team/rherzog/">Roland Herzog</a>, <a href="../../../team/gm%C3%BCller/">Georg Müller</a></span></span>
+				<br>
+
+				
+				
+				
+					<span> Assistants: <span class="assistants-list"><a href="../../../team/alumni/mhashemi/">Masoumeh Hashemi</a>, <a href="../../../team/eherberg/">Evelyn Herberg</a></span>
+</span>
+				<br>
+				
+				
+				
+				
+				<span> Contact: <a href="../../../forwards/teachingContact/scoop-teaching-NLO" >Send e-mail</a></span>
+				<br>
+				
+				
+				
+				
+					<span> Websites for this class: </span>
+				
+
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1646">MÜSLI</a>, <a href="https://moodle.uni-heidelberg.de/course/view.php?id=17573">Moodle</a>, 
+
+
+
+
+
+
+
+
+
+
+<a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.veranstnr=11BMAV0430%2c11BMAU0430&veranstaltung.semester=20231&P_start=0&P_anzahl=50&P.sort=veranstaltung.dtxt&_form=display">LSF</a><br>
+				
+				
+				
+					<span> Exam Dates: <a href="#exam-dates"title="Jul-Oct 2023">Jul-Oct 2023</a> </span>
+					<br>
+				
+			
+		</div>
+	</header>
+	<hr>
+	<article>
+		<h2> Course Information </h2>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#concept-and-components">Concept and Components</a></li>
+    <li><a href="#dates-and-schedule">Dates and Schedule</a></li>
+    <li><a href="#exercises">Exercises</a></li>
+    <li><a href="#dates-and-schedule-1">Dates and Schedule</a></li>
+    <li><a href="#class-registration">Class Registration</a></li>
+    <li><a href="#exams">Exams</a>
+      <ul>
+        <li><a href="#exam-format">Exam Format</a></li>
+        <li><a href="#admission-rules">Admission Rules</a></li>
+        <li><a href="#exam-dates">Exam Dates</a></li>
+        <li><a href="#exam-registration">Exam Registration</a></li>
+        <li><a href="#cancellation-policy">Cancellation Policy</a></li>
+        <li><a href="#exam-location">Exam Location</a></li>
+      </ul>
+    </li>
+    <li><a href="#course-material">Course Material</a>
+      <ul>
+        <li><a href="#lecture-notes">Lecture Notes</a></li>
+        <li><a href="#exercises-1">Exercises</a></li>
+        <li><a href="#literature">Literature</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		<h2 id="description">
+	Description
+	<a href="#description" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>This class provides a detailed overview of algorithms for unconstrained and constrained smooth, nonlinear optimization problems in finite dimensions.
+It will emphasize the interplay of optimization and numerical linear algebra.
+Optimality conditions and associated constraint qualifications for constrained problems will be presented and discussed.
+Moreover, the class will give an introduction to algorithmic differentiation (AD).</p>
+<h2 id="prerequisites">
+	Prerequisites
+	<a href="#prerequisites" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Skills from Analysis I and II (MA1/ MA2), Lineare Algebra I (MA4) as well as basic optimization skills are highly recommended.</p>
+<h2 id="concept-and-components">
+	Concept and Components
+	<a href="#concept-and-components" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>This class is comprised of:</p>
+<ul>
+<li>Detailed lecture notes</li>
+<li>2x 2h lectures per week</li>
+<li>Exercise sheets with corresponding answer sheets</li>
+<li>Labs for co-working on exercise sheets</li>
+<li>An exam following the end of the lecture period</li>
+</ul>
+<p>The detailed concept and how to activly participate in the class will be discussed in the first lecture on Monday 17.04.2023 at 11:15h in the <a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=verpublish&amp;status=init&amp;vmfile=no&amp;moduleCall=webInfo&amp;publishConfFile=webInfoRaum&amp;publishSubDir=raum&amp;keep=y&amp;raum.rgid=5151"target="_blank" rel="noopener" class="external">main lecture hall of the Mathematikon</a>.</p>
+<ul>
+<li><a href="./plenum-00.pdf"title="Plenum 00 (Informations Concerning the Class )">Plenum 00 (Informations Concerning the Class )</a></li>
+</ul>
+<h2 id="dates-and-schedule">
+	Dates and Schedule
+	<a href="#dates-and-schedule" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>You can find the information on lecture meetings in the 
+
+
+
+
+
+
+
+
+
+
+<a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.veranstnr=11BMAV0430%2c11BMAU0430&veranstaltung.semester=20231&P_start=0&P_anzahl=50&P.sort=veranstaltung.dtxt&_form=display">LSF</a>.
+Information on the exercises can be found in <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1646">MÜSLI</a>.</p>
+<p>Please also refer to the <a href="./schedule.pdf"title="class&amp;rsquo; schedule">class&rsquo; schedule</a>.</p>
+<h2 id="exercises">
+	Exercises
+	<a href="#exercises" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Exercises will be centered around one exercise sheet per week containing both theoretical/analytical questions and numerical/implementation exercises.
+Default programming language &ndash; in the sense that it will be used in our answer sheets and we will be providing support for it &ndash; will be Python.
+Feel free to work with another programming laguage that is suitable for implementing the optimization algorithms if you are self sufficient working with it.</p>
+<p>In the exercise lab groups (see <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1646">MÜSLI</a>), you will have the oportunity to work on the exercise sheets with your peers and with support from our tutors.
+You can get the most out of their time if you show up having already taken a first look at the exercises and bringing your own questions and discussion topics to the meetings.
+Feel free to ask questions on the lecture notes or the lectures as well.</p>
+<p>For successful participation in this semester&rsquo;s exercises, you will be asked to submit your exercises weekly, see <a href="#exams"title="exams">exams</a>.
+To evaluate your success on the exercise sheets, please compare your work with the answer sheets we will provide and, of course, feel free to talk to your tutor in the labs.</p>
+<p>You may work on the exercises in whichever type of group you would like but we request that you submit one answer/program per person.</p>
+<p>Please submit your work via <a href="https://moodle.uni-heidelberg.de/course/view.php?id=17573">Moodle</a>.</p>
+<h2 id="dates-and-schedule-1">
+	Dates and Schedule
+	<a href="#dates-and-schedule-1" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>You can find the information on lecture meetings in the 
+
+
+
+
+
+
+
+
+
+
+<a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.veranstnr=11BMAV0430%2c11BMAU0430&veranstaltung.semester=20231&P_start=0&P_anzahl=50&P.sort=veranstaltung.dtxt&_form=display">LSF</a>.
+Information on the exercises can be found in <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1646">MÜSLI</a>.</p>
+<p>Please also referr to the <a href="./schedule.pdf"title="class&amp;rsquo; schedule">class&rsquo; schedule</a>.</p>
+<p><strong>Attention:</strong> The class on 18.04.2023 will not take place in the lecture hall of the INF 205 but in seminar room 25 of INF 328.</p>
+<h2 id="class-registration">
+	Class Registration
+	<a href="#class-registration" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>To register for this class, please register for an exercise group at <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1646">MÜSLI</a>.
+Please also register in case you are interested in participating in this class but not in the exercises.
+This will allow us to get an idea of class demand.</p>
+<p>Attention(!): Registration for the class does not automatically include registration for an examination.
+More information on the exams can be found in the section <a href="#exams"title="exams">exams</a>.</p>
+<h2 id="exams">
+	Exams
+	<a href="#exams" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>We will be offering exams at the end of the semester and during the following summer break.</p>
+<h3 id="exam-format">
+	Exam Format
+	<a href="#exam-format" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Exams will be held orally and you should plan for around 30-35 minutes of exam time plus a short additional debriefing.
+You may choose between english and german as the exam language.</p>
+<p>You have the option of (orally and using a whiteboard) presenting a topic from the lecture&rsquo;s content in (roughly) the initial 5 minutes of the exam, after which we will start the exam&rsquo;s question-and-answer style discussion.
+We are offering the following choice of topics for your presentation (including the relevant sections from the lecture notes):</p>
+<ol>
+<li>minimization of quadratic functions (all of §4)</li>
+<li>gradient descent method with line search (§5.1, §5.2, §5.3)</li>
+<li>inexact Newton method with line search (§5.4, §5.5, §5.6)</li>
+<li>quasi-Newton method with line search (§5.4, §5.5, §5.7)</li>
+<li>trust-region methods (all of §6)</li>
+</ol>
+<p>Should you choose to take this opportunity, make sure that your chosen topic and the level of detail you go into match the short timeframe.
+If you choose to pass on this option, we will start out with the question-and-answer style discussion right away.</p>
+<p>In any case, the exam will begin with a topic from chapter 1 (unconstrained optimization) but topics from chapters 2 and 3 (constrained optimization) will definitely be part of the exam as well.
+The proofs of the following lemmas and theorems may be part of the exam:</p>
+<ol>
+<li>Theorem 3.1 (first-order necessary optimality condition)</li>
+<li>Theorem 3.2 (second-order necessary optimality condition)</li>
+<li>Theorem 3.3 (second-order sufficient optimality condition)</li>
+<li>Lemma 5.5 (bounded condition numbers imply the angle condition)</li>
+<li>Lemma 5.8 (efficiency implies admissibility)</li>
+<li>Theorem 5.9 (global convergence of model Algorithm 5.2)</li>
+<li>Theorem 7.4 (first-order necessary optimality conditions)</li>
+<li>Lemma 7.7 (relation between the cones)</li>
+<li>Lemma 8.4 (significance of the KKT conditions)</li>
+<li>Theorem 8.7 (KKT conditions are necessary optimality conditions under the Abadie CQ and the Guignard CQ)</li>
+<li>Theorem 8.9 (KKT conditions are necessary optimality conditions under affine constraints only)</li>
+<li>Theorem 8.18 (KKT conditions are necessary optimality conditions under the LICQ)</li>
+<li>Theorem 8.19 (KKT conditions are sufficient optimality conditions for convex problems)</li>
+</ol>
+<h3 id="admission-rules">
+	Admission Rules
+	<a href="#admission-rules" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>If you want to take the exam with us, we require that you are registered in Müsli and that you meet at least one of the following criteria:</p>
+<ol>
+<li>You have been admitted to an exam for this class in a previous semester and let us know <a href="../../../forwards/teachingContact/scoop-teaching-NLO" >via E-Mail</a> when and by whom you have been admitted by 2023-06-30.</li>
+<li>You have successfully participated in this semester&rsquo;s exercise program in the sense that:
+<ul>
+<li>On every exercise sheet but at most one sheet, you have worked every exercise to a reasonable degree.
+&ldquo;To a reasonable degree&rdquo; means that you have at least sketched an approach of how to solve the excercise and made a connection to the material of the lecture.</li>
+</ul>
+</li>
+</ol>
+<h3 id="exam-dates">
+	Exam Dates
+	<a href="#exam-dates" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>The exams will be held in blocks of 3 hours covering 4 exams of 45 minutes per exam.
+You may request your preferred block for the exam and we will assign slots inside the blocks ourselves and let you know your assigned slot in the confirmation email.</p>
+<p>The exam blocks are:</p>
+
+
+
+
+
+<table class="exam-table">
+<thead>
+<tr>
+<th style="text-align:left">Weekday</th>
+<th style="text-align:left">Date</th>
+<th style="text-align:left">Time</th>
+<th style="text-align:left">Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Wednesday</td>
+<td style="text-align:left">2023-07-26</td>
+<td style="text-align:left">09:00-12:00</td>
+<td style="text-align:left">Available</td>
+</tr>
+<tr>
+<td style="text-align:left">Wednesday</td>
+<td style="text-align:left">2023-07-26</td>
+<td style="text-align:left">13:00-16:00</td>
+<td style="text-align:left">Fully booked</td>
+</tr>
+<tr>
+<td style="text-align:left">Wednesday</td>
+<td style="text-align:left">2023-08-30</td>
+<td style="text-align:left">09:00-12:00</td>
+<td style="text-align:left">Fully booked</td>
+</tr>
+<tr>
+<td style="text-align:left">Thursday</td>
+<td style="text-align:left">2023-08-31</td>
+<td style="text-align:left">13:00-16:00</td>
+<td style="text-align:left">Fully booked</td>
+</tr>
+<tr>
+<td style="text-align:left">Tuesday</td>
+<td style="text-align:left">2023-09-05</td>
+<td style="text-align:left">09:00-12:00</td>
+<td style="text-align:left">Available</td>
+</tr>
+<tr>
+<td style="text-align:left">Thursday</td>
+<td style="text-align:left">2023-09-07</td>
+<td style="text-align:left">13:00-16:00</td>
+<td style="text-align:left">Fully booked</td>
+</tr>
+<tr>
+<td style="text-align:left">Monday</td>
+<td style="text-align:left">2023-09-18</td>
+<td style="text-align:left">09:00-12:00</td>
+<td style="text-align:left">Fully booked</td>
+</tr>
+<tr>
+<td style="text-align:left">Tuesday</td>
+<td style="text-align:left">2023-09-19</td>
+<td style="text-align:left">09:00-12:00</td>
+<td style="text-align:left">Fully booked</td>
+</tr>
+<tr>
+<td style="text-align:left">Tuesday</td>
+<td style="text-align:left">2023-10-10</td>
+<td style="text-align:left">13:00-16:00</td>
+<td style="text-align:left">Fully booked</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>We will try to keep the current booking status up to date, but expect delays.</p>
+<h3 id="exam-registration">
+	Exam Registration
+	<a href="#exam-registration" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Please <a href="../../../forwards/teachingContact/scoop-teaching-exam-registration-NLO" >contact our front office via email</a> providing the following:</p>
+<ul>
+<li>Your intent to register</li>
+<li>Your preferred exam block and possibly an alternative block</li>
+<li>Last name</li>
+<li>First Name</li>
+<li>Date of birth</li>
+<li>Place of birth</li>
+<li>Student-ID-Nr. (Matrikel-Nr.)</li>
+<li>Course of study</li>
+</ul>
+<p>We require this information to pre-fill the exam forms.</p>
+<p>Your registration is complete when you receive a confirmation email by us.</p>
+<h3 id="cancellation-policy">
+	Cancellation Policy
+	<a href="#cancellation-policy" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>You may cancel your registration for the exam up to 7 days before the scheduled date of the exam without the need for a reason.
+If you do not take the exam at the scheduled time without having cancelled at least 7 days ahead of time, you will be required to submit a medical certificate for the scheduled time of the exam, otherwise the central exam office will be notified about the missed exam by us.
+In the event that you cancel your exam registration and this is your first cancellation for other than medical reasons, you may contact us to schedule an alternative exam date.</p>
+<p>In case you registered for an exam but fail to meet the requirements installed to be admissible for the exam to begin with, you may cancel your exam without consequences.
+However, please contact us if this is the case, so we can take a closer look at the situation.</p>
+<h3 id="exam-location">
+	Exam Location
+	<a href="#exam-location" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>All exams will be held in room 2.300 of INF 205 (Mathematikon).</p>
+<h2 id="course-material">
+	Course Material
+	<a href="#course-material" class="h-anchor" aria-hidden="true">#</a>
+</h2><h3 id="lecture-notes">
+	Lecture Notes
+	<a href="#lecture-notes" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./nonlinear-optimization-lecture-notes-20230417.pdf"title="Lecture Notes (2023-04-17, §1-§3)">Lecture Notes (2023-04-17, §1-§3)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230423.pdf"title="Lecture Notes (2023-04-23, §1-§4.4)">Lecture Notes (2023-04-23, §1-§4.4)</a> (Lemma 4.10 incorrect)</li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230426.pdf"title="Lecture Notes (2023-04-26, §1-§4.6)">Lecture Notes (2023-04-26, §1-§4.6)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230507.pdf"title="Lecture Notes (2023-05-07, §1-§5.3)">Lecture Notes (2023-05-07, §1-§5.3)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230513.pdf"title="Lecture Notes (2023-05-13, §1-§5.6)">Lecture Notes (2023-05-13, §1-§5.6)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230521.pdf"title="Lecture Notes (2023-05-21, §1-§5.8)">Lecture Notes (2023-05-21, §1-§5.8)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230528.pdf"title="Lecture Notes (2023-05-28, §1-§6)">Lecture Notes (2023-05-28, §1-§6)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230606.pdf"title="Lecture Notes (2023-06-06, §1-§9)">Lecture Notes (2023-06-06, §1-§9)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230617.pdf"title="Lecture Notes (2023-06-17, §1-§11.3)">Lecture Notes (2023-06-17, §1-§11.3)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230623.pdf"title="Lecture Notes (2023-06-23, §1-§13.1)">Lecture Notes (2023-06-23, §1-§13.1)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230701.pdf"title="Lecture Notes (2023-07-01, §1-§13.2)">Lecture Notes (2023-07-01, §1-§13.2)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230709.pdf"title="Lecture Notes (2023-07-09, §1-§14)">Lecture Notes (2023-07-09, §1-§14)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230714.pdf"title="Lecture Notes (2023-07-14, §1-§16)">Lecture Notes (2023-07-14, §1-§16)</a></li>
+<li><a href="./nonlinear-optimization-lecture-notes-20230718.pdf"title="Lecture Notes (2023-07-18, §1-§16)">Lecture Notes (2023-07-18, §1-§16)</a></li>
+</ul>
+<h3 id="exercises-1">
+	Exercises
+	<a href="#exercises-1" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./exercise-01.pdf"title="Exercise sheet 01">Exercise sheet 01</a></li>
+<li><a href="./exercise-02.pdf"title="Exercise sheet 02">Exercise sheet 02</a></li>
+<li><a href="./exercise-03.pdf"title="Exercise sheet 03">Exercise sheet 03</a></li>
+<li><a href="./exercise-04.pdf"title="Exercise sheet 04">Exercise sheet 04</a></li>
+<li><a href="./exercise-05.pdf"title="Exercise sheet 05">Exercise sheet 05</a></li>
+<li><a href="./exercise-06.pdf"title="Exercise sheet 06">Exercise sheet 06</a></li>
+<li><a href="./exercise-07.pdf"title="Exercise sheet 07">Exercise sheet 07</a></li>
+<li><a href="./exercise-08.pdf"title="Exercise sheet 08">Exercise sheet 08</a></li>
+<li><a href="./exercise-09.pdf"title="Exercise sheet 09">Exercise sheet 09</a></li>
+<li><a href="./exercise-10.pdf"title="Exercise sheet 10">Exercise sheet 10</a></li>
+<li><a href="./exercise-11.pdf"title="Exercise sheet 11">Exercise sheet 11</a></li>
+<li><a href="./exercise-12.pdf"title="Exercise sheet 12">Exercise sheet 12</a></li>
+<li><a href="./exercise-13.pdf"title="Exercise sheet 13">Exercise sheet 13</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="literature">
+	Literature
+	<a href="#literature" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>This class is self contained and does not rely on outside literature.
+If you would like to read up additionally, we can however recommend the following literature:</p>
+<ul>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-0-387-40065-5">Nocedal, Wright: Numerical Optimization</a></li>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-3-642-56004-0">Geiger, Kanzow: Theorie und Numerik restringierter Optimierungsaufgaben</a></li>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-3-0346-0654-7">Ulbrich, Ulbrich: Nichtlineare Optimierung</a></li>
+</ul>
+
+	</article>
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

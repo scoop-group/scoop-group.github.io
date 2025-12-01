@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Preconditioned SQP Solvers for Nonlinear Optimization Problems with PDEs | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/preconditioned-sqp/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Preconditioned SQP Solvers for Nonlinear Optimization Problems with PDEs
+		</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2012-10-01</span>
+	<br>
+
+
+
+	<span> End: 2015-09-30</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a></span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/alumni/smach/">Susann Mach</a></span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Individual Research Grant funding scheme
+		
+	</span>
+	<br>
+
+
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p>Partial differential equations (PDEs) are the language to describe countless phenomena in the natural sciences and engineering.
+The optimization of such processes, or the identification of unknown model parameters, lead to <strong>optimization problems with PDEs</strong>.
+Sequential quadratic programming (SQP) algorithms are powerful and widely used solution methods for nonlinear problems of this type.</p>
+<p>The overall effectiveness of an SQP algorithm depends on its global and local convergence properties, as well as on the <strong>fast solution of the quadratic programming (QP) subproblem</strong> in every iteration.
+In the proposed project, we will investigate preconditioners which are especially well suited for the efficient solution of the subproblems occuring in the popular <strong>composite-step trust-region SQP methods</strong>.
+Our research will lead to new preconditioned matrix-free SQP solvers for nonlinear large-scale optimization problems.
+<strong>Challenging applications</strong> governed by nonlinear, coupled and time-dependent PDEs will demonstrate the potential and limitations of these methods.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-ARTICLE">
+	<li class="publication-item" id="HerzogMach:2016:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a> and <a href="../../team/alumni/smach/">Susann Mach</a> </div>
+	
+	
+	
+	<div class="publication-title"> Preconditioned solution of state gradient constrained elliptic optimal control problems </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Numerical Analysis 54(2), p.688-718, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/130948045">doi:10.1137/130948045</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogMach:2016:1,
+  AUTHOR = {Herzog, Roland and Mach, Susann},
+  DATE = {2016},
+  DOI = {10.1137/130948045},
+  JOURNALTITLE = {SIAM Journal on Numerical Analysis},
+  NUMBER = {2},
+  PAGES = {688--718},
+  TITLE = {Preconditioned solution of state gradient constrained elliptic optimal control problems},
+  VOLUME = {54},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogSachs:2015:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a> and Ekkehard Sachs </div>
+	
+	
+	
+	<div class="publication-title"> Superlinear convergence of Krylov subspace methods for self-adjoint problems in Hilbert space </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Numerical Analysis 53(3), p.1304-1324, </span>
+		
+		<span class="publication-year"> 2015 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/140973050">doi:10.1137/140973050</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogSachs:2015:1,
+  AUTHOR = {Herzog, Roland and Sachs, Ekkehard},
+  DATE = {2015},
+  DOI = {10.1137/140973050},
+  JOURNALTITLE = {SIAM Journal on Numerical Analysis},
+  NUMBER = {3},
+  PAGES = {1304--1324},
+  TITLE = {Superlinear convergence of Krylov subspace methods for self-adjoint problems in Hilbert space},
+  VOLUME = {53},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

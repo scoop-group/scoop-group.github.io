@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Phase Field Methods, Parameter Identification and Process Optimization | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/popular-1/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Phase Field Methods, Parameter Identification and Process Optimization
+		(PoPULAR)</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2023-07-01</span>
+	<br>
+
+
+
+	<span> End: 2026-06-30</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a>, <a href="https://www.tu-chemnitz.de/mathematik/wire/prof.php"target="_blank" rel="noopener" class="external">Martin Stoll</a>, <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/math/prof/invpde/team/jan-f-pietschmann/"target="_blank" rel="noopener" class="external">Jan-Frederik Pietschmann</a></span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="https://scholar.google.com/citations?user=vvJp_D0AAAAJ&amp;hl=en"target="_blank" rel="noopener" class="external">Pelin Çiloğlu</a>, <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/math/prof/invpde/team/carmen-tretmans/"target="_blank" rel="noopener" class="external">Carmen Tretmans</a></span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Research Unit funding scheme
+		
+	</span>
+	<br>
+
+
+
+	<span> Part of: <a href="https://www.tu-chemnitz.de/physik/OPKM/3p.de"target="_blank" rel="noopener" class="external">Printed &amp; Stable Organic Photovoltaics from Non-Fullerene Acceptors</a>
+	
+		(FOR 5387) </span>
+	
+	<br>
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p>This project aims at a) the derivation of accurate mathematical models for the morphology formation during organic solar cell production, both via spin coating and printing processes, b) to develop efficient numerical schemes that allow for the fast and accurate numerical simulation of these models in two and three spatial dimensions, and c) the use of parameter identification techniques to calibrate the models using experimental data obtained by other projects within FOR 5387.</p>
+<p>The modelling methodology will be based on phase field descriptions of binary polymer-NFA systems whose dynamics is governed by a free energy functional based on the Flory-Huggins theory.
+Evaporation of the solvent will be taken into account by introducing an additional order parameter, allowing for a flexible treatment of geometric effects but also a natural coupling to hydrodynamics.
+In addition, appropriate mobilities will take care of size exclusion effects that occur when most of the solvent is evaporated.</p>
+<p>The efficient numerical schemes we will develop in this proposal are essential for evaluating the complex phase-field models.
+In order to achieve the desirable accuracy, the discretization needs to be sufficiently fine-grained requiring the solution of many large-scale (non)linear systems of equations.
+The efficiency will rely on developing suitable iterative solution schemes requiring structured preconditioners.
+Relying on these algorithms, parameter identification is carried out by numerically solving appropriate non-linear least squares problems.
+As the specific morphology is very sensitive to the initial conditions and the choice of parameters, yet the efficiency of the resulting organic solar cells mostly depends on averaged quantities, it is most important to develop appropriate loss functionals for the purpose of parameter identification.
+In addition, a sensitivity analysis will be carried out to identify the most important parameters in terms of these quantities of interest.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-ARTICLE">
+	<li class="publication-item" id="CilogluTretmansHerzogPietschmannStoll:2025:2">
+	<div class="publication-author"> Pelin Çiloğlu, Carmen Tretmans, <a href="../../team/rherzog/">Roland Herzog</a>, Jan-F. Pietschmann and Martin Stoll </div>
+	
+	
+	
+	<div class="publication-title"> Preconditioning for a Cahn-Hilliard-Navier-Stokes model for morphology formation in organic solar cells </div>
+	<div class="publication-ref-info">
+		
+			<span> Journal of Computational Physics 540, </span>
+		
+		<span class="publication-year"> 2025 </span> <br>
+	</div>
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2501.11767">arXiv:2501.11767</a>
+		</div>
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1016/j.jcp.2025.114280">doi:10.1016/j.jcp.2025.114280</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{CilogluTretmansHerzogPietschmannStoll:2025:2,
+  AUTHOR = {Çiloğlu, Pelin and Tretmans, Carmen and Herzog, Roland and Pietschmann, Jan-F. and Stoll, Martin},
+  DATE = {2025-08-07},
+  DOI = {10.1016/j.jcp.2025.114280},
+  EPRINT = {2501.11767},
+  EPRINTTYPE = {arXiv},
+  JOURNALTITLE = {Journal of Computational Physics},
+  PAGES = {114280},
+  TITLE = {Preconditioning for a Cahn-Hilliard-Navier-Stokes model for morphology formation in organic solar cells},
+  VOLUME = {540},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="BergermannDeibelHerzogMacKenziePietschmannStoll:2023:1">
+	<div class="publication-author"> <a href="../../team/alumni/kbergermann/">Kai Bergermann</a>, Carsten Deibel, <a href="../../team/rherzog/">Roland Herzog</a>, Roderick C. I. MacKenzie, Jan-Frederik Pietschmann and Martin Stoll </div>
+	
+	
+	
+	<div class="publication-title"> Preconditioning for a phase-field model with application to morphology evolution in organic semiconductors </div>
+	<div class="publication-ref-info">
+		
+			<span> Communications in Computational Physics 34(1), p.1-17, </span>
+		
+		<span class="publication-year"> 2023 </span> <br>
+	</div>
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2204.03575">arXiv:2204.03575</a>
+		</div>
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.4208/cicp.oa-2022-0115">doi:10.4208/cicp.oa-2022-0115</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{BergermannDeibelHerzogMacKenziePietschmannStoll:2023:1,
+  AUTHOR = {Bergermann, Kai and Deibel, Carsten and Herzog, Roland and MacKenzie, Roderick C. I. and Pietschmann, Jan-Frederik and Stoll, Martin},
+  PUBLISHER = {Global Science Press},
+  DATE = {2023-06},
+  DOI = {10.4208/cicp.oa-2022-0115},
+  EPRINT = {2204.03575},
+  EPRINTTYPE = {arXiv},
+  JOURNALTITLE = {Communications in Computational Physics},
+  NUMBER = {1},
+  PAGES = {1--17},
+  TITLE = {Preconditioning for a phase-field model with application to morphology evolution in organic semiconductors},
+  VOLUME = {34},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+ 				
+					<img  class="logo-project-single" src="../../img/consortiumlogos/PoPULAR.png" alt="Consortium logo">
+				
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

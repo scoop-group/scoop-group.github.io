@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Optimal Control of Dissipative Solids: Viscosity Limits and Non-Smooth Algorithms | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/dissipative-solids/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Optimal Control of Dissipative Solids: Viscosity Limits and Non-Smooth Algorithms
+		</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2016-10-01</span>
+	<br>
+
+
+
+	<span> End: 2020-05-31</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a>, <a href="https://www.uni-kassel.de/fb10/institute/mathematik/arbeitsgruppen/analysis-und-angewandte-mathematik/prof-dr-dorothee-knees"target="_blank" rel="noopener" class="external">Dorothee Knees</a>, <a href="https://wwwold.mathematik.tu-dortmund.de/lsx/cms/de/mitarbeiter/cmeyer.html"target="_blank" rel="noopener" class="external">Christian Meyer</a></span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/alumni/ast%C3%B6tzner/">Ailyn Stötzner</a>, <a href="../../team/alumni/mhashemi/">Masoumeh Hashemi</a>, Stephanie Thomas, Michael Sievers</span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Priority Program funding scheme
+		
+	</span>
+	<br>
+
+
+
+	<span> Part of: <a href="https://spp1962.wias-berlin.de/"target="_blank" rel="noopener" class="external">Non-Smooth and Complementarity-based Distributed Parameter Systems</a>
+	
+		(SPP 1962) </span>
+	
+	<br>
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p>The proposed project concerns the optimal control of dissipative solids.
+Our point of departure is a thermodynamically consistent material model which takes into account <strong>damage effects</strong> as well as <strong>thermo-elastoplasticity</strong>.
+A modern solution theory for such systems with rate-independent components is based on so-called <strong>balanced viscosity solutions</strong> whose existence is proved by means of viscous regularization and a subsequent passage to the limit in the viscosity parameters.</p>
+<p>Within the proposed project, we intend to <strong>analyze the optimization of damage and thermo-plastic deformation processes</strong> under this solution concept.
+Besides the existence of optimal controls, we are mainly interested in the approximability of locally optimal controls by viscous regularization.
+The rate-dependent, viscous problems have a physical meaning in their own right, and they are still non-smooth in the sense that the associated control-to-state operator is, in general, not Gateaux differentiable.
+Moreover, the viscous problems serve as a basis for the development of an efficient optimization algorithm, a <strong>bundle method in function space</strong>.
+To apply it, elements of the subdifferential in the sense of Clarke are to be determined on the basis of directional derivatives for the viscous model problems.
+By using a path-following approach for vanishing viscosity, we expect to be able to compute optimal solutions even of the associated rate-independent problems.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-INCOLLECTION">
+	<li class="publication-item" id="HerzogKneesMeyerSieversStoetznerThomas:2019:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, Dorothee Knees, Christian Meyer, Michael Sievers, <a href="../../team/alumni/ast%C3%B6tzner/">Ailyn Stötzner</a> and Stephanie Thomas </div>
+	
+	
+	
+	<div class="publication-title"> Rate-independent systems and their viscous regularizations: analysis, simulation and optimal control </div>
+	<div class="publication-ref-info">
+		
+			<span> Non-Smooth and Complementarity-Based Distributed Parameter Systems, International Series of Numerical Mathematics 172, </span>
+		
+		<span class="publication-year"> 2019 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/978-3-030-79393-7_6">doi:10.1007/978-3-030-79393-7_6</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INCOLLECTION{HerzogKneesMeyerSieversStoetznerThomas:2019:1,
+  AUTHOR = {Herzog, Roland and Knees, Dorothee and Meyer, Christian and Sievers, Michael and Stötzner, Ailyn and Thomas, Stephanie},
+  EDITOR = {Hintermüller, Michael and Herzog, Roland and Kanzow, Christian and Ulbrich, Michael and Ulbrich, Stefan},
+  PUBLISHER = {Springer},
+  BOOKTITLE = {Non-Smooth and Complementarity-Based Distributed Parameter Systems},
+  DATE = {2019},
+  DOI = {10.1007/978-3-030-79393-7_6},
+  SERIES = {International Series of Numerical Mathematics},
+  TITLE = {Rate-independent systems and their viscous regularizations: analysis, simulation and optimal control},
+  VOLUME = {172},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogStoetzner:2019:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a> and <a href="../../team/alumni/ast%C3%B6tzner/">Ailyn Stötzner</a> </div>
+	
+	
+	
+	<div class="publication-title"> Hadamard differentiability of the solution map in thermoviscoplasticity </div>
+	<div class="publication-ref-info">
+		
+			<span> Pure and Applied Functional Analysis 4(2), p.271-295, </span>
+		
+		<span class="publication-year"> 2019 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogStoetzner:2019:1,
+  AUTHOR = {Herzog, Roland and Stötzner, Ailyn},
+  DATE = {2019},
+  JOURNALTITLE = {Pure and Applied Functional Analysis},
+  NUMBER = {2},
+  PAGES = {271--295},
+  TITLE = {Hadamard differentiability of the solution map in thermoviscoplasticity},
+  VOLUME = {4},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Stoetzner:2018:1">
+	<div class="publication-author"> <a href="../../team/alumni/ast%C3%B6tzner/">Ailyn Stötzner</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal Control of Thermoviscoplasticity </div>
+	<div class="publication-ref-info">
+		
+			<span> Ph.D. thesis, Technische Universität Chemnitz, Germany, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a href="https://www.nbn-resolving.de/urn:nbn:de:bsz:ch1-qucosa2-318874"target="_blank" rel="noopener" class="external">urn:nbn:de:bsz:ch1-qucosa2-318874</a>
+		</div>
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@THESIS{Stoetzner:2018:1,
+  AUTHOR = {Stötzner, Ailyn},
+  INSTITUTION = {Technische Universität Chemnitz, Germany},
+  DATE = {2018},
+  EPRINT = {urn:nbn:de:bsz:ch1-qucosa2-318874},
+  EPRINTTYPE = {urn},
+  TITLE = {Optimal Control of Thermoviscoplasticity},
+  TYPE = {phdthesis},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogMeyerStoetzner:2017:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, Christian Meyer and <a href="../../team/alumni/ast%C3%B6tzner/">Ailyn Stötzner</a> </div>
+	
+	
+	
+	<div class="publication-title"> Existence of solutions of a thermoviscoplastic model and associated optimal control problems </div>
+	<div class="publication-ref-info">
+		
+			<span> Nonlinear Analysis: Real World Applications 35, p.75-101, </span>
+		
+		<span class="publication-year"> 2017 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1016/j.nonrwa.2016.10.008">doi:10.1016/j.nonrwa.2016.10.008</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogMeyerStoetzner:2017:1,
+  AUTHOR = {Herzog, Roland and Meyer, Christian and Stötzner, Ailyn},
+  DATE = {2017},
+  DOI = {10.1016/j.nonrwa.2016.10.008},
+  JOURNALTITLE = {Nonlinear Analysis: Real World Applications},
+  PAGES = {75--101},
+  TITLE = {Existence of solutions of a thermoviscoplastic model and associated optimal control problems},
+  VOLUME = {35},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+ 				
+					<img  class="logo-project-single" src="../../img/consortiumlogos/SPP-1962.png" alt="Consortium logo">
+				
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

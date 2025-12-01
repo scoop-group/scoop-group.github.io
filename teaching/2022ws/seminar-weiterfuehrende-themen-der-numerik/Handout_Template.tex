@@ -1,0 +1,38 @@
+\documentclass[a4paper,DIV=12,parskip=full]{scrartcl}
+
+% Load standard packages
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{ngerman}  % comment for English text
+\RequirePackage{lipsum}
+\RequirePackage{scrlayer-scrpage}
+
+% Setup the page layout
+\KOMAoptions{headsepline=true}
+\KOMAoptions{footsepline=true}
+\recalctypearea
+
+% Setup the head and footer
+\makeatletter
+\ihead{Short Title}
+\ohead{\@author}
+\ifoot[]{\@date}
+\cfoot[]{Seminar Weiterführende Themen der Numerik}
+\ofoot*{\thepage}
+\makeatother
+
+% Set the author and title information
+\author{Author}
+\title{Title}
+\date{13.01.2023}
+
+\begin{document}
+\maketitle
+
+\section{Einführung}
+
+% Remove this dummy text
+\lipsum
+\lipsum
+
+\end{document}

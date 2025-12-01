@@ -1,0 +1,339 @@
+body {
+  display: block;
+  position: relative;
+  min-height: 100%;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #ffffff; }
+
+::selection {
+  background: #c7ebf6; }
+
+html {
+  height: 100%;
+  font-family: "IBM Plex Sans", "Open Sans", sans;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.725;
+  color: #222222;
+  text-rendering: geometricPrecision;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0; }
+
+a {
+  text-decoration: none;
+  color: #0077aa; }
+  a:hover {
+    text-decoration: underline; }
+
+main {
+  padding-bottom: 80px;
+  position: relative;
+  /* enable absolute positioning for aside */ }
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2.0rem;
+  margin-bottom: 0; }
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1.6rem;
+  margin-bottom: 0; }
+
+h3 {
+  font-size: 1.0rem;
+  font-weight: 450;
+  margin-top: 1.6rem;
+  margin-bottom: 0; }
+
+.nopadding {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.external {
+  background: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png) center right no-repeat;
+  padding-right: 13px; }
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  /* hack needed because of absolute positioning */
+  right: 5px;
+  /* hack needed because of absolute positioning */
+  font-size: 12px;
+  padding: 20px 5px;
+  border-top: 1px solid;
+  border-color: #cccccc;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto; }
+  footer span {
+    color: inherit; }
+  footer a {
+    color: inherit; }
+  footer span#built {
+    margin: 0;
+    padding-left: 5px;
+    float: right;
+    text-decoration: none; }
+  footer a#up {
+    margin: 0;
+    padding: 0;
+    float: right;
+    text-decoration: none; }
+  footer a#rss {
+    margin: 0;
+    padding: 0;
+    float: right;
+    text-decoration: none; }
+
+header#site-header {
+  display: block;
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: .5rem; }
+
+#site-logo {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 2rem;
+  float: left; }
+
+#site-title {
+  display: inline-block;
+  margin: 0;
+  padding-left: .5em;
+  height: 2rem; }
+  #site-title * {
+    color: #222222;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem; }
+
+#site-menu {
+  display: block; }
+  #site-menu ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    max-width: 700px; }
+    #site-menu ul a {
+      font-weight: 400;
+      font-size: 0.85rem;
+      text-decoration: none;
+      margin-right: .5em;
+      padding-right: .5em; }
+      @media (max-width: 650px) {
+        #site-menu ul a {
+          margin-right: 0.5em;
+          padding-right: 0.5em;
+          border-right: 0; } }
+      #site-menu ul a:hover {
+        text-decoration: underline; }
+    #site-menu ul li {
+      display: inline;
+      list-style: none;
+      text-align: center; }
+      #site-menu ul li:last-child a {
+        margin: 0;
+        padding: 0;
+        border: 0; }
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.profile-card {
+  display: inline-block;
+  text-align: center;
+  width: 220px;
+  min-width: 100px;
+  max-height: 400px;
+  padding: 5px; }
+  .profile-card img.avatar {
+    width: 100%;
+    min-width: 100px;
+    max-width: 150px;
+    border-radius: 50%; }
+    .profile-card img.avatar:hover {
+      -webkit-filter: brightness(80%); }
+  .profile-card h3, .profile-card h4 {
+    margin: 0; }
+  .profile-card h3 {
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+    font-weight: 400; }
+  .profile-card h4 {
+    font-size: .8rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 1.4rem; }
+
+.contact-card {
+  display: grid;
+  grid-template-columns: max-content auto;
+  width: 70%;
+  margin: 10px auto; }
+
+.contact-info {
+  display: flex;
+  padding: 5px;
+  padding-left: 20px;
+  border-left: solid 1px #666; }
+  .contact-info ul {
+    align-self: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    font-size: .8rem;
+    color: #666;
+    line-height: 1.2rem; }
+
+.project-in-list {
+  margin: 1rem;
+  width: 100%; }
+
+.project-in-list-left {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top; }
+
+.project-in-list-right {
+  display: inline-block;
+  width: 69%; }
+
+.logo-project-list {
+  max-width: 90%;
+  max-height: 60px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.logo-container-single {
+  margin: 1rem;
+  width: 100%; }
+
+.logo-container-single-left {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top; }
+
+.logo-container-single-right {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top; }
+
+.logo-project-single {
+  max-width: 90%;
+  max-height: 60px;
+  margin-left: 10px; }
+
+ul.list-teachers {
+  display: inline;
+  list-style: none;
+  padding: 0; }
+  ul.list-teachers li::after {
+    content: ", "; }
+  ul.list-teachers li:last-child::after {
+    content: ""; }
+
+.theses-list {
+  width: 75%; }
+
+.thesis-title {
+  font-style: italic; }
+
+.publications-list {
+  width: 90%; }
+
+.publication-title {
+  font-style: italic; }
+
+.publication-link {
+  margin: 3px; }
+
+.talks-list {
+  width: 90%; }
+
+.talk-title {
+  font-style: italic; }
+
+.talk-link {
+  margin: 3px; }
+
+.software-list {
+  width: 90%; }
+
+.software-title {
+  font-style: italic; }
+
+.software-link {
+  margin: 3px; }
+
+pre {
+  padding: 1em;
+  border-radius: .5em;
+  overflow-x: auto;
+  background-color: #eee;
+  color: black; }
+
+p code {
+  background-color: #eee;
+  color: black;
+  padding: .2em;
+  border-radius: .2em; }
+
+.bibtex-cite {
+  overflow-x: auto; }
+
+.time-table {
+  table-layout: fixed;
+  width: 100%; }
+  .time-table th, .time-table td {
+    word-wrap: break-word;
+    white-space: normal; }
+  .time-table th:first-child,
+  .time-table td:first-child {
+    width: 30%; }
+
+td, th {
+  border: 1px solid #333;
+  padding: 0 .2em; }
+
+.la-table, td, th {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+  border: none; }
+
+.exam-table {
+  border-collapse: collapse;
+  border: none; }
+
+td, th {
+  border: none;
+  padding: 0 .5em;
+  border-collapse: collapse; }
+
+.EUCCO-table {
+  white-space: nowrap;
+  width: 100%;
+  border: 3px solid black; }
+
+.skiseminar-table, td, th {
+  table-layout: fixed;
+  white-space: wrap;
+  width: 175%;
+  border-collapse: collapse;
+  border: 3px solid black; }

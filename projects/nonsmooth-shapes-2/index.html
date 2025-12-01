@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> A Calculus for Non-Smooth Shape Optimization with Applications to Geometric Inverse Problems | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/nonsmooth-shapes-2/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> A Calculus for Non-Smooth Shape Optimization with Applications to Geometric Inverse Problems
+		</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2021-06-15</span>
+	<br>
+
+
+
+	<span> End: 2025-12-31</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a>, <a href="https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-iv/faecher/mathematik/personenseiten/dr-s-schmidt"target="_blank" rel="noopener" class="external">Stephan Schmidt</a></span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/mwei%C3%9F/">Manuel Weiß</a>, <a href="https://www.mathematik.hu-berlin.de/de/personen/mitarb-vz/1693318"target="_blank" rel="noopener" class="external">Lukas Baumgärtner</a></span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Priority Program funding scheme
+		
+	</span>
+	<br>
+
+
+
+	<span> Part of: <a href="https://spp1962.wias-berlin.de/"target="_blank" rel="noopener" class="external">Non-Smooth and Complementarity-based Distributed Parameter Systems</a>
+	
+		(SPP 1962) </span>
+	
+	<br>
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p>The overall goal of the project is a mathematically rigorous approach to the theory and numerics of <strong>non-smooth shape optimization problems</strong>.
+The objective functions are of a geometric nature, i.e., they emphasize certain desired properties of optimal shapes.
+In the process, we will examine different classes of functionals, which are, as they stand, suitable for surface smoothing or geometry segmentation tasks, respectively.
+The non-smoothness of these functionals, which ultimately are all based on the normal vector field of the surface, is a crucial feature in each case for their functioning.</p>
+<p>The main motivation for the above considerations are so-called <strong>geometric inverse problems</strong>, in which an unknown geometry is to be reconstructed from data.
+Numerous examples of applications for this can be found in the field of non-invasive sensing, for example for the detection of inclusions, but also in medical imaging.
+The novel geometric functionals we are examining allow a detailed control over expected or <strong>desired properties</strong> of the geometries to be identified.
+In the first phase of the project, we mainly considered the total surface variation of the normal vector field in this context, which has the property of being edge preserving.</p>
+<p>In the second phase, on the other hand, we first look at functionals that can be used for <strong>geometry segmentation</strong>, that is, the classification of a surface according to certain features.
+These functionals can, for instance, help to express a preference for specific orientations of the surface segments.
+This makes it possible to bring in expert knowledge in the field of crystallography, geology and material science, for example.
+Furthermore, we consider functionals based on the generalized, <strong>second-order total variation</strong> of the surface normals.
+Thereby, a preference for certain curvature properties of the surface can be expressed.</p>
+<p>As application examples, in each case problems of electrical impedance tomography (EIT) as a classical imaging modality are to be combined with the new geometric functionals into a geometric inverse problem.
+On an equal level with the investigation of the theoretical properties is always an efficient and robust numerical realization.
+To achieve this, we will develop an ADMM method, which will have to incorporate <strong>tools of differential geometry</strong> due to the intrinsic properties of the surface normal.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-ONLINE">
+	<li class="publication-item" id="BaumgaertnerBergmannHerzogSchmidtWeiss:2025:1">
+	<div class="publication-author"> Lukas Baumgärtner, <a href="../../team/alumni/rbergmann/">Ronny Bergmann</a>, <a href="../../team/rherzog/">Roland Herzog</a>, Stephan Schmidt and <a href="../../team/mwei%C3%9F/">Manuel Weiß</a> </div>
+	
+	
+	
+		<span class="publication-title"> Total generalized variation of the normal vector field and applications to mesh denoising, </span>
+		<span class="publication-year"> 2025 </span> <br>
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2507.13530">arXiv:2507.13530</a>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ONLINE{BaumgaertnerBergmannHerzogSchmidtWeiss:2025:1,
+  AUTHOR = {Baumgärtner, Lukas and Bergmann, Ronny and Herzog, Roland and Schmidt, Stephan and Weiß, Manuel},
+  DATE = {2025-07},
+  EPRINT = {2507.13530},
+  EPRINTTYPE = {arXiv},
+  TITLE = {Total generalized variation of the normal vector field and applications to mesh denoising},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="BaumgaertnerBergmannHerzogSchmidtVidalNunezWeiss:2025:1">
+	<div class="publication-author"> Lukas Baumgärtner, <a href="../../team/alumni/rbergmann/">Ronny Bergmann</a>, <a href="../../team/rherzog/">Roland Herzog</a>, Stephan Schmidt, <a href="../../team/alumni/jvidal/">José Vidal-Núñez</a> and <a href="../../team/mwei%C3%9F/">Manuel Weiß</a> </div>
+	
+	
+	
+	<div class="publication-title"> Mesh denoising and inpainting using the total variation of the normal and a shape Newton approach </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Scientific Computing 47(1), p.A300-A324, </span>
+		
+		<span class="publication-year"> 2025 </span> <br>
+	</div>
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2012.11748">arXiv:2012.11748</a>
+		</div>
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/24m1646121">doi:10.1137/24m1646121</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{BaumgaertnerBergmannHerzogSchmidtVidalNunezWeiss:2025:1,
+  AUTHOR = {Baumgärtner, Lukas and Bergmann, Ronny and Herzog, Roland and Schmidt, Stephan and Vidal-Núñez, José and Weiß, Manuel},
+  PUBLISHER = {Society for Industrial \&amp; Applied Mathematics (SIAM)},
+  DATE = {2025-01},
+  DOI = {10.1137/24m1646121},
+  EPRINT = {2012.11748},
+  EPRINTTYPE = {arXiv},
+  JOURNALTITLE = {SIAM Journal on Scientific Computing},
+  NUMBER = {1},
+  PAGES = {A300--A324},
+  TITLE = {Mesh denoising and inpainting using the total variation of the normal and a shape Newton approach},
+  VOLUME = {47},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="BaumgaertnerBergmannHerzogSchmidtWeiss:2024:1">
+	<div class="publication-author"> Lukas Baumgärtner, <a href="../../team/alumni/rbergmann/">Ronny Bergmann</a>, <a href="../../team/rherzog/">Roland Herzog</a>, Stephan Schmidt and <a href="../../team/mwei%C3%9F/">Manuel Weiß</a> </div>
+	
+	
+	
+		<span class="publication-title"> Two models for surface segmentation using the total variation of the normal vector, </span>
+		<span class="publication-year"> 2024 </span> <br>
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2412.00445">arXiv:2412.00445</a>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ONLINE{BaumgaertnerBergmannHerzogSchmidtWeiss:2024:1,
+  AUTHOR = {Baumgärtner, Lukas and Bergmann, Ronny and Herzog, Roland and Schmidt, Stephan and Weiß, Manuel},
+  DATE = {2024-12},
+  EPRINT = {2412.00445},
+  EPRINTTYPE = {arXiv},
+  TITLE = {Two models for surface segmentation using the total variation of the normal vector},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="BaumgaertnerHerzogSchmidtWeiss:2023:1">
+	<div class="publication-author"> Lukas Baumgärtner, <a href="../../team/rherzog/">Roland Herzog</a>, Stephan Schmidt and <a href="../../team/mwei%C3%9F/">Manuel Weiß</a> </div>
+	
+	
+	
+	<div class="publication-title"> The proximal map of the weighted mean absolute error </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings in Applied Mathematics and Mechanics 23(4), </span>
+		
+		<span class="publication-year"> 2023 </span> <br>
+	</div>
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2209.13545">arXiv:2209.13545</a>
+		</div>
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/pamm.202300042">doi:10.1002/pamm.202300042</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{BaumgaertnerHerzogSchmidtWeiss:2023:1,
+  AUTHOR = {Baumgärtner, Lukas and Herzog, Roland and Schmidt, Stephan and Weiß, Manuel},
+  PUBLISHER = {Wiley},
+  DATE = {2023-09},
+  DOI = {10.1002/pamm.202300042},
+  EPRINT = {2209.13545},
+  EPRINTTYPE = {arXiv},
+  JOURNALTITLE = {Proceedings in Applied Mathematics and Mechanics},
+  NUMBER = {4},
+  TITLE = {The proximal map of the weighted mean absolute error},
+  VOLUME = {23},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="BaumgaertnerBergmannHerzogSchmidtVidalNunez:2023:1">
+	<div class="publication-author"> Lukas Baumgärtner, <a href="../../team/alumni/rbergmann/">Ronny Bergmann</a>, <a href="../../team/rherzog/">Roland Herzog</a>, Stephan Schmidt and <a href="../../team/alumni/jvidal/">José Vidal-Núñez</a> </div>
+	
+	
+	
+	<div class="publication-title"> Total generalized variation for piecewise constant functions on triangular meshes with applications in imaging </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Imaging Sciences 16(1), p.313-339, </span>
+		
+		<span class="publication-year"> 2023 </span> <br>
+	</div>
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2206.12331">arXiv:2206.12331</a>
+		</div>
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/22m1505281">doi:10.1137/22m1505281</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{BaumgaertnerBergmannHerzogSchmidtVidalNunez:2023:1,
+  AUTHOR = {Baumgärtner, Lukas and Bergmann, Ronny and Herzog, Roland and Schmidt, Stephan and Vidal-Núñez, José},
+  PUBLISHER = {Society for Industrial \&amp; Applied Mathematics (SIAM)},
+  DATE = {2023-02},
+  DOI = {10.1137/22m1505281},
+  EPRINT = {2206.12331},
+  EPRINTTYPE = {arXiv},
+  JOURNALTITLE = {SIAM Journal on Imaging Sciences},
+  NUMBER = {1},
+  PAGES = {313--339},
+  TITLE = {Total generalized variation for piecewise constant functions on triangular meshes with applications in imaging},
+  VOLUME = {16},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+			<h2> Associated Software </h2>
+<ul class="software-list" id="software">
+	<li class="software-item" id="BaumgaertnerHerzogSchmidtWeiss:2022:2">
+	<div class="software-author"> Lukas Baumgärtner, <a href="../../team/rherzog/">Roland Herzog</a>, Stephan Schmidt and <a href="../../team/mwei%C3%9F/">Manuel Weiß</a> </div>
+	
+	
+		<span class="software-title"> The proximal map of the weighted mean absolute error, </span>
+		<span class="software-year"> 2023 </span> <br>
+	
+	
+	
+		<div class="software-link">
+			<a class="link-doi external" href="https://doi.org/10.5281/zenodo.7620815">doi:10.5281/zenodo.7620815</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@SOFTWARE{BaumgaertnerHerzogSchmidtWeiss:2022:2,
+  AUTHOR = {Baumgärtner, Lukas and Herzog, Roland and Schmidt, Stephan and Weiß, Manuel},
+  DATE = {2023},
+  DOI = {10.5281/zenodo.7620815},
+  TITLE = {The proximal map of the weighted mean absolute error},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+ 				
+					<img  class="logo-project-single" src="../../img/consortiumlogos/SPP-1962.png" alt="Consortium logo">
+				
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

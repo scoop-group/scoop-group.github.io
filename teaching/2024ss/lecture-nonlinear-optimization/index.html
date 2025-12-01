@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Nonlinear Optimization | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/teaching/2024ss/lecture-nonlinear-optimization/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../../news">News</a> </li>
+			
+				<li> <a href="../../../team">Team</a> </li>
+			
+				<li> <a href="../../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../../publications">Publications</a> </li>
+			
+				<li> <a href="../../../talks">Talks</a> </li>
+			
+				<li> <a href="../../../software">Software</a> </li>
+			
+				<li> <a href="../../../projects">Projects</a> </li>
+			
+				<li> <a href="../../../events">Events</a> </li>
+			
+				<li> <a href="../../../theses">Theses</a> </li>
+			
+				<li> <a href="../../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+		
+			<h1>Nonlinear Optimization</h1>
+		
+		<div class="metadata">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+				
+			
+				
+				
+				
+					<span> Semester: 2024 SS</span>
+					<br>
+				
+				
+				
+				
+					<span> Class type: Lecture</span>
+					<br>
+				
+
+				
+				
+					<span> Languages: English</span>
+					<br>
+				
+
+				
+				
+					<span> Teachers: <span class="teachers-list"><a href="../../../team/eherberg/">Evelyn Herberg</a></span></span>
+				<br>
+
+				
+				
+				
+					<span> Assistants: <span class="assistants-list">Mario Marić, Viktor Stein</span>
+</span>
+				<br>
+				
+				
+				
+				
+				<span> Contact: <a href="../../../forwards/teachingContact/scoop-teaching-NLO" >Send e-mail</a></span>
+				<br>
+				
+				
+				
+				
+					<span> Websites for this class: </span>
+				
+
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1850">MÜSLI</a>, <a href="https://moodle.uni-heidelberg.de/course/view.php?id=21857">Moodle</a>, heiCO(<a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/127417'>1100121502</a>, <a href='https://heico.uni-heidelberg.de/heiCO/ee/rest/pages/slc.tm.cp/course/127419'>1100121503</a>)<br>
+				
+				
+				
+					<span> Exam Dates: 2024-08-06, 2024-10-09 </span>
+					<br>
+				
+			
+		</div>
+	</header>
+	<hr>
+	<article>
+		<h2> Course Information </h2>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#concept-and-components">Concept and Components</a></li>
+    <li><a href="#dates-and-schedule">Dates and Schedule</a></li>
+    <li><a href="#exercises">Exercises</a></li>
+    <li><a href="#class-registration">Class Registration</a></li>
+    <li><a href="#exams">Exams</a>
+      <ul>
+        <li><a href="#exam-format">Exam Format</a></li>
+        <li><a href="#exam-admission-rules">Exam Admission Rules</a></li>
+        <li><a href="#exam-dates">Exam Dates</a></li>
+        <li><a href="#exam-registration">Exam Registration</a></li>
+        <li><a href="#cancellation-policy">Cancellation Policy</a></li>
+        <li><a href="#exam-aids">Exam Aids</a></li>
+      </ul>
+    </li>
+    <li><a href="#course-material">Course Material</a>
+      <ul>
+        <li><a href="#lecture-notes">Lecture Notes</a></li>
+        <li><a href="#exercises-1">Exercises</a></li>
+        <li><a href="#literature">Literature</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		<h2 id="description">
+	Description
+	<a href="#description" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>This class provides a detailed overview of algorithms for unconstrained and constrained smooth, nonlinear optimization problems in finite dimensions.
+It will emphasize the interplay of optimization and numerical linear algebra.
+Optimality conditions and associated constraint qualifications for constrained problems will be presented and discussed.
+Moreover, the class will give an introduction to algorithmic differentiation (AD).</p>
+<h2 id="prerequisites">
+	Prerequisites
+	<a href="#prerequisites" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Skills from Analysis I and II (MA1/ MA2), Lineare Algebra I (MA4) as well as basic optimization skills are highly recommended.</p>
+<h2 id="concept-and-components">
+	Concept and Components
+	<a href="#concept-and-components" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>This class is comprised of:</p>
+<ul>
+<li>Detailed lecture notes</li>
+<li>2x 2h lectures per week</li>
+<li>Exercise sheets with corresponding answer sheets</li>
+<li>Tutorials for co-working on exercise sheets</li>
+<li>An exam following the end of the lecture period</li>
+</ul>
+<h2 id="dates-and-schedule">
+	Dates and Schedule
+	<a href="#dates-and-schedule" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Information on the exercise labs can be found in <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1850">MÜSLI</a>.</p>
+<p>Please also refer to the <a href="./schedule.pdf"title="class&amp;rsquo; schedule">class&rsquo; schedule</a>.</p>
+<h2 id="exercises">
+	Exercises
+	<a href="#exercises" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Exercises will be centered around one exercise sheet per week containing both theoretical/analytical questions and numerical/implementation exercises.
+Default programming language &ndash; in the sense that it will be used in our answer sheets and we will be providing support for it &ndash; will be Python.
+Feel free to work with another programming laguage that is suitable for implementing the optimization algorithms if you are self sufficient working with it.</p>
+<p>In the exercise tutorials (see <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1850">MÜSLI</a>), you will have the oportunity to work on the exercise sheets with your peers and with support from our tutors.
+You can get the most out of their time if you show up having already taken a first look at the exercises and bringing your own questions and discussion topics to the meetings.
+Feel free to ask questions on the lecture notes or the lectures as well.</p>
+<p>For successful participation in this semester&rsquo;s exercises, you will be asked to submit your exercises weekly, see <a href="#exams"title="exams">exams</a>.
+To evaluate your success on the exercise sheets, please compare your work with the answer sheets we will provide and, of course, feel free to talk to your tutor in the labs.</p>
+<p>You may work on the exercises in groups of up to five students.</p>
+<p>Please submit your work via <a href="https://moodle.uni-heidelberg.de/course/view.php?id=21857">Moodle</a> in the following format:</p>
+<p>The name of every group member must be represented in the file name. The members are separated by an underscore &ldquo;_&rdquo;. Each member is specified in the format &ldquo;firstname(s)-surname(s)&rdquo;. Should you have multiple surnames or first names, simply join them without any separator. The listing of the members is followed by an underscore and a tag for the current sheet in the format exsheetnumber. The sheet number must have two digits. If the exercise only requires a PDF, then a simple file upload suffices. Should the exercise require multiple files, such as some code files, etc., bundle them into a zip archive. The name of the archive must follow the conventions specified above. Example:</p>
+<p>firstname(s)1-lastname(s)1_firstname(s)2-lastname(s)2_ex01.zip</p>
+<p>Mario Maric and Viktor Stein von Kamienski are group members and want to hand in a PDF and a Jupyter notebook for sheet number 4. They archive both files into a zip and call it:</p>
+<p>Mario-Maric_Viktor-Steinvonkamienski_ex04.zip</p>
+<p>We will use this naming scheme to identify and track the groups. The order of the members, the capitalization of the names, or how many people uploaded the file is irrelevant. Just make sure that the spelling of the members does not change between different assignments. A failure to adhere to this convention will result in a fail on the assignment.</p>
+<h2 id="class-registration">
+	Class Registration
+	<a href="#class-registration" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>To register for this class, please register for an exercise group at <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1850">MÜSLI</a>.
+Please also register in case you are interested in participating in this class but not in the exercises.
+This will allow us to get an idea of class demand.</p>
+<p>Attention(!): Registration for the class does not automatically include registration for an examination.
+More information on the exams can be found in the section <a href="#exams"title="exams">exams</a>.</p>
+<h2 id="exams">
+	Exams
+	<a href="#exams" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>We will be offering exams at the end of the semester and during the following summer break.</p>
+<p>You may attend up to two exams. It is also possible to not register for the first exam and only attend the second exam.
+If you pass the exam, you can not take another exam for this course.
+In case you pass neither of the two offered exams, you have to wait until this course is offered again for the next attempt. It is up to the respective lecturer, whether your admission to the exam will remain valid in following semesters.</p>
+<p>It is important that you register in <strong>HeiCo</strong>, so that we can officially submit your exam results.</p>
+<h3 id="exam-format">
+	Exam Format
+	<a href="#exam-format" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>The exams will be <strong>written</strong> with a duration of 120 minutes.</p>
+<p>Relevant material for the exam consists of the lecture notes and exercises (including numerical exercises) that are provided for this course.</p>
+<p>The following parts of the lecture notes are <strong>excluded</strong> from the exam:</p>
+<ul>
+<li>Proofs that were not discussed in the lecture or exercises,</li>
+<li>Paragraph 3.4,</li>
+<li>Paragraph 3.5,</li>
+<li>Modified Armijo backtracking,</li>
+<li>Cubic interpolation in Wolfe-Powell line search,</li>
+<li>Paragraph 9.4,</li>
+<li>Paragraph 12.5,</li>
+<li>Chapter 5 (will be included in second exam),</li>
+<li>Appendix B.</li>
+</ul>
+<h3 id="exam-admission-rules">
+	Exam Admission Rules
+	<a href="#exam-admission-rules" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>If you want to take the exam with us, we require that you are registered in Müsli and that you meet at least one of the following criteria:</p>
+<ol>
+<li>You have been admitted to an exam for this class in a previous semester and let us know <a href="../../../forwards/teachingContact/scoop-teaching-NLO" >via E-Mail</a> when and by whom you have been admitted by 2024-06-30.</li>
+<li>You have successfully participated in this semester&rsquo;s exercise program in the sense that:
+<ul>
+<li>On at least 12 out of 13 exercise sheets, you have worked on every exercise to a reasonable degree.
+&ldquo;To a reasonable degree&rdquo; means that you have at least sketched an approach of how to solve the excercise and made a connection to the material of the lecture.</li>
+</ul>
+</li>
+</ol>
+<h3 id="exam-dates">
+	Exam Dates
+	<a href="#exam-dates" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>The first exam will take place on 6th of August 2024 from 10:00 to 12:00 in Seminar room A and B.</p>
+<p>The second exam will take place on 9th of October 2024 from 9:00 to 11:00 in the lecture hall in Mathematikon. Please be there a few minutes early to ensure a timely start of the exam.</p>
+<h3 id="exam-registration">
+	Exam Registration
+	<a href="#exam-registration" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Please register in HeiCo. Registration for the second exam is open until 7th of October 2024.</p>
+<h3 id="cancellation-policy">
+	Cancellation Policy
+	<a href="#cancellation-policy" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>You may cancel your registration for the exam up to 1 day before the scheduled date of the exam without the need for a reason.
+If you do not take the exam at the scheduled time without having cancelled at least 1 day ahead of time, you will be required to submit a medical certificate for the scheduled time of the exam, otherwise the central exam office will be notified about the missed exam by us.</p>
+<p>In case you registered for an exam, but fail to meet the requirements installed to be admissible for the exam to begin with, your registration is not valid and will not be counted as a failed attempt.</p>
+<h3 id="exam-aids">
+	Exam Aids
+	<a href="#exam-aids" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Every participant may bring a cheat sheet, i.e. one DinA4 sheet with your own notes. You can use both sides and either write or print your notes. You have to put your name on the cheat sheet and it is <strong>not allowed</strong> to photo-copy another student&rsquo;s cheat sheet.</p>
+<h2 id="course-material">
+	Course Material
+	<a href="#course-material" class="h-anchor" aria-hidden="true">#</a>
+</h2><h3 id="lecture-notes">
+	Lecture Notes
+	<a href="#lecture-notes" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./nonlinear-optimization-lecture-notes.pdf"title="Lecture Notes (2024-08-02)">Lecture Notes (2024-08-02)</a></li>
+</ul>
+<h3 id="exercises-1">
+	Exercises
+	<a href="#exercises-1" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./exercise-01.pdf"title="Exercise sheet 01">Exercise sheet 01</a></li>
+<li><a href="./exercise-02.pdf"title="Exercise sheet 02">Exercise sheet 02</a></li>
+<li><a href="./exercise-03.pdf"title="Exercise sheet 03">Exercise sheet 03</a></li>
+<li><a href="./exercise-04.pdf"title="Exercise sheet 04">Exercise sheet 04</a></li>
+<li><a href="./exercise-05.pdf"title="Exercise sheet 05">Exercise sheet 05</a></li>
+<li><a href="./exercise-06.pdf"title="Exercise sheet 06">Exercise sheet 06</a></li>
+<li><a href="./exercise-07.pdf"title="Exercise sheet 07">Exercise sheet 07</a></li>
+<li><a href="./exercise-08.pdf"title="Exercise sheet 08">Exercise sheet 08</a></li>
+<li><a href="./exercise-09.pdf"title="Exercise sheet 09">Exercise sheet 09</a></li>
+<li><a href="./exercise-10.pdf"title="Exercise sheet 10">Exercise sheet 10</a></li>
+<li><a href="./exercise-11.pdf"title="Exercise sheet 11">Exercise sheet 11</a></li>
+<li><a href="./exercise-12.pdf"title="Exercise sheet 12">Exercise sheet 12</a></li>
+<li><a href="./exercise-13.pdf"title="Exercise sheet 13">Exercise sheet 13</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="literature">
+	Literature
+	<a href="#literature" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>This class is self contained and does not rely on outside literature.
+If you would like to read up additionally, we can however recommend the following literature:</p>
+<ul>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-0-387-40065-5">Nocedal, Wright: Numerical Optimization</a></li>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-3-642-56004-0">Geiger, Kanzow: Theorie und Numerik restringierter Optimierungsaufgaben</a></li>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-3-0346-0654-7">Ulbrich, Ulbrich: Nichtlineare Optimierung</a></li>
+</ul>
+
+	</article>
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

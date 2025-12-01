@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Bivalent and Multi-Criteria Optimization of Coupled Simulations of Manufacturing and Loading of Hybrid Structures | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/merge/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Bivalent and Multi-Criteria Optimization of Coupled Simulations of Manufacturing and Loading of Hybrid Structures
+		(MERGE)</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2012-11-01</span>
+	<br>
+
+
+
+	<span> End: 2019-09-30</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a></span></span>
+	<br>
+
+
+
+	<span> Collaborators: <span class="collaboratos-list">Arnd Meyer, <a href="https://www.tu-chemnitz.de/mathematik/numa/people/ernst/"target="_blank" rel="noopener" class="external">Oliver Ernst</a>, <a href="https://www.tu-chemnitz.de/mb/FestKoerpMech/Mitarbeiter/MA_Seite.php?MA_ID=1&amp;ln=en"target="_blank" rel="noopener" class="external">Jörn Ihlemann</a>, <a href="https://www.tu-chemnitz.de/mb/IST/kontakt.php.en"target="_blank" rel="noopener" class="external">Lothar Kroll</a>, <a href="https://www.tu-chemnitz.de/informatik/PI/professur/inhaber/index.php.en"target="_blank" rel="noopener" class="external">Gudula Rünger</a></span></span>
+	<br>
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/alumni/fospald/">Felix Ospald</a>,</span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Cluster of Excellence funding scheme
+		
+	</span>
+	<br>
+
+
+
+	<span> Part of: <a href="https://www.tu-chemnitz.de/MERGE/project/federal-cluster"target="_blank" rel="noopener" class="external">Merge Technologies for Multifunctional Lightweight Structures</a>
+	
+		(EXC 1075) </span>
+	
+	<br>
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p>The Cluster of Excellence <a href="https://www.tu-chemnitz.de/MERGE/project/federal-cluster"target="_blank" rel="noopener" class="external">Merge Technologies for Multifunctional Lightweight Structures</a> aims towards the fusion of several fundamental production technologies for the resource-efficient production of of high-strength, high-stiffness multifunctional lightweight structures suitable for mass-production.
+Each of these production technologies work with a set of different materials like metal (bulk, foam, tape), plastics or textile reinforcements.
+They also face the problem of sensor integration during the production process for in-situ measurements as well as for actuating modules.
+For different applications (i.e. automotive production), several of these production technologies have to be merged together to fulfill today&rsquo;s demands of the industry.
+However, the properties of such compounds depend to a great extent on the respective manufacturing processes, meaning that the manufacturing and design conditions cannot be examined separately.
+In order to guarantee of the quality and safety of the produced components, simulation and prediction of residual stresses induced by different manufacturing processes is necessary.
+This very demanding task and the necessary development of adaptive FEM-code is considered within the sub-project IRD F1 of the interdisciplinary cross-sectional research area, IRD F.
+The simulations are also utilized for an optimization of the manufacturing process, regarding different process parameters.
+This enormous computational task will be supported by efficient data management techniques and the use of distributed computing environments.</p>
+<p>The complexity of the optimization task requires <strong>multi-criteria optimization strategies</strong> that are tailored to the coupled problem at hand.
+Commercial software, used for injection-molding simulations, usually do not provide derivative information, therefore <strong>derivative-free optimization</strong> approaches will be employed in conjunction with <strong>reduced-order model functions</strong>.
+On the other hand, exact derivatives will be used in the case of the FE-analysis of the produced components.
+Thus, the overall <strong>bivalent optimization problem</strong> will be solved in a hybrid manner, using as much derivative information as possible.
+The optimization tool will be developed for <strong>parallel and distributed computing</strong> environments.
+Moreover, specific technologies for data management, including data organisation, data conversion and support for fast data access, will be provided.
+The efficiency of the developed optimization codes will be shown for some of the demonstrators (CCC, CCX, WERB) within MERGE.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-ARTICLE">
+	<li class="publication-item" id="OspaldBergermannHerzog:2021:1">
+	<div class="publication-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a>, <a href="../../team/alumni/kbergermann/">Kai Bergermann</a> and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+	<div class="publication-title"> An extension of the strain transfer principle for fiber reinforced materials </div>
+	<div class="publication-ref-info">
+		
+			<span> Computational Mechanics 67(5), p.1453-1463, </span>
+		
+		<span class="publication-year"> 2021 </span> <br>
+	</div>
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2010.05857">arXiv:2010.05857</a>
+		</div>
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/s00466-021-01997-4">doi:10.1007/s00466-021-01997-4</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{OspaldBergermannHerzog:2021:1,
+  AUTHOR = {Ospald, Felix and Bergermann, Kai and Herzog, Roland},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  DATE = {2021-03},
+  DOI = {10.1007/s00466-021-01997-4},
+  EPRINT = {2010.05857},
+  EPRINTTYPE = {arXiv},
+  JOURNALTITLE = {Computational Mechanics},
+  NUMBER = {5},
+  PAGES = {1453--1463},
+  TITLE = {An extension of the strain transfer principle for fiber reinforced materials},
+  VOLUME = {67},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="GoerthoferSchneiderOspaldHrymakBoehlke:2020:1">
+	<div class="publication-author"> Johannes Görthofer, Matti Schneider, <a href="../../team/alumni/fospald/">Felix Ospald</a>, Andrew Hrymak and Thomas Böhlke </div>
+	
+	
+	
+	<div class="publication-title"> Computational homogenization of sheet molding compound composites based on high fidelity representative volume elements </div>
+	<div class="publication-ref-info">
+		
+			<span> Computational Materials Science 174, </span>
+		
+		<span class="publication-year"> 2020 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1016/j.commatsci.2019.109456">doi:10.1016/j.commatsci.2019.109456</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{GoerthoferSchneiderOspaldHrymakBoehlke:2020:1,
+  AUTHOR = {Görthofer, Johannes and Schneider, Matti and Ospald, Felix and Hrymak, Andrew and Böhlke, Thomas},
+  PUBLISHER = {Elsevier BV},
+  DATE = {2020-03},
+  DOI = {10.1016/j.commatsci.2019.109456},
+  JOURNALTITLE = {Computational Materials Science},
+  PAGES = {109456},
+  TITLE = {Computational homogenization of sheet molding compound composites based on high fidelity representative volume elements},
+  VOLUME = {174},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="OspaldHerzog:2020:1">
+	<div class="publication-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+		<span class="publication-title"> Short note on a relation between the inverse of the cosine and Carlson&#39;s elliptic integral $R_D$, </span>
+		<span class="publication-year"> 2020 </span> <br>
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/2001.02203">arXiv:2001.02203</a>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ONLINE{OspaldHerzog:2020:1,
+  AUTHOR = {Ospald, Felix and Herzog, Roland},
+  DATE = {2020-01},
+  EPRINT = {2001.02203},
+  EPRINTTYPE = {arXiv},
+  TITLE = {Short note on a relation between the inverse of the cosine and Carlson&#39;s elliptic integral $R_D$},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Ospald:2019:1">
+	<div class="publication-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> </div>
+	
+	
+	
+	<div class="publication-title"> fibergen: An introductory tool for FFT-based material homogenization </div>
+	<div class="publication-ref-info">
+		
+			<span> Journal of Open Source Software 4(34), </span>
+		
+		<span class="publication-year"> 2019 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.21105/joss.01027">doi:10.21105/joss.01027</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{Ospald:2019:1,
+  AUTHOR = {Ospald, Felix},
+  PUBLISHER = {The Open Journal},
+  DATE = {2019-02},
+  DOI = {10.21105/joss.01027},
+  JOURNALTITLE = {Journal of Open Source Software},
+  NUMBER = {34},
+  PAGES = {1027},
+  TITLE = {fibergen: An introductory tool for FFT-based material homogenization},
+  VOLUME = {4},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="DietzeGoldbergHerzogHannuschHofmannIhlemannKrollMeyerOspaldPeretzkiRuengerSchmidtSchrammSpringerStockmannUlkeWinter:2019:1">
+	<div class="publication-author"> Robert Dietze, Niels Goldberg, <a href="../../team/rherzog/">Roland Herzog</a>, Susann Hannusch, Michael Hofmann, Jörn Ihlemann, Lothar Kroll, Arnd Meyer, <a href="../../team/alumni/fospald/">Felix Ospald</a>, Edgar Peretzki, Gudula Rünger, Hansjörg Schmidt, Norbert Schramm, Rolf Springer, Martin Stockmann and Lars Ulke-Winter </div>
+	
+	
+	
+	<div class="publication-title"> Modellierung, integrative Simulation und Optimierung </div>
+	<div class="publication-ref-info">
+		
+			<span> Technologiefusion für multifunktionale Leichtbaustrukturen: Ressourceneffizienz durch die Schlüsseltechnologie ``Leichtbau&#39;&#39;, p.577-645, </span>
+		
+		<span class="publication-year"> 2019 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/978-3-662-54734-2_8">doi:10.1007/978-3-662-54734-2_8</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INCOLLECTION{DietzeGoldbergHerzogHannuschHofmannIhlemannKrollMeyerOspaldPeretzkiRuengerSchmidtSchrammSpringerStockmannUlkeWinter:2019:1,
+  AUTHOR = {Dietze, Robert and Goldberg, Niels and Herzog, Roland and Hannusch, Susann and Hofmann, Michael and Ihlemann, Jörn and Kroll, Lothar and Meyer, Arnd and Ospald, Felix and Peretzki, Edgar and Rünger, Gudula and Schmidt, Hansjörg and Schramm, Norbert and Springer, Rolf and Stockmann, Martin and Ulke-Winter, Lars},
+  EDITOR = {Kroll, Lothar},
+  PUBLISHER = {Springer Berlin Heidelberg},
+  BOOKTITLE = {Technologiefusion für multifunktionale Leichtbaustrukturen: Ressourceneffizienz durch die Schlüsseltechnologie ``Leichtbau&#39;&#39;},
+  DATE = {2019},
+  DOI = {10.1007/978-3-662-54734-2_8},
+  PAGES = {577--645},
+  TITLE = {Modellierung, integrative Simulation und Optimierung},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Ospald:2019:2">
+	<div class="publication-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> </div>
+	
+	
+	
+	<div class="publication-title"> Contributions to the Simulation and Optimization of the Manufacturing Process and the Mechanical Properties of Short Fiber-Reinforced Plastic Parts </div>
+	<div class="publication-ref-info">
+		
+			<span> Ph.D. thesis, Technische Universität Chemnitz, Germany, </span>
+		
+		<span class="publication-year"> 2019 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a href="https://www.nbn-resolving.de/urn:nbn:de:bsz:ch1-qucosa2-365224"target="_blank" rel="noopener" class="external">urn:nbn:de:bsz:ch1-qucosa2-365224</a>
+		</div>
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@THESIS{Ospald:2019:2,
+  AUTHOR = {Ospald, Felix},
+  INSTITUTION = {Technische Universität Chemnitz, Germany},
+  DATE = {2019},
+  EPRINT = {urn:nbn:de:bsz:ch1-qucosa2-365224},
+  EPRINTTYPE = {urn},
+  TITLE = {Contributions to the Simulation and Optimization of the Manufacturing Process and the Mechanical Properties of Short Fiber-Reinforced Plastic Parts},
+  TYPE = {phdthesis},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="KoeblerSchneiderOspaldAndraeMueller:2018:1">
+	<div class="publication-author"> Jonathan Köbler, Matti Schneider, <a href="../../team/alumni/fospald/">Felix Ospald</a>, Heiko Andrä and Ralf Müller </div>
+	
+	
+	
+	<div class="publication-title"> Fiber orientation interpolation for the multiscale analysis of short fiber reinforced composite parts </div>
+	<div class="publication-ref-info">
+		
+			<span> Computational Mechanics 61(6), p.729-750, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/s00466-017-1478-0">doi:10.1007/s00466-017-1478-0</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{KoeblerSchneiderOspaldAndraeMueller:2018:1,
+  AUTHOR = {Köbler, Jonathan and Schneider, Matti and Ospald, Felix and Andrä, Heiko and Müller, Ralf},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  DATE = {2018-04},
+  DOI = {10.1007/s00466-017-1478-0},
+  JOURNALTITLE = {Computational Mechanics},
+  NUMBER = {6},
+  PAGES = {729--750},
+  TITLE = {Fiber orientation interpolation for the multiscale analysis of short fiber reinforced composite parts},
+  VOLUME = {61},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="OspaldHerzog:2017:1">
+	<div class="publication-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+	<div class="publication-title"> SIMP based topology optimization for injection molding of SFRPs </div>
+	<div class="publication-ref-info">
+		
+			<span> Advances in Structural and Multidisciplinary Optimization, p.850-861, </span>
+		
+		<span class="publication-year"> 2017 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/978-3-319-67988-4_65">doi:10.1007/978-3-319-67988-4_65</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{OspaldHerzog:2017:1,
+  AUTHOR = {Ospald, Felix and Herzog, Roland},
+  PUBLISHER = {Springer International Publishing},
+  BOOKTITLE = {Advances in Structural and Multidisciplinary Optimization},
+  DATE = {2017-12},
+  DOI = {10.1007/978-3-319-67988-4_65},
+  NOTE = {Proceedings of the 12th World Congress on Structural and Multidisciplinary Optimization},
+  PAGES = {850--861},
+  TITLE = {SIMP based topology optimization for injection molding of SFRPs},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="OspaldHerzog:2017:2">
+	<div class="publication-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+	<div class="publication-title"> Topology optimization for injection molding of short fiber-reinforced plastics </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings in Applied Mathematics and Mechanics 17(1), p.337-338, </span>
+		
+		<span class="publication-year"> 2017 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/pamm.201710138">doi:10.1002/pamm.201710138</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{OspaldHerzog:2017:2,
+  AUTHOR = {Ospald, Felix and Herzog, Roland},
+  PUBLISHER = {Wiley-Blackwell},
+  DATE = {2017-12},
+  DOI = {10.1002/pamm.201710138},
+  JOURNALTITLE = {Proceedings in Applied Mathematics and Mechanics},
+  NUMBER = {1},
+  PAGES = {337--338},
+  TITLE = {Topology optimization for injection molding of short fiber-reinforced plastics},
+  VOLUME = {17},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="GoldbergOspaldSchneider:2017:1">
+	<div class="publication-author"> Niels Goldberg, <a href="../../team/alumni/fospald/">Felix Ospald</a> and Matti Schneider </div>
+	
+	
+	
+	<div class="publication-title"> A fiber orientation-adapted integration scheme for computing the hyperelastic Tucker average for short fiber reinforced composites </div>
+	<div class="publication-ref-info">
+		
+			<span> Computational Mechanics 60(4), p.595-611, </span>
+		
+		<span class="publication-year"> 2017 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/s00466-017-1425-0">doi:10.1007/s00466-017-1425-0</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{GoldbergOspaldSchneider:2017:1,
+  AUTHOR = {Goldberg, Niels and Ospald, Felix and Schneider, Matti},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  DATE = {2017-06},
+  DOI = {10.1007/s00466-017-1425-0},
+  JOURNALTITLE = {Computational Mechanics},
+  NUMBER = {4},
+  PAGES = {595--611},
+  TITLE = {A fiber orientation-adapted integration scheme for computing the hyperelastic Tucker average for short fiber reinforced composites},
+  VOLUME = {60},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogOspald:2017:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a> and <a href="../../team/alumni/fospald/">Felix Ospald</a> </div>
+	
+	
+	
+	<div class="publication-title"> Parameter identification for short fiber-reinforced plastics using optimal experimental design </div>
+	<div class="publication-ref-info">
+		
+			<span> International Journal for Numerical Methods in Engineering 110(8), p.703-725, </span>
+		
+		<span class="publication-year"> 2017 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/nme.5371">doi:10.1002/nme.5371</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogOspald:2017:1,
+  AUTHOR = {Herzog, Roland and Ospald, Felix},
+  PUBLISHER = {John Wiley \&amp; Sons, Ltd},
+  DATE = {2017},
+  DOI = {10.1002/nme.5371},
+  JOURNALTITLE = {International Journal for Numerical Methods in Engineering},
+  NUMBER = {8},
+  PAGES = {703--725},
+  TITLE = {Parameter identification for short fiber-reinforced plastics using optimal experimental design},
+  VOLUME = {110},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="KabelFinkOspaldSchneider:2016:1">
+	<div class="publication-author"> Matthias Kabel, Andreas Fink, <a href="../../team/alumni/fospald/">Felix Ospald</a> and Matti Schneider </div>
+	
+	
+	
+	<div class="publication-title"> Nonlinear composite voxels and FFT-based homogenization </div>
+	<div class="publication-ref-info">
+		
+			<span> ECCOMAS, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.7712/100016.1944.5977">doi:10.7712/100016.1944.5977</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{KabelFinkOspaldSchneider:2016:1,
+  AUTHOR = {Kabel, Matthias and Fink, Andreas and Ospald, Felix and Schneider, Matti},
+  BOOKTITLE = {ECCOMAS},
+  DATE = {2016},
+  DOI = {10.7712/100016.1944.5977},
+  TITLE = {Nonlinear composite voxels and FFT-based homogenization},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="OspaldHerzog:2016:1">
+	<div class="publication-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> and <a href="../../team/rherzog/">Roland Herzog</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal experimental design to identify the average stress-strain response in short fiber-reinforced plastics </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings in Applied Mathematics and Mechanics 16(1), p.673-674, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/pamm.201610325">doi:10.1002/pamm.201610325</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{OspaldHerzog:2016:1,
+  AUTHOR = {Ospald, Felix and Herzog, Roland},
+  DATE = {2016},
+  DOI = {10.1002/pamm.201610325},
+  JOURNALTITLE = {Proceedings in Applied Mathematics and Mechanics},
+  NUMBER = {1},
+  PAGES = {673--674},
+  TITLE = {Optimal experimental design to identify the average stress-strain response in short fiber-reinforced plastics},
+  VOLUME = {16},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="SchneiderOspaldKabel:2016:1">
+	<div class="publication-author"> Matti Schneider, <a href="../../team/alumni/fospald/">Felix Ospald</a> and Matthias Kabel </div>
+	
+	
+	
+	<div class="publication-title"> Computational homogenization of elasticity on a staggered grid </div>
+	<div class="publication-ref-info">
+		
+			<span> International Journal for Numerical Methods in Engineering 105(9), p.693-720, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/nme.5008">doi:10.1002/nme.5008</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{SchneiderOspaldKabel:2016:1,
+  AUTHOR = {Schneider, Matti and Ospald, Felix and Kabel, Matthias},
+  DATE = {2016},
+  DOI = {10.1002/nme.5008},
+  JOURNALTITLE = {International Journal for Numerical Methods in Engineering},
+  NUMBER = {9},
+  PAGES = {693--720},
+  TITLE = {Computational homogenization of elasticity on a staggered grid},
+  VOLUME = {105},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="SchneiderOspaldKabel:2016:2">
+	<div class="publication-author"> Matti Schneider, <a href="../../team/alumni/fospald/">Felix Ospald</a> and Matthias Kabel </div>
+	
+	
+	
+	<div class="publication-title"> A model order reduction method for computational homogenization at finite strains on regular grids using hyperelastic laminates to approximate interfaces </div>
+	<div class="publication-ref-info">
+		
+			<span> Computer Methods in Applied Mechanics and Engineering 309, p.476-496, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1016/j.cma.2016.06.021">doi:10.1016/j.cma.2016.06.021</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{SchneiderOspaldKabel:2016:2,
+  AUTHOR = {Schneider, Matti and Ospald, Felix and Kabel, Matthias},
+  DATE = {2016},
+  DOI = {10.1016/j.cma.2016.06.021},
+  JOURNALTITLE = {Computer Methods in Applied Mechanics and Engineering},
+  PAGES = {476--496},
+  TITLE = {A model order reduction method for computational homogenization at finite strains on regular grids using hyperelastic laminates to approximate interfaces},
+  VOLUME = {309},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HannuschHerzogHofmannIhlemannKrollMeyerOspaldRuengerSpringerStockmannUlkeWinter:2015:1">
+	<div class="publication-author"> Susann Hannusch, Michael Herzog, Jörn Ihlemann, Lothar Kroll, Arnd Meyer, <a href="../../team/alumni/fospald/">Felix Ospald</a>, Gudula Rünger, Rolf Springer, Martin Stockmann and Lars Ulke-Winter </div>
+	
+	
+	
+	<div class="publication-title"> Efficient simulation, optimization, and validation of lightweight structures </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings of the 2nd International MERGE Technologies Conference for Lightweight Structures (IMTC 2015), p.219-227, </span>
+		
+		<span class="publication-year"> 2015 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1364/ofs.2018.tub6">doi:10.1364/ofs.2018.tub6</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{HannuschHerzogHofmannIhlemannKrollMeyerOspaldRuengerSpringerStockmannUlkeWinter:2015:1,
+  AUTHOR = {Hannusch, Susann and Herzog, Roland Hofmann, Michael and Ihlemann, Jörn and Kroll, Lothar and Meyer, Arnd and Ospald, Felix and Rünger, Gudula and Springer, Rolf and Stockmann, Martin and Ulke-Winter, Lars},
+  BOOKTITLE = {Proceedings of the 2nd International MERGE Technologies Conference for Lightweight Structures (IMTC 2015)},
+  DATE = {2015},
+  DOI = {10.1364/ofs.2018.tub6},
+  PAGES = {219--227},
+  TITLE = {Efficient simulation, optimization, and validation of lightweight structures},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="SchneiderOspaldKabel:2015:1">
+	<div class="publication-author"> Matti Schneider, <a href="../../team/alumni/fospald/">Felix Ospald</a> and Matthias Kabel </div>
+	
+	
+	
+	<div class="publication-title"> Computational homogenization of elasticity at large deformations on a staggered grid </div>
+	<div class="publication-ref-info">
+		
+			<span> Conference Proceedings of the YIC GACM 2015, p.178-181, </span>
+		
+		<span class="publication-year"> 2015 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.18154/RWTH-2015-03980">doi:10.18154/RWTH-2015-03980</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{SchneiderOspaldKabel:2015:1,
+  AUTHOR = {Schneider, Matti and Ospald, Felix and Kabel, Matthias},
+  BOOKTITLE = {Conference Proceedings of the YIC GACM 2015},
+  DATE = {2015},
+  DOI = {10.18154/RWTH-2015-03980},
+  PAGES = {178--181},
+  TITLE = {Computational homogenization of elasticity at large deformations on a staggered grid},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HofmannOspaldSchmidtSpringer:2014:1">
+	<div class="publication-author"> Michael Hofmann, <a href="../../team/alumni/fospald/">Felix Ospald</a>, Hansjorg Schmidt and Rolf Springer </div>
+	
+	
+	
+	<div class="publication-title"> Programming support for the flexible coupling of distributed software components for scientific simulations </div>
+	<div class="publication-ref-info">
+		
+			<span> Software Engineering and Applications (ICSOFT-EA), 2014 9th International Conference on, p.506-511, </span>
+		
+		<span class="publication-year"> 2014 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.5220/0005105405060511">doi:10.5220/0005105405060511</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INPROCEEDINGS{HofmannOspaldSchmidtSpringer:2014:1,
+  AUTHOR = {Hofmann, Michael and Ospald, Felix and Schmidt, Hansjorg and Springer, Rolf},
+  BOOKTITLE = {Software Engineering and Applications (ICSOFT-EA), 2014 9th International Conference on},
+  DATE = {2014-08},
+  DOI = {10.5220/0005105405060511},
+  PAGES = {506--511},
+  TITLE = {Programming support for the flexible coupling of distributed software components for scientific simulations},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Ospald:2014:1">
+	<div class="publication-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> </div>
+	
+	
+	
+	<div class="publication-title"> Numerical simulation of injection molding using OpenFOAM </div>
+	<div class="publication-ref-info">
+		
+			<span> Proceedings in Applied Mathematics and Mechanics 14(1), p.673-674, </span>
+		
+		<span class="publication-year"> 2014 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/pamm.201410320">doi:10.1002/pamm.201410320</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{Ospald:2014:1,
+  AUTHOR = {Ospald, Felix},
+  DATE = {2014},
+  DOI = {10.1002/pamm.201410320},
+  JOURNALTITLE = {Proceedings in Applied Mathematics and Mechanics},
+  NUMBER = {1},
+  PAGES = {673--674},
+  TITLE = {Numerical simulation of injection molding using OpenFOAM},
+  VOLUME = {14},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+			<h2> Associated Software </h2>
+<ul class="software-list" id="software">
+	<li class="software-item" id="Ospald:2019:3">
+	<div class="software-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> </div>
+	
+	
+		<span class="software-title"> fibergen: An introductory tool for FFT-based material homogenization, </span>
+		<span class="software-year">  </span> <br>
+	
+	
+	
+	
+	
+		<div class="software-link">
+			<a href="https://github.com/fospald/fibergen/"target="_blank" rel="noopener" class="external">https://github.com/fospald/fibergen/</a>
+		</div>
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@SOFTWARE{Ospald:2019:3,
+  AUTHOR = {Ospald, Felix},
+  URL = {https://github.com/fospald/fibergen/},
+  TITLE = {fibergen: An introductory tool for FFT-based material homogenization},
+}</pre>
+		</details>
+	
+</li>
+<li class="software-item" id="Ospald:2018:1">
+	<div class="software-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> </div>
+	
+	
+		<span class="software-title"> A solver in OpenFOAM for the simulation of injection molding, </span>
+		<span class="software-year">  </span> <br>
+	
+	
+	
+	
+	
+		<div class="software-link">
+			<a href="https://github.com/fospald/injectionMoldingFoam/"target="_blank" rel="noopener" class="external">https://github.com/fospald/injectionMoldingFoam/</a>
+		</div>
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@SOFTWARE{Ospald:2018:1,
+  AUTHOR = {Ospald, Felix},
+  URL = {https://github.com/fospald/injectionMoldingFoam/},
+  TITLE = {A solver in OpenFOAM for the simulation of injection molding},
+}</pre>
+		</details>
+	
+</li>
+<li class="software-item" id="Ospald:2018:2">
+	<div class="software-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> </div>
+	
+	
+		<span class="software-title"> A Python tool for the topology optimization of short fiber reinforced plastics, </span>
+		<span class="software-year">  </span> <br>
+	
+	
+	
+	
+	
+		<div class="software-link">
+			<a href="https://github.com/fospald/SFRP_Topology_Optimization/"target="_blank" rel="noopener" class="external">https://github.com/fospald/SFRP_Topology_Optimization/</a>
+		</div>
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@SOFTWARE{Ospald:2018:2,
+  AUTHOR = {Ospald, Felix},
+  URL = {https://github.com/fospald/SFRP_Topology_Optimization/},
+  TITLE = {A Python tool for the topology optimization of short fiber reinforced plastics},
+}</pre>
+		</details>
+	
+</li>
+<li class="software-item" id="Ospald:2018:3">
+	<div class="software-author"> <a href="../../team/alumni/fospald/">Felix Ospald</a> </div>
+	
+	
+		<span class="software-title"> The shortest path algorithm on the surface of OpenFOAM meshes, </span>
+		<span class="software-year">  </span> <br>
+	
+	
+	
+	
+	
+		<div class="software-link">
+			<a href="https://github.com/fospald/fastMarchingFoam/"target="_blank" rel="noopener" class="external">https://github.com/fospald/fastMarchingFoam/</a>
+		</div>
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@SOFTWARE{Ospald:2018:3,
+  AUTHOR = {Ospald, Felix},
+  URL = {https://github.com/fospald/fastMarchingFoam/},
+  TITLE = {The shortest path algorithm on the surface of OpenFOAM meshes},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+ 				
+					<img  class="logo-project-single" src="../../img/consortiumlogos/MERGE.jpg" alt="Consortium logo">
+				
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

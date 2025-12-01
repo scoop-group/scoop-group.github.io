@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Lineare Algebra I | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/teaching/2023ws/lecture-lineare-algebra/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../../news">News</a> </li>
+			
+				<li> <a href="../../../team">Team</a> </li>
+			
+				<li> <a href="../../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../../publications">Publications</a> </li>
+			
+				<li> <a href="../../../talks">Talks</a> </li>
+			
+				<li> <a href="../../../software">Software</a> </li>
+			
+				<li> <a href="../../../projects">Projects</a> </li>
+			
+				<li> <a href="../../../events">Events</a> </li>
+			
+				<li> <a href="../../../theses">Theses</a> </li>
+			
+				<li> <a href="../../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+		
+			<h1>Lineare Algebra I</h1>
+		
+		<div class="metadata">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+				
+					
+					
+					
+						
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+			
+				
+				
+				
+					<span> Semester: 2023 WS</span>
+					<br>
+				
+				
+				
+				
+					<span> Veranstaltungstyp: Vorlesung</span>
+					<br>
+				
+
+				
+				
+					<span> Sprachen: Deutsch</span>
+					<br>
+				
+
+				
+				
+					<span> Verantwortlich: <span class="teachers-list"><a href="../../../team/rherzog/">Roland Herzog</a>, <a href="../../../team/gm%C3%BCller/">Georg Müller</a></span></span>
+				<br>
+
+				
+				
+				
+				
+				
+				
+				<span> Kontakt: <a href="../../../forwards/teachingContact/scoop-teaching-LA" >E-Mail senden</a></span>
+				<br>
+				
+				
+				
+				
+					<span> Webseiten zu diesem Kurs: </span>
+				
+
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1723">MÜSLI</a>, <a href="https://mampf.mathi.uni-heidelberg.de/lectures/175 ">MaMpf</a>, 
+
+
+
+
+
+
+
+
+
+	
+
+
+<a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.veranstnr=11BMAV0130%2c11BMAU0130&veranstaltung.semester=20232&P_start=0&P_anzahl=50&P.sort=veranstaltung.dtxt&_form=display">LSF</a><br>
+				
+				
+				
+					<span> Prüfungstermine: <a href="#pr%c3%bcfung"title="Ersttermin 13.02.2024, Zweittermin 10.04.2024">Ersttermin 13.02.2024, Zweittermin 10.04.2024</a> </span>
+					<br>
+				
+			
+		</div>
+	</header>
+	<hr>
+	<article>
+		<h2> Kursinformationen </h2>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#beschreibung">Beschreibung</a></li>
+    <li><a href="#vorkenntnisse">Vorkenntnisse</a></li>
+    <li><a href="#veranstaltungskonzept">Veranstaltungskonzept</a>
+      <ul>
+        <li><a href="#vorlesung-und-skript">Vorlesung und Skript</a></li>
+        <li><a href="#übungsbetrieb">Übungsbetrieb</a></li>
+        <li><a href="#plenarübung">Plenarübung</a></li>
+        <li><a href="#kleingruppenübungen">Kleingruppenübungen</a></li>
+      </ul>
+    </li>
+    <li><a href="#termine-und-zeitplan">Termine und Zeitplan</a></li>
+    <li><a href="#registrierung">Registrierung</a></li>
+    <li><a href="#prüfung">Prüfung</a>
+      <ul>
+        <li><a href="#format">Format</a></li>
+        <li><a href="#termine-und-zeiten">Termine und Zeiten</a></li>
+        <li><a href="#anmeldung-zur-prüfung">Anmeldung zur Prüfung</a></li>
+        <li><a href="#abmeldung-von-der-prüfung">Abmeldung von der Prüfung</a></li>
+        <li><a href="#zulassung-zur-prüfung">Zulassung zur Prüfung</a></li>
+        <li><a href="#klausureinsicht">Klausureinsicht</a></li>
+      </ul>
+    </li>
+    <li><a href="#inhaltliches-material-zur-veranstaltung">Inhaltliches Material zur Veranstaltung</a>
+      <ul>
+        <li><a href="#skript">Skript</a></li>
+        <li><a href="#vorlesungsfolien">Vorlesungsfolien</a></li>
+        <li><a href="#vorlesungsmitschrift">Vorlesungsmitschrift</a></li>
+        <li><a href="#plenarübungsfolien">Plenarübungsfolien</a></li>
+        <li><a href="#plenarübungsmitschrift">Plenarübungsmitschrift</a></li>
+        <li><a href="#übungsaufgaben">Übungsaufgaben</a></li>
+        <li><a href="#material-für-die-prüfungsvorbereitung">Material für die Prüfungsvorbereitung</a></li>
+        <li><a href="#literatur">Literatur</a></li>
+      </ul>
+    </li>
+    <li><a href="#weitere-angebote-für-studieneinsteiger">Weitere Angebote für Studieneinsteiger</a>
+      <ul>
+        <li><a href="#help-desk">Help-Desk</a></li>
+        <li><a href="#proseminar-fun-facts-aus-der-analysis-und-linearen-algebra">Proseminar &ldquo;Fun Facts aus der Analysis und Linearen Algebra&rdquo;</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="beschreibung">
+	Beschreibung
+	<a href="#beschreibung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>In dieser Lehrveranstaltung werden grundlegende mathematische Strukturen und Beweistechniken eingeführt sowie lineare Strukturen wie Vektorräume, Abbildungen zwischen Vektorräumen und lineare Gleichungssysteme behandelt.
+Das abstrakte und strukturierte Denken im Rahmen grundlegender mathematischer Strukturen wird trainiert und die Teilnehmer:innen befähigt, kurze mathematische Beweise eigenständig zu führen.</p>
+<h2 id="vorkenntnisse">
+	Vorkenntnisse
+	<a href="#vorkenntnisse" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Dieser Kurs ist für Studierende im ersten Fachsemester vorgesehen.
+Schulisches Vorwissen ist ausreichend.</p>
+<h2 id="veranstaltungskonzept">
+	Veranstaltungskonzept
+	<a href="#veranstaltungskonzept" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Diese Lehrveranstaltung setzt sich aus verschiedenen Komponenten zusammen:</p>
+<ul>
+<li>Skript zur Vorlesung</li>
+<li>zwei Prüfungstermine (Klausur) zum Ende der Veranstaltung</li>
+<li>Je Woche:
+<ul>
+<li>zwei Vorlesungstermine zu je 90 Minuten</li>
+<li>ein Plenarübungstermin</li>
+<li>ein Übungsblatt mit Hausaufgaben</li>
+<li>Kleingruppenübungen (auch als Tutorien bezeichnet)</li>
+</ul>
+</li>
+</ul>
+<p>Das <a href="./Organisatorisches.pdf"title="Konzept und organisatorische Details zur Veranstaltung">Konzept und organisatorische Details zur Veranstaltung</a> wurden im Vorbesprechungstermin am Montag den 16.10.2023 um 14:15 Uhr (dem Termin der Plenarübung) vorgestellt.</p>
+<p>Das Material zu dieser Lehrveranstaltung ist in Inhaltswochen organisiert, siehe auch <a href="#termine-und-zeitplan"title="Termine und Zeitplan">Termine und Zeitplan</a>.</p>
+<p>Eng verbunden mit dieser und anderen Mathematikveranstaltungen des ersten Studiensemesters ist zudem das <a href="#help-desk"title="Help-Desk-Angebot">Help-Desk-Angebot</a>.</p>
+<h3 id="vorlesung-und-skript">
+	Vorlesung und Skript
+	<a href="#vorlesung-und-skript" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Die Vorlesung mit dem dazugehörigen Skript ist die zentrale Komponente dieser Veranstaltung.
+In der Vorlesung werden Ihnen neue Inhalte vermittelt.
+Individuelle Vor- und insbesondere Nachbereitung des Vorlesungsmaterials sind empfohlen.
+Der Zeitaufwand für die Vor- und Nachbereitung des Vorlesungsmaterials sollte nicht unterschätzt werden und kann durchaus bei 6 Stunden pro Woche liegen.
+Inhaltliche Fragen sollten Sie vorzugsweise in den <a href="#kleingruppen%c3%bcbungen"title="Kleingruppenübungen">Kleingruppenübungen</a> oder im Rahmen des <a href="#help-desk"title="Help-Desk-Angebots">Help-Desk-Angebots</a> klären, aber auch während und im Anschluss an die Vorlesung und die Plenarübung gibt es die Möglichkeit, Fragen zu stellen.</p>
+<h3 id="übungsbetrieb">
+	Übungsbetrieb
+	<a href="#%c3%bcbungsbetrieb" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Um die Vorlesungsinhalte wirklich zu durchdringen und die vorgestellten Techniken sicher anwenden zu können, ist eine praktische Übungsphase essentiell.
+Der von uns angebotene Übungsbetrieb besteht aus Übungsaufgaben, den Kleingruppenübungen und einer Plenarübung.
+Außerhalb der Übungszeiten steht Ihnen das <a href="#help-desk"title="Help-Desk-Angebot">Help-Desk-Angebot</a> zur Verfügung.</p>
+<h4 id="übungsblätter">
+	Übungsblätter
+	<a href="#%c3%bcbungsbl%c3%a4tter" class="h-anchor" aria-hidden="true">#</a>
+</h4><p>Kernkomponente des Übungsbetriebs sind Hausaufgaben, die jeweils zu Beginn der Inhaltswoche auf einem Übungsblatt ausgegeben werden und von Ihnen in möglichst festen Gruppen von mindestens zwei und höchstens drei Personen bis zum Ende der entsprechenden Inhaltswoche bearbeitet werden sollen.
+Sie können Ihre Gruppen frei bilden, naheliegend ist es aber, Gruppen innerhalb Ihrer <a href="#kleingruppen%c3%bcbungen"title="Kleingruppenübung">Kleingruppenübung</a> zu formen.
+Für jede Gruppe soll <em>ein</em> Lösungsexemplar für alle Aufgaben der entsprechenden Woche ausformuliert und als <em>eine</em> PDF-Datei über <a href="https://mampf.mathi.uni-heidelberg.de/lectures/175 ">MaMpf</a>
+ zum Ende der Inhaltswoche eingereicht werden.
+Bitte achten Sie aber darauf, dass Sie beim Anlegen der Abgaben in Mampf ihr Tutorium auswählen! Sollten sie eine tutoriumsübergreifende Abgabegruppe gebildet haben, dann wählen Sie bitte eines der Tutorien aus, das Ihre Gruppenmitglieder besuchen, und ordnen Ihre Abgaben zukünftig immer diesem gleichen Tutorium zu.
+Handgeschriebene, gescannte Unterlagen sind ausreichend.</p>
+<p>Ihre Abgaben werden bewertet und kommentiert.
+Sie erhalten Zugriff auf die Bewertung und die Kommentare zu Ihrer Abgabe über das Abgabeportal (<a href="https://mampf.mathi.uni-heidelberg.de/lectures/175 ">MaMpf</a>
+).
+Dies soll Ihnen einerseits ermöglichen, die Qualität Ihrer Arbeit einzuschätzen, andererseits ist die erfolgreiche Bearbeitung der Hausaufgaben Voraussetzung für die <a href="#zulassung-zur-pr%c3%bcfung"title="Zulassung zur Prüfung">Zulassung zur Prüfung</a>.</p>
+<p>Nach Ende der Abgabephase Ihrer Lösungen zum Abschluss der Inhaltswoche werden wir Lösungsvorschläge zu den Übungsaufgaben veröffentlichen.
+Unsere Musterlösungen sollen hauptsächlich zeigen, wie sauber ausgearbeitete Lösungen zu bekannten Aufgaben aussehen können.</p>
+<h3 id="plenarübung">
+	Plenarübung
+	<a href="#plenar%c3%bcbung" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Die Plenarübung ist ein Lehrangebot im Frontalformat, welches den Vorlesungsbetrieb und den restlichen Übungsbetrieb ergänzt.
+Hier können unter anderem</p>
+<ul>
+<li>offene Fragen geklärt werden,</li>
+<li>Vorlesungsinhalte vertieft werden und</li>
+<li>Übungsaufgaben und deren Lösungen besprochen werden.</li>
+</ul>
+<p>Die Plenarübung markiert das Ende unserer Inhaltswochen und liegt nach dem Abgabezeitpunkt der Hausaufgaben.
+Sie ist also die beste Gelegenheit, verbliebene Unklarheiten aus dem Weg zu schaffen.
+Um sicher zu stellen, dass Sie den größten Mehrwert aus der relativ frei gestaltbaren Plenarübung ziehen können, haben wir die unten stehenden (sehr kurzen) anonymisierten Abfragen erstellt, in denen Sie uns bitte mitteilen sollen, worauf Sie in den jeweiligen Plenarübungen den Fokus sehen möchten.</p>
+<ul>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/796898?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 01 (§1-§3)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/367523?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 02 (§4-§5)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/376334?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 03 (§6)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/319787?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 04 (§7-§7.3)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/569848?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 05 (§7.4-§8)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/337456?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 06 (§8.1-§9)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/113877?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 07 (§10-§11)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/599396?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 08 (§12)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/757778?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 09 (§13-14)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/167711?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 10 (§15)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/671345?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 11 (§15.5-§16)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/831116?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 12 (§17)</a></li>
+<li><a href="https://limesurvey.urz.uni-heidelberg.de/index.php/837553?lang=de"target="_blank" rel="noopener" class="external">Umfrage Plenarübung Woche 13 (§18-§19)</a></li>
+</ul>
+<p>In der Plenarübung wird kein zusätzliches prüfungsrelevantes Material eingeführt.
+Die Teilnahme und aktive Mitgestaltung über die Umfragen und vor Ort wird jedoch empfohlen.</p>
+<h3 id="kleingruppenübungen">
+	Kleingruppenübungen
+	<a href="#kleingruppen%c3%bcbungen" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>In den Kleingruppenübungen (auch Tutorien genannt) besteht die Möglichkeit, den Inhalt der Vorlesung zu diskutieren, zu vertiefen oder gemeinsam an den Hausaufgaben zu arbeiten.
+Auch wenn Sie Fragen zu den Bewertungen Ihrer Abgaben haben, ist dies der Ort, sie zu stellen.
+Zu etwa gleichen Teilen werden bisherige Inhalte diskutiert und aktuelle Inhalte aufbereitet.</p>
+<p>Um an einer Kleingruppenübung teilzunehmen, melden Sie sich bitte über <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1723">MÜSLI</a> zu einer der Gruppe an.</p>
+<h2 id="termine-und-zeitplan">
+	Termine und Zeitplan
+	<a href="#termine-und-zeitplan" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Informationen zu den Terminen der Vorlesung und der Plenarübung finden Sie im 
+
+
+
+
+
+
+
+
+
+	
+
+
+<a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.veranstnr=11BMAV0130%2c11BMAU0130&veranstaltung.semester=20232&P_start=0&P_anzahl=50&P.sort=veranstaltung.dtxt&_form=display">LSF</a>.
+Die Informationen für die Termine der Kleingruppenübungen finden Sie im <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1723">MÜSLI</a>.</p>
+<p>Einen Überblick über den zeitlichen Ablauf der Veranstaltung mit ihren Inhaltswochen können Sie sich anhand des <a href="./schedule.pdf"title="Veranstaltungskalenders">Veranstaltungskalenders</a> verschaffen.</p>
+<h2 id="registrierung">
+	Registrierung
+	<a href="#registrierung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Um sich für den Kurs zu registrieren, melden Sie sich bitte über <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1723">MÜSLI</a> für eine <a href="#kleingruppen%c3%bcbungen"title="Kleingruppenübung">Kleingruppenübung</a> an.
+Bitte melden Sie dort Ihre bevorzugten Übungstermine.
+Eine (automatisierte) Zuordnung der Teilnehmer:innen zu den Übungsgruppen findet am Dienstag 2023-10-17 morgens statt, sie haben also bis einschließlich Montag 2023-10-16 Zeit, Ihre Präferenzen zu vermerken.
+Nach der automatisierten Zuordnung können Sie sich jederzeit in Tutorien mit freien Plätzen umschreiben.
+Bitte registrieren Sie sich auf Müsli auch dann, wenn Sie nicht vorhaben, am Übungsbetrieb teilzunehmen und nutzen Sie dafür die Gruppe am Sonntag mit 1000 Plätzen Kapazität.
+So können wir die Anzahl der Teilnehmenden besser abschätzen und Sie per E-Mail mit Informationen erreichen.</p>
+<p><strong>Achtung</strong>: Die Registrierung im Kurs ist noch keine Anmeldung zur Prüfung.
+Mehr Informationen hierzu gibt es im Abschnitt <a href="#pr%c3%bcfung"title="Prüfung">Prüfung</a>.</p>
+<h2 id="prüfung">
+	Prüfung
+	<a href="#pr%c3%bcfung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Zu dieser Veranstaltung bieten wir Ihnen zu zwei Terminen (zeitnah am Ende der Vorlesungszeit und gegen Ende der vorlesungsfreien Zeit) je eine schriftliche Prüfung an.
+Nach dem zweiten Prüfungstermin werden wir keine weiteren Prüfungstermine zur Linearen Algebra I in diesem Durchgang anbieten, Sie werden üblicherweise also frühestens nach dem nächsten Durchlauf der Veranstaltung im folgenden Wintersemester die Möglichkeit kriegen, eine Prüfung (bei einem anderen Dozenten) abzulegen.</p>
+<p>Sie dürfen genau dann an der ersten Prüfung teilnehmen, wenn Sie die <a href="#zulassung-zur-pr%c3%bcfung"title="Zulassungsvoraussetzungen zur Prüfung">Zulassungsvoraussetzungen zur Prüfung</a> erfüllen.
+Sie dürfen genau dann an der zweiten Prüfung teilnehmen, wenn Sie die <a href="#zulassung-zur-pr%c3%bcfung"title="Zulassungsvoraussetzungen zur Prüfung">Zulassungsvoraussetzungen zur Prüfung</a> erfüllen und nicht bereits am ersten Termin bestanden haben.
+Falls Sie am ersten Termin die Prüfung ablegen und diese nicht bestehen, so können Sie sich also noch einmal zum zweiten Termin anmelden.
+Auch, wenn Sie am ersten Termin nicht teilnehmen, können Sie sich zum zweiten Termin anmelden.
+Für jeden der Prüfungstermine, den Sie wahrnehmen möchten, müssen Sie sich separat anmelden (<a href="#anmeldung-zur-pr%c3%bcfung"title="Anmeldung zur Prüfung">Anmeldung zur Prüfung</a>).
+Jedesmal, wenn wir die Anmeldemöglichkeit für einen Klausurtermin in Müsli freischalten, geben wir Ihnen Bescheid.</p>
+<p>Nach jedem Termin für die Einsichtnahme in die Klausuren melden wir die Ergebnisse den jeweiligen Prüfungsämtern, die für die Abrechnung Ihrer Prüfungsleistungen zuständig sind.
+Für jede der Klausuren gilt:
+Wenn Sie Ihre <a href="#zulassung-zur-pr%c3%bcfung"title="Zulassung zur Prüfung">Zulassung zur Prüfung</a> erreicht haben und Sie zur Klausur angemeldet sind, dann wird Ihre Klausurnote die gemeldete Modulnote sein.
+Wenn Sie Ihre <a href="#zulassung-zur-pr%c3%bcfung"title="Zulassung zur Prüfung">Zulassung zur Prüfung</a> erreicht haben, sich zur Klausur anmelden aber dann fristgerecht wieder abmelden, dann haben Sie das Modul nicht beendet und für Sie wird keine Teilnahme an dem Klausurtermin gemeldet.
+Auch wenn Sie die <a href="#zulassung-zur-pr%c3%bcfung"title="Zulassung zur Prüfung">Zulassung zur Prüfung</a> nicht erreicht haben, haben Sie das Modul nicht beendet und erhalten keine Modulnote, selbst dann, wenn Sie sich zur Klausur in Müsli angemeldet haben sollten.</p>
+<h3 id="format">
+	Format
+	<a href="#format" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Die reguläre Bearbeitungszeit der Klausuren beträgt jeweils 120 Minuten.
+Das einzige zulässige Hilfsmittel für die Bearbeitung der Klausur wird ein beliebig (auch doppelseitig) beschriebenes oder bedrucktes DIN-A4 Blatt sein.
+(Insbesondere sollte es Ihnen möglich sein, Ihr Blatt &ndash; bis auf Brillen und Kontaktlinsen &ndash; ohne technische Hilfsmittel lesen zu können.)
+Elektronische Hilfsmittel (Smartphones, -watches etc.) werden vom Tisch entfernt werden müssen.
+Die Aufgaben beider Klausuren werden mit Methoden aus den Abschnitten §1-§19 (inklusive) lösbar sein.</p>
+<p>Für beide Klausuren gilt:
+Die erste Aufgabe wird Wahr/Falsch-Format haben.
+In dieser Aufgabe wird Ihnen eine Liste von Aussagen vorgelegt, die entweder wahr oder falsch sind.
+Ihre Aufgabe wird sein, für jede dieser Aussagen zu entscheiden, ob sie wahr oder falsch ist, und Ihre Antwort mit einem Kreuz zu markieren.
+Jede korrekte Entscheidung liefert einen Punkt.
+Jede falsche Entscheidung liefert einen Punkt Abzug.
+Die Summe der Punkte und Abzüge, mindestens aber Null, ist die erreichte Punktzahl zu dieser Aufgabe.
+In dieser ersten Aufgabe müssen Ihre Antworten nicht begründet werden.
+Der Anteil der maximal erreichbaren Punkte der ersten Aufgabe an der maximal erreichbaren Gesamtpunktzahl wird im Bereich 20-30 Prozent liegen.
+Die verbleibenden Aufgaben werden im Freitextformat gestellt sein.
+Hier sind alle Antworten grundsätzlich zu begründen.
+Sie können dafür auf alle Resultate der Vorlesung, des Skripts und des Übungsbetriebs zurückgreifen.
+Sie erhalten Papier zum Schreiben von uns.
+Sie benötigen für die Teilnahme lediglich einen Stift (der kein Bleistift und kein Rotstift ist) und Ihren Studierenden- oder einen amtlichen Lichtbildausweis.</p>
+<h3 id="termine-und-zeiten">
+	Termine und Zeiten
+	<a href="#termine-und-zeiten" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Der <strong>erste Prüfungstermin</strong> für unsere Veranstaltung ist Dienstag 2024-02-13 ab 09:30 Uhr.
+Der <strong>zweite Prüfungstermin</strong> für unsere Veranstaltung ist Mittwoch 2024-04-10 ab 09:30 Uhr.
+Die Teilnehmenden werden auf mehrere Räume verteilt sein.
+Die Verteilung auf die Räume werden wir rechtzeitig bekanntgeben.
+Bitte seien sie um 09:15 Uhr in Ihrem Prüfungsraum.
+Die Bearbeitungszeit beginnt um 09:30 Uhr.</p>
+<!-- raw HTML omitted -->
+<h3 id="anmeldung-zur-prüfung">
+	Anmeldung zur Prüfung
+	<a href="#anmeldung-zur-pr%c3%bcfung" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Die Anmeldung zum ersten Prüfungstermin ist ab sofort und bis zum 2024-01-26 in <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1723">MÜSLI</a> möglich.
+Die Anmeldung zum zweiten Prüfungstermin ist ab sofort und bis zum 2024-04-04 in <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1723">MÜSLI</a> möglich.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Sollten Sie sich für eine Prüfung anmelden aber die Zulassung nicht erreichen, so ist Ihre Anmeldung nicht gültig.
+Dies zählt nicht als Fehlversuch, wir melden in diesem Fall keine Teilnahme an der Prüfung.</p>
+<!-- raw HTML omitted -->
+<h3 id="abmeldung-von-der-prüfung">
+	Abmeldung von der Prüfung
+	<a href="#abmeldung-von-der-pr%c3%bcfung" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Sie können Ihre Anmeldung zur ersten Prüfung bis 11.02.2024 23:59 Uhr ohne Angabe von Gründen stornieren.
+Sie können Ihre Anmeldung zur zweiten Prüfung bis 08.04.2024 23:59 Uhr ohne Angabe von Gründen stornieren.
+Nach Schließung der An- und Abmeldefrist können Sie Ihre Auswahl in Müsli nicht mehr selbst editieren, dann melden Sie sich bitte <a href="../../../forwards/teachingContact/scoop-teaching-LA" >per E-Mail</a> ab.
+Wenn Sie eine angemeldete Prüfung nicht ablegen oder nach der Abmeldefrist vor dem jeweiligen Termin stornieren, so sollten Sie uns und Ihrem zuständigen Prüfungsamt eine <a href="https://www.mathinf.uni-heidelberg.de/de/dokumente/bescheinigung-der-pruefungsunfaehigkeit/download"target="_blank" rel="noopener" class="external">Prüfungsunfähigkeitsbescheinigung</a> für den entsprechenden Termin vorlegen, ansonsten melden wir die Prüfung als nicht bestanden an das Prüfungsamt.</p>
+<h3 id="zulassung-zur-prüfung">
+	Zulassung zur Prüfung
+	<a href="#zulassung-zur-pr%c3%bcfung" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Um bei uns eine Prüfung abzulegen zu können, müssen Sie mindestens eine der folgenden Voraussetzungen erfüllen:</p>
+<ol>
+<li>Sie haben sich bereits im Wintersemester 22/23 für eine Prüfung in dieser Veranstaltungsreihe qualifiziert und informieren uns darüber <a href="../../../forwards/teachingContact/scoop-teaching-LA" >per E-Mail</a> bis zum 2024-01-14.
+Bitte beachten Sie, dass Sie die Leistungen für den Erhalt Ihrer Prüfungszulassung im Wintersemester 22/23 erbracht haben müssen.
+Waren Sie im Wintersemester 22/23 ausschließlich auf Grund von Altzulassungsregelungen zur Prüfung zugelassen, dann ist das nicht ausreichend.</li>
+<li>Sie haben erfolgreich am Übungsbetrieb der Veranstaltung in diesem Semester teilgenommen.
+Hinreichend dafür ist, dass ihre Gesamtpunktzahl <strong>mindestens die Hälfte der Punktzahl</strong> beträgt, die durch Aufgaben, welche kein Wissen zu den komplexen Zahlen voraussetzen, erreichbar war.</li>
+</ol>
+<!-- raw HTML omitted -->
+<p><strong>Achtung:</strong> Ob Ihre Zulassung zur Prüfung aus unserer Veranstaltung auch in einem folgenden Durchlauf der Veranstaltung anerkannt wird, entscheidet der oder die Lehrende des jeweiligen Semesters.</p>
+<h3 id="klausureinsicht">
+	Klausureinsicht
+	<a href="#klausureinsicht" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Nach jeder Ihrer Prüfungen können Sie im Anschluss an die Korrektur zu je einem von uns vorgegebenen Termin unter unserer Aufsicht in einem dafür reservierten Raum Einsicht in Ihre Prüfung nehmen.
+Bildaufnahmen sind während der Einsichtnahme nicht gestattet, Ihre Klausur darf den Raum nicht verlassen und nicht von Ihnen verändert werden.
+Um Ihre Klausur einzusehen, bringen Sie bitte einen Lichtbildausweis mit, den Sie als Pfand bei uns gegen Ihre Klausur eintauschen.
+Bei Rückgabe Ihrer Klausur erhalten Sie Ihren Ausweis zurück.
+Wir werden Klausuren zur Einsicht nur an die Person herausgeben, welche die Klausur auch geschrieben hat.
+Einsichtnahme in Klausuren von KommilitonInnen ist (auch mit Vollmachten) nicht möglich.</p>
+<p>Die Klausuren, die am ersten Termin (2024-02-13) geschrieben wurden, können am 2024-03-21 im Seminarraum C des Mathematikons (INF 205) eingesehen werden.
+Vorgesehen ist der Zeitblock 09:00-16:00h.
+Wer seine Klausur an diesem Tag nicht einsehen kann, kann dies am Einsichtstermin für die zweite Klausur nachholen.
+Um lange Wartezeiten auf Grund der beschränkten Kapazitäten zu vermeiden, sind Sie anhand Ihrer Nachnamen, wie sie in Müsli hinterlegt sind, verschiedenen Zeitfenstern zugeordnet.
+Die Zuordnung auf die Zeitfenster mit den entsprechenden inklusiven Nachnamenbereichen bzgl lexikografischer Ordnung für das Alphabet    (Leerzeichen)(Bindestrich)AÄB&hellip;XYZ (Umlaute folgen also direkt auf ihre Reinbuchstaben) ist:
+
+
+
+
+
+<table class="la-table">
+<thead>
+<tr>
+<th style="text-align:center">Slot Beginn</th>
+<th style="text-align:center">Slot Ende</th>
+<th style="text-align:center">Von</th>
+<th style="text-align:center">Bis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">09:00</td>
+<td style="text-align:center">10:30</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Fischer</td>
+</tr>
+<tr>
+<td style="text-align:center">10:30</td>
+<td style="text-align:center">12:00</td>
+<td style="text-align:center">Fitterling</td>
+<td style="text-align:center">Kleinau</td>
+</tr>
+<tr>
+<td style="text-align:center">12:00</td>
+<td style="text-align:center">13:30</td>
+<td style="text-align:center">Kleinbach</td>
+<td style="text-align:center">Paßlick</td>
+</tr>
+<tr>
+<td style="text-align:center">13:30</td>
+<td style="text-align:center">14:45</td>
+<td style="text-align:center">Patarak</td>
+<td style="text-align:center">Semmisch</td>
+</tr>
+<tr>
+<td style="text-align:center">14:45</td>
+<td style="text-align:center">16:00</td>
+<td style="text-align:center">Seufert</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+
+
+Erfahrungsgemäß erscheinen die meisten Personen genau zu Beginn ihres jeweiligen Zeitslots.
+Sie können also Wartezeiten wahrscheinlich auch dadurch umgehen, dass Sie genau das nicht tun.</p>
+<h2 id="inhaltliches-material-zur-veranstaltung">
+	Inhaltliches Material zur Veranstaltung
+	<a href="#inhaltliches-material-zur-veranstaltung" class="h-anchor" aria-hidden="true">#</a>
+</h2><h3 id="skript">
+	Skript
+	<a href="#skript" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./lineare-algebra-skript-20231010.pdf"title="Skript (2023-10-10), Kapitel 1 (§1-§6)">Skript (2023-10-10), Kapitel 1 (§1-§6)</a></li>
+<li><a href="./lineare-algebra-skript-20231016.pdf"title="Skript (2023-10-16), Kapitel 1 (§1-§6)">Skript (2023-10-16), Kapitel 1 (§1-§6)</a>: kleinere Korrekturen</li>
+<li><a href="./lineare-algebra-skript-20231022.pdf"title="Skript (2023-10-22), Kapitel 1 (§1-§6)">Skript (2023-10-22), Kapitel 1 (§1-§6)</a>: Korrektur beim Beispiel zum direkten Beweis</li>
+<li><a href="./lineare-algebra-skript-20231029.pdf"title="Skript (2023-10-29), Kapitel 1 (§1-§6)">Skript (2023-10-29), Kapitel 1 (§1-§6)</a>: Ergänzung bei Satz 6.27</li>
+<li><a href="./lineare-algebra-skript-20231102.pdf"title="Skript (2023-11-02), Kapitel 1-2 (§1-§11)">Skript (2023-11-02), Kapitel 1-2 (§1-§11)</a></li>
+<li><a href="./lineare-algebra-skript-20231119.pdf"title="Skript (2023-11-19), Kapitel 1-2 (§1-§11)">Skript (2023-11-19), Kapitel 1-2 (§1-§11)</a>: kleinere Verbesserungen</li>
+<li><a href="./lineare-algebra-skript-20231126.pdf"title="Skript (2023-11-26), Kapitel 1-3 (§1-§14)">Skript (2023-11-26), Kapitel 1-3 (§1-§14)</a></li>
+<li><a href="./lineare-algebra-skript-20231130.pdf"title="Skript (2023-11-30), Kapitel 1-3 (§1-§14)">Skript (2023-11-30), Kapitel 1-3 (§1-§14)</a>: kleinere Verbesserungen in §11</li>
+<li><a href="./lineare-algebra-skript-20231204.pdf"title="Skript (2023-12-04), Kapitel 1-3 (§1-§14)">Skript (2023-12-04), Kapitel 1-3 (§1-§14)</a>: Korrektur lineare Unabhängigkeit</li>
+<li><a href="./lineare-algebra-skript-20231207.pdf"title="Skript (2023-12-07), Kapitel 1-3 (§1-§14)">Skript (2023-12-07), Kapitel 1-3 (§1-§14)</a>: Ergänzung von Folgerung 12.15 und Anhang zu komplexen Zahlen</li>
+<li><a href="./lineare-algebra-skript-20231210.pdf"title="Skript (2023-12-10), Kapitel 1-3 (§1-§14)">Skript (2023-12-10), Kapitel 1-3 (§1-§14)</a>: kleinere Verbesserungen in §12-§14; Klarstellung zu Homomorphismen zwischen Ringen mit Eins</li>
+<li><a href="./lineare-algebra-skript-20240106.pdf"title="Skript (2024-01-06), Kapitel 1-4 (§1-§20)">Skript (2024-01-06), Kapitel 1-4 (§1-§20)</a>: vollständiges Skript bis zum Ende des Semesters</li>
+<li><a href="./lineare-algebra-skript-20240115.pdf"title="Skript (2024-01-15), Kapitel 1-4 (§1-§20)">Skript (2024-01-15), Kapitel 1-4 (§1-§20)</a>: kleinere Verbesserungen in §15-§16</li>
+<li><a href="./lineare-algebra-skript-20240128.pdf"title="Skript (2024-01-28), Kapitel 1-4 (§1-§20)">Skript (2024-01-28), Kapitel 1-4 (§1-§20)</a>: kleinere Verbesserungen in §17-§20</li>
+<li><a href="./lineare-algebra-skript-20240207.pdf"title="Skript (2024-02-07), Kapitel 1-4 (§1-§20)">Skript (2024-02-07), Kapitel 1-4 (§1-§20)</a>: kleinere Verbesserungen</li>
+<li><a href="./lineare-algebra-skript-20240208.pdf"title="Skript (2024-02-08), Kapitel 1-4 (§1-§20)">Skript (2024-02-08), Kapitel 1-4 (§1-§20)</a>: vollständiges Skript ohne Änderungsmarkierungen</li>
+<li><a href="./lineare-algebra-skript-20240211.pdf"title="Skript (2024-02-11), Kapitel 1-4 (§1-§20)">Skript (2024-02-11), Kapitel 1-4 (§1-§20)</a>: Verbesserung von Beispiel 16.2</li>
+</ul>
+<h3 id="vorlesungsfolien">
+	Vorlesungsfolien
+	<a href="#vorlesungsfolien" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./lineare-algebra-01.pdf"title="Vorlesungsfolien zur Woche 01 (§1-§3)">Vorlesungsfolien zur Woche 01 (§1-§3)</a></li>
+<li><a href="./lineare-algebra-02.pdf"title="Vorlesungsfolien zur Woche 02 (§4-§5)">Vorlesungsfolien zur Woche 02 (§4-§5)</a></li>
+<li><a href="./lineare-algebra-03.pdf"title="Vorlesungsfolien zur Woche 03 (§6)">Vorlesungsfolien zur Woche 03 (§6)</a></li>
+<li><a href="./lineare-algebra-04.pdf"title="Vorlesungsfolien zur Woche 04 (§7-§7.3)">Vorlesungsfolien zur Woche 04 (§7-§7.3)</a></li>
+<li><a href="./lineare-algebra-05.pdf"title="Vorlesungsfolien zur Woche 05 (§7.4-§8)">Vorlesungsfolien zur Woche 05 (§7.4-§8)</a></li>
+<li><a href="./lineare-algebra-06.pdf"title="Vorlesungsfolien zur Woche 06 (§8.1-§9)">Vorlesungsfolien zur Woche 06 (§8.1-§9)</a></li>
+<li><a href="./lineare-algebra-07.pdf"title="Vorlesungsfolien zur Woche 07 (§10-§11)">Vorlesungsfolien zur Woche 07 (§10-§11)</a></li>
+<li><a href="./lineare-algebra-08.pdf"title="Vorlesungsfolien zur Woche 08 (§12)">Vorlesungsfolien zur Woche 08 (§12)</a></li>
+<li><a href="./lineare-algebra-09.pdf"title="Vorlesungsfolien zur Woche 09 (§13-§14)">Vorlesungsfolien zur Woche 09 (§13-§14)</a></li>
+<li><a href="./lineare-algebra-10.pdf"title="Vorlesungsfolien zur Woche 10 (§15-§15.4)">Vorlesungsfolien zur Woche 10 (§15-§15.4)</a></li>
+<li><a href="./lineare-algebra-11.pdf"title="Vorlesungsfolien zur Woche 11 (§15.5-§16)">Vorlesungsfolien zur Woche 11 (§15.5-§16)</a></li>
+<li><a href="./lineare-algebra-12.pdf"title="Vorlesungsfolien zur Woche 12 (§17)">Vorlesungsfolien zur Woche 12 (§17)</a></li>
+<li><a href="./lineare-algebra-13.pdf"title="Vorlesungsfolien zur Woche 13 (§18-§19)">Vorlesungsfolien zur Woche 13 (§18-§19)</a></li>
+<li><a href="./lineare-algebra-14.pdf"title="Vorlesungsfolien zur Woche 14 (§20)">Vorlesungsfolien zur Woche 14 (§20)</a></li>
+</ul>
+<h3 id="vorlesungsmitschrift">
+	Vorlesungsmitschrift
+	<a href="#vorlesungsmitschrift" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./lineare-algebra-01-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 01 (§1-§3)">Vorlesungsmitschrift zur Woche 01 (§1-§3)</a>: Korrektur auf Folie 29</li>
+<li><a href="./lineare-algebra-02-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 02 (§4-§5)">Vorlesungsmitschrift zur Woche 02 (§4-§5)</a></li>
+<li><a href="./lineare-algebra-03-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 03 (§6)">Vorlesungsmitschrift zur Woche 03 (§6)</a></li>
+<li><a href="./lineare-algebra-04-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 04 (§7-§7.3)">Vorlesungsmitschrift zur Woche 04 (§7-§7.3)</a></li>
+<li><a href="./lineare-algebra-05-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 05 (§7.4-§8)">Vorlesungsmitschrift zur Woche 05 (§7.4-§8)</a></li>
+<li><a href="./lineare-algebra-06-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 06 (§8.1-§9)">Vorlesungsmitschrift zur Woche 06 (§8.1-§9)</a></li>
+<li><a href="./lineare-algebra-07-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 07 (§10-§11)">Vorlesungsmitschrift zur Woche 07 (§10-§11)</a></li>
+<li><a href="./lineare-algebra-08-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 08 (§12)">Vorlesungsmitschrift zur Woche 08 (§12)</a></li>
+<li><a href="./lineare-algebra-09-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 09 (§13-§14)">Vorlesungsmitschrift zur Woche 09 (§13-§14)</a></li>
+<li><a href="./lineare-algebra-10-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 10 (§15-§15.4)">Vorlesungsmitschrift zur Woche 10 (§15-§15.4)</a></li>
+<li><a href="./lineare-algebra-11-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 11 (§15.5-§16)">Vorlesungsmitschrift zur Woche 11 (§15.5-§16)</a></li>
+<li><a href="./lineare-algebra-12-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 12 (§17)">Vorlesungsmitschrift zur Woche 12 (§17)</a></li>
+<li><a href="./lineare-algebra-13-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 13 (§18-§19)">Vorlesungsmitschrift zur Woche 13 (§18-§19)</a></li>
+<li><a href="./lineare-algebra-14-mitschrift.pdf"title="Vorlesungsmitschrift zur Woche 14 (§20)">Vorlesungsmitschrift zur Woche 14 (§20)</a></li>
+</ul>
+<h3 id="plenarübungsfolien">
+	Plenarübungsfolien
+	<a href="#plenar%c3%bcbungsfolien" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./lineare-algebra-01-plenar%c3%bcbung-blanko.pdf"title="Plenarübungsfolien zur Woche 01 (§1-§3)">Plenarübungsfolien zur Woche 01 (§1-§3)</a></li>
+<li><a href="./lineare-algebra-02-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zur Woche 02 (§4-§5)">Plenarübungsfolien zur Woche 02 (§4-§5)</a></li>
+<li><a href="./lineare-algebra-03-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zur Woche 03 (§6)">Plenarübungsfolien zur Woche 03 (§6)</a></li>
+<li><a href="./lineare-algebra-04-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zur Woche 04 (§7-§7.3)">Plenarübungsfolien zur Woche 04 (§7-§7.3)</a></li>
+<li><a href="./lineare-algebra-05-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zur Woche 05 (§7.4-§8)">Plenarübungsfolien zur Woche 05 (§7.4-§8)</a></li>
+<li><a href="./lineare-algebra-06-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zur Woche 06 (§8.1-§9)">Plenarübungsfolien zur Woche 06 (§8.1-§9)</a></li>
+<li><a href="./lineare-algebra-07-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zur Woche 07 (§10-§11)">Plenarübungsfolien zur Woche 07 (§10-§11)</a></li>
+<li><a href="./lineare-algebra-08-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zur Woche 08 (§12)">Plenarübungsfolien zur Woche 08 (§12)</a></li>
+<li><a href="./lineare-algebra-bonus-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zum Bonustermin (Komplexe Zahlen, Wiederholungthemen)">Plenarübungsfolien zum Bonustermin (Komplexe Zahlen, Wiederholungthemen)</a></li>
+<li><a href="./lineare-algebra-09-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zur Woche 09 (§13-§14)">Plenarübungsfolien zur Woche 09 (§13-§14)</a></li>
+<li>Plenarübung zur Woche 10 folgt gemeinsam mit der Plenarübung zur Woche 11</li>
+<li><a href="./lineare-algebra-10-11-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zu den Wochen 10/11  (§15-§16)">Plenarübungsfolien zu den Wochen 10/11  (§15-§16)</a></li>
+<li><a href="./lineare-algebra-12-plenar%c3%bcbung.pdf"title="Plenarübungsfolien zur Woche 12 (§17)">Plenarübungsfolien zur Woche 12 (§17)</a></li>
+</ul>
+<h3 id="plenarübungsmitschrift">
+	Plenarübungsmitschrift
+	<a href="#plenar%c3%bcbungsmitschrift" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./lineare-algebra-01-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 01 (§1-§3)">Plenarübungsmitschrift zur Woche 01 (§1-§3)</a></li>
+<li><a href="./lineare-algebra-02-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 02 (§4-§5)">Plenarübungsmitschrift zur Woche 02 (§4-§5)</a></li>
+<li><a href="./lineare-algebra-03-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 03 (§6)">Plenarübungsmitschrift zur Woche 03 (§6)</a></li>
+<li><a href="./lineare-algebra-04-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 04 (§7-§7.3)">Plenarübungsmitschrift zur Woche 04 (§7-§7.3)</a></li>
+<li><a href="./lineare-algebra-05-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 05 (§7.4-§8)">Plenarübungsmitschrift zur Woche 05 (§7.4-§8)</a></li>
+<li><a href="./lineare-algebra-06-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 06 (§8.1-§9)">Plenarübungsmitschrift zur Woche 06 (§8.1-§9)</a></li>
+<li><a href="./lineare-algebra-07-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 07 (§10-§11)">Plenarübungsmitschrift zur Woche 07 (§10-§11)</a></li>
+<li><a href="./lineare-algebra-08-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 08 (§12)">Plenarübungsmitschrift zur Woche 08 (§12)</a></li>
+<li><a href="./lineare-algebra-bonus-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zum Bonustermin (Komplexe Zahlen, Wiederholungthemen)">Plenarübungsmitschrift zum Bonustermin (Komplexe Zahlen, Wiederholungthemen)</a> (Korrektur auf Folie 16)</li>
+<li><a href="./lineare-algebra-09-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 09 (§13-§14)">Plenarübungsmitschrift zur Woche 09 (§13-§14)</a></li>
+<li>Plenarübung zur Woche 10 folgt gemeinsam mit der Plenarübung zur Woche 11</li>
+<li><a href="./lineare-algebra-10-11-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zu den Wochen 10/11  (§15-§16)">Plenarübungsmitschrift zu den Wochen 10/11  (§15-§16)</a></li>
+<li><a href="./lineare-algebra-12-plenar%c3%bcbung-mitschrift-WS23.pdf"title="Plenarübungsmitschrift zur Woche 12 (§13-§14)">Plenarübungsmitschrift zur Woche 12 (§13-§14)</a></li>
+</ul>
+<h3 id="übungsaufgaben">
+	Übungsaufgaben
+	<a href="#%c3%bcbungsaufgaben" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./exercise-01.pdf"title="Übungsblatt 01">Übungsblatt 01</a></li>
+<li><a href="./exercise-02.pdf"title="Übungsblatt 02">Übungsblatt 02</a></li>
+<li><a href="./exercise-03.pdf"title="Übungsblatt 03">Übungsblatt 03</a></li>
+<li><a href="./exercise-04.pdf"title="Übungsblatt 04">Übungsblatt 04</a></li>
+<li><a href="./exercise-05.pdf"title="Übungsblatt 05">Übungsblatt 05</a></li>
+<li><a href="./exercise-06.pdf"title="Übungsblatt 06">Übungsblatt 06</a></li>
+<li><a href="./exercise-07.pdf"title="Übungsblatt 07">Übungsblatt 07</a></li>
+<li><a href="./exercise-08.pdf"title="Übungsblatt 08">Übungsblatt 08</a></li>
+<li><a href="./exercise-09.pdf"title="Übungsblatt 09">Übungsblatt 09</a></li>
+<li><a href="./exercise-10.pdf"title="Übungsblatt 10">Übungsblatt 10</a></li>
+<li><a href="./exercise-11.pdf"title="Übungsblatt 11">Übungsblatt 11</a></li>
+<li><a href="./exercise-12.pdf"title="Übungsblatt 12">Übungsblatt 12</a></li>
+<li><a href="./exercise-13.pdf"title="Übungsblatt 13">Übungsblatt 13</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="material-für-die-prüfungsvorbereitung">
+	Material für die Prüfungsvorbereitung
+	<a href="#material-f%c3%bcr-die-pr%c3%bcfungsvorbereitung" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./exam-prep.pdf"title="Klausurvorbereitung">Klausurvorbereitung</a>
+&ndash; <a href="./exam-prep-solutions.pdf"title="Lösungen Klausurvorbereitung">Lösungen Klausurvorbereitung</a></li>
+</ul>
+<h3 id="literatur">
+	Literatur
+	<a href="#literatur" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Die Lehrveranstaltung kommt ohne zusätzliche Literatur aus.
+Wenn Sie jedoch Begleitliteratur wünschen, so können wir folgende Bücher empfehlen:</p>
+<ul>
+<li><a href="https://www.aleph1.info/?call=Puc&amp;permalink=grundbegriffe"target="_blank" rel="noopener" class="external">Deiser: Grundbegriffe der Mathematik</a></li>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-3-642-55260-1">Bosch: Lineare Algebra</a></li>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-3-540-75502-9">Jänich: Lineare Algebra</a></li>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-3-662-61645-1">Fischer, Springborn: Lineare Algebra</a></li>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-3-658-02413-0">Beutelspacher: Lineare Algebra</a></li>
+<li><a class="link-doi external" href="https://doi.org/10.1007/978-3-031-41026-0">Axler: Linear Algebra Done Right</a></li>
+</ul>
+<p>Als Begleitung zu Kapitel 2 (Algebraische Strukturen) bietet sich außerdem</p>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6"target="_blank" rel="noopener" class="external">die Playlist Abstract Algebra</a> des Kanals <a href="https://www.youtube.com/@Socratica"target="_blank" rel="noopener" class="external">@Socratica</a>
+an.</li>
+</ul>
+<p>Einen Überblick über die lineare Algebra mit historischen Anmerkungen bietet</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=VgyIKqNmA74"target="_blank" rel="noopener" class="external">das Video &ldquo;Was ist lineare Algebra? Und wofür braucht man Vektorräume?&rdquo;</a> von Edmund Weitz.</li>
+</ul>
+<h2 id="weitere-angebote-für-studieneinsteiger">
+	Weitere Angebote für Studieneinsteiger
+	<a href="#weitere-angebote-f%c3%bcr-studieneinsteiger" class="h-anchor" aria-hidden="true">#</a>
+</h2><h3 id="help-desk">
+	Help-Desk
+	<a href="#help-desk" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Der <a href="https://mampf.mathi.uni-heidelberg.de/lectures/45"target="_blank" rel="noopener" class="external">Help-Desk</a> findet im Seminarraum Statistik (INF205 2.OG) statt und ist eine Anlaufstelle, die inbesondere Studierende der ersten Semester mit individueller Hilfestellung fachlich und organisatorisch im Studium unterstützt.
+Der Help-Desk wird vorwiegend von Studierenden höherer Semester besetzt.</p>
+<p><strong>Wichtig:</strong> In diesem Semester wird <a href="../../../team/gm%C3%BCller/">Georg Müller</a> donnerstags zwischen 14:00 und 16:00 Uhr im Help-Desk aktiv sein.</p>
+<h3 id="proseminar-fun-facts-aus-der-analysis-und-linearen-algebra">
+	Proseminar &ldquo;Fun Facts aus der Analysis und Linearen Algebra&rdquo;
+	<a href="#proseminar-fun-facts-aus-der-analysis-und-linearen-algebra" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Das Proseminar <a href="https://www.mathi.uni-heidelberg.de/~aschilling/teaching/funfacts-WS23"target="_blank" rel="noopener" class="external">Fun Facts aus der Analysis und Linearen Algebra</a> ist ein Zusatzangebot für interessierte Studierende zu den Grundvorlesungen Analysis I und Lineare Algebra I, speziell auch für Studierende aus dem ersten Semester.
+Die Inhalte der Vorträge knüpfen an Inhalte der Grundvorlesungen an, gehen aber über den dortigen Stoff hinaus und zeigen Anwendungen oder spannende Gegenbeispiele.</p>
+
+	</article>
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

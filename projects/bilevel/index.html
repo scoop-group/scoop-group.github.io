@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Analysis and Solution Methods for Bilevel Optimal Control Problems | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/bilevel/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Analysis and Solution Methods for Bilevel Optimal Control Problems
+		</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2016-10-01</span>
+	<br>
+
+
+
+	<span> End: 2019-09-30</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a>, Stephan Dempe</span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/alumni/fharder/">Felix Harder</a>, <a href="https://www.uni-marburg.de/de/fb12/arbeitsgruppen/optimi/team/leiter-der-arbeitsgruppe"target="_blank" rel="noopener" class="external">Patrick Mehlitz</a></span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Priority Program funding scheme
+		
+	</span>
+	<br>
+
+
+
+	<span> Part of: <a href="https://spp1962.wias-berlin.de/"target="_blank" rel="noopener" class="external">Non-Smooth and Complementarity-based Distributed Parameter Systems</a>
+	
+		(SPP 1962) </span>
+	
+	<br>
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				We are going to consider bilevel optimal control problems governed by partial differential equations.
+Using different approaches (lower level optimality conditions, lower level optimal value function, differentiability properties of the lower level solution w.r.t. the upper level solution variables) we are going to construct necessary and sufficient optimality conditions for such problems.
+Therefore, we start considering a general bilevel optimization problem in Banach spaces before the obtained results are applied to bilevel optimal control problems.
+Furthermore, we want to analyze the numerical behaviour of such problems.
+Here it has to be considered whether and how theoretical approaches are realizable in practice.
+Especially, the sensitivity and stability analysis of finite-dimensional bilevel programming problems plays a crucial role when choosing appropriate reformulations and discretization strategies.
+Error bounds have to be obtained which can be used for a convergence analysis in the function space setting.
+Thus, both the theoretical as well as the numerical approach lead to problems of parametric and nonsmooth optimal control.
+We want to set up a collection of benchmark problems which can be used in order to test and compare the derived theoretical results and numerical methods.
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-ARTICLE">
+	<li class="publication-item" id="ChristofWachsmuth:2019:1">
+	<div class="publication-author"> Constantin Christof and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Differential sensitivity analysis of variational inequalities with locally Lipschitz continuous solution operators </div>
+	<div class="publication-ref-info">
+		
+			<span> Applied Mathematics \&amp; Optimization 81(1), p.23-62, </span>
+		
+		<span class="publication-year"> 2019 </span> <br>
+	</div>
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-arXiv external" href="https://arxiv.org/abs/1711.02720">arXiv:1711.02720</a>
+		</div>
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/s00245-018-09553-y">doi:10.1007/s00245-018-09553-y</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{ChristofWachsmuth:2019:1,
+  AUTHOR = {Christof, Constantin and Wachsmuth, Gerd},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  DATE = {2019-01},
+  DOI = {10.1007/s00245-018-09553-y},
+  EPRINT = {1711.02720},
+  EPRINTTYPE = {arXiv},
+  JOURNALTITLE = {Applied Mathematics \&amp; Optimization},
+  NUMBER = {1},
+  PAGES = {23--62},
+  TITLE = {Differential sensitivity analysis of variational inequalities with locally Lipschitz continuous solution operators},
+  VOLUME = {81},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HarderWachsmuth:2018:3">
+	<div class="publication-author"> <a href="../../team/alumni/fharder/">Felix Harder</a> and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimality conditions for a class of inverse optimal control problems with partial differential equations </div>
+	<div class="publication-ref-info">
+		
+			<span> Optimization 68(2--3), p.615-643, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1080/02331934.2018.1495205">doi:10.1080/02331934.2018.1495205</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HarderWachsmuth:2018:3,
+  AUTHOR = {Harder, Felix and Wachsmuth, Gerd},
+  PUBLISHER = {Informa UK Limited},
+  DATE = {2018-08},
+  DOI = {10.1080/02331934.2018.1495205},
+  JOURNALTITLE = {Optimization},
+  NUMBER = {2--3},
+  PAGES = {615--643},
+  TITLE = {Optimality conditions for a class of inverse optimal control problems with partial differential equations},
+  VOLUME = {68},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HarderWachsmuth:2018:4">
+	<div class="publication-author"> <a href="../../team/alumni/fharder/">Felix Harder</a> and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> The limiting normal cone of a complementarity set in Sobolev spaces </div>
+	<div class="publication-ref-info">
+		
+			<span> Optimization, p.1-25, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1080/02331934.2018.1484467">doi:10.1080/02331934.2018.1484467</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HarderWachsmuth:2018:4,
+  AUTHOR = {Harder, Felix and Wachsmuth, Gerd},
+  PUBLISHER = {Informa UK Limited},
+  DATE = {2018-07},
+  DOI = {10.1080/02331934.2018.1484467},
+  JOURNALTITLE = {Optimization},
+  PAGES = {1--25},
+  TITLE = {The limiting normal cone of a complementarity set in Sobolev spaces},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="CasasWachsmuthWachsmuth:2018:1">
+	<div class="publication-author"> Eduardo Casas, Daniel Wachsmuth and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Second-order analysis and numerical approximation for bang-bang bilinear control problems </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Control and Optimization 56(6), p.4203-4227, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/17m1139953">doi:10.1137/17m1139953</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{CasasWachsmuthWachsmuth:2018:1,
+  AUTHOR = {Casas, Eduardo and Wachsmuth, Daniel and Wachsmuth, Gerd},
+  PUBLISHER = {Society for Industrial and Applied Mathematics (SIAM)},
+  DATE = {2018-01},
+  DOI = {10.1137/17m1139953},
+  JOURNALTITLE = {SIAM Journal on Control and Optimization},
+  NUMBER = {6},
+  PAGES = {4203--4227},
+  TITLE = {Second-order analysis and numerical approximation for bang-bang bilinear control problems},
+  VOLUME = {56},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="ChristofWachsmuth:2018:1">
+	<div class="publication-author"> Constantin Christof and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> No-gap second-order conditions via a directional curvature functional </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Optimization 28(3), p.2097-2130, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/17M1140418">doi:10.1137/17M1140418</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{ChristofWachsmuth:2018:1,
+  AUTHOR = {Christof, Constantin and Wachsmuth, Gerd},
+  DATE = {2018},
+  DOI = {10.1137/17M1140418},
+  JOURNALTITLE = {SIAM Journal on Optimization},
+  NUMBER = {3},
+  PAGES = {2097--2130},
+  TITLE = {No-gap second-order conditions via a directional curvature functional},
+  VOLUME = {28},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="ChristofWachsmuth:2018:2">
+	<div class="publication-author"> Constantin Christof and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> On the non-polyhedricity of sets with upper and lower bounds in dual spaces </div>
+	<div class="publication-ref-info">
+		
+			<span> GAMM-Mitteilungen 40(4), p.339-350, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/gamm.201740005">doi:10.1002/gamm.201740005</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{ChristofWachsmuth:2018:2,
+  AUTHOR = {Christof, Constantin and Wachsmuth, Gerd},
+  DATE = {2018},
+  DOI = {10.1002/gamm.201740005},
+  JOURNALTITLE = {GAMM-Mitteilungen},
+  NUMBER = {4},
+  PAGES = {339--350},
+  TITLE = {On the non-polyhedricity of sets with upper and lower bounds in dual spaces},
+  VOLUME = {40},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Harder:2018:1">
+	<div class="publication-author"> <a href="../../team/alumni/fharder/">Felix Harder</a> </div>
+	
+	
+	
+	<div class="publication-title"> Legendre forms in reflexive Banach spaces </div>
+	<div class="publication-ref-info">
+		
+			<span> Zeitschrift für Analysis und ihre Anwendungen 37(4), p.377-388, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.4171/zaa/1619">doi:10.4171/zaa/1619</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{Harder:2018:1,
+  AUTHOR = {Harder, Felix},
+  DATE = {2018},
+  DOI = {10.4171/zaa/1619},
+  JOURNALTITLE = {Zeitschrift für Analysis und ihre Anwendungen},
+  NUMBER = {4},
+  PAGES = {377--388},
+  TITLE = {Legendre forms in reflexive Banach spaces},
+  VOLUME = {37},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HarderWachsmuth:2018:5">
+	<div class="publication-author"> <a href="../../team/alumni/fharder/">Felix Harder</a> and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Comparison of optimality systems for the optimal control of the obstacle problem </div>
+	<div class="publication-ref-info">
+		
+			<span> GAMM-Mitteilungen 40(4), p.312-338, </span>
+		
+		<span class="publication-year"> 2018 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/gamm.201740004">doi:10.1002/gamm.201740004</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HarderWachsmuth:2018:5,
+  AUTHOR = {Harder, Felix and Wachsmuth, Gerd},
+  DATE = {2018},
+  DOI = {10.1002/gamm.201740004},
+  JOURNALTITLE = {GAMM-Mitteilungen},
+  NUMBER = {4},
+  PAGES = {312--338},
+  TITLE = {Comparison of optimality systems for the optimal control of the obstacle problem},
+  VOLUME = {40},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="MehlitzWachsmuth:2017:1">
+	<div class="publication-author"> Patrick Mehlitz and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> The weak sequential closure of decomposable sets in Lebesgue spaces and its application to variational geometry </div>
+	<div class="publication-ref-info">
+		
+			<span> Set-Valued and Variational Analysis 27(1), p.265-294, </span>
+		
+		<span class="publication-year"> 2017 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/s11228-017-0464-1">doi:10.1007/s11228-017-0464-1</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{MehlitzWachsmuth:2017:1,
+  AUTHOR = {Mehlitz, Patrick and Wachsmuth, Gerd},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  DATE = {2017-12},
+  DOI = {10.1007/s11228-017-0464-1},
+  JOURNALTITLE = {Set-Valued and Variational Analysis},
+  NUMBER = {1},
+  PAGES = {265--294},
+  TITLE = {The weak sequential closure of decomposable sets in Lebesgue spaces and its application to variational geometry},
+  VOLUME = {27},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="CasasWachsmuthWachsmuth:2017:1">
+	<div class="publication-author"> Eduardo Casas, Daniel Wachsmuth and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Sufficient second-order conditions for bang-bang control problems </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Control and Optimization 55(5), p.3066-3090, </span>
+		
+		<span class="publication-year"> 2017 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/16M1099674">doi:10.1137/16M1099674</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{CasasWachsmuthWachsmuth:2017:1,
+  AUTHOR = {Casas, Eduardo and Wachsmuth, Daniel and Wachsmuth, Gerd},
+  DATE = {2017},
+  DOI = {10.1137/16M1099674},
+  JOURNALTITLE = {SIAM Journal on Control and Optimization},
+  NUMBER = {5},
+  PAGES = {3066--3090},
+  TITLE = {Sufficient second-order conditions for bang-bang control problems},
+  VOLUME = {55},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="StefanelliWachsmuthWachsmuth:2017:1">
+	<div class="publication-author"> Ulisse Stefanelli, Daniel Wachsmuth and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal control of a rate-independent evolution equation via viscous regularization </div>
+	<div class="publication-ref-info">
+		
+			<span> Discrete and Continuous Dynamical Systems - Series S 10(6), p.1467-1485, </span>
+		
+		<span class="publication-year"> 2017 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.3934/dcdss.2017076">doi:10.3934/dcdss.2017076</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{StefanelliWachsmuthWachsmuth:2017:1,
+  AUTHOR = {Stefanelli, Ulisse and Wachsmuth, Daniel and Wachsmuth, Gerd},
+  DATE = {2017},
+  DOI = {10.3934/dcdss.2017076},
+  JOURNALTITLE = {Discrete and Continuous Dynamical Systems - Series S},
+  NUMBER = {6},
+  PAGES = {1467--1485},
+  TITLE = {Optimal control of a rate-independent evolution equation via viscous regularization},
+  VOLUME = {10},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="MehlitzWachsmuth:2016:1">
+	<div class="publication-author"> Patrick Mehlitz and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Weak and strong stationarity in generalized bilevel programming and bilevel optimal control </div>
+	<div class="publication-ref-info">
+		
+			<span> Optimization 65(5), p.907-935, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1080/02331934.2015.1122007">doi:10.1080/02331934.2015.1122007</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{MehlitzWachsmuth:2016:1,
+  AUTHOR = {Mehlitz, Patrick and Wachsmuth, Gerd},
+  DATE = {2016},
+  DOI = {10.1080/02331934.2015.1122007},
+  JOURNALTITLE = {Optimization},
+  NUMBER = {5},
+  PAGES = {907--935},
+  TITLE = {Weak and strong stationarity in generalized bilevel programming and bilevel optimal control},
+  VOLUME = {65},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="MehlitzWachsmuth:2016:2">
+	<div class="publication-author"> Patrick Mehlitz and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> The limiting normal cone to pointwise defined sets in Lebesgue spaces </div>
+	<div class="publication-ref-info">
+		
+			<span> Set-Valued and Variational Analysis, p.1-19, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/s11228-016-0393-4">doi:10.1007/s11228-016-0393-4</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{MehlitzWachsmuth:2016:2,
+  AUTHOR = {Mehlitz, Patrick and Wachsmuth, Gerd},
+  DATE = {2016},
+  DOI = {10.1007/s11228-016-0393-4},
+  JOURNALTITLE = {Set-Valued and Variational Analysis},
+  PAGES = {1--19},
+  TITLE = {The limiting normal cone to pointwise defined sets in Lebesgue spaces},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+ 				
+					<img  class="logo-project-single" src="../../img/consortiumlogos/SPP-1962.png" alt="Consortium logo">
+				
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

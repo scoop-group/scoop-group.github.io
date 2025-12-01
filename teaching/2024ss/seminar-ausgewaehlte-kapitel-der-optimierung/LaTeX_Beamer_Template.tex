@@ -1,0 +1,81 @@
+\documentclass[english]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+
+% Choose the theme.
+\usetheme{Warsaw}
+\useoutertheme{infolines}
+
+% Information about the presentation.
+\title[Short Title]{Full Title}
+\author{Author(s)}
+\institute[]{Heidelberg University}
+\date[Date]{Seminar Selected Topics in Optimization \\ Summer 2024 \\ Date}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Overview}
+  \tableofcontents
+\end{frame}
+
+
+%---------------------------------------------------
+\section{Introduction}
+%---------------------------------------------------
+
+\begin{frame}
+  \frametitle{A Simple Slide}
+  \begin{block}{Headline}
+		Content
+  \end{block}
+  \begin{block}<2->{This Block \ldots}
+		only appears later.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Another Slide}
+  \begin{theorem}[Stability Function]
+    A Runge-Kutta method has stability function
+    \begin{equation*}
+      R(z) = 1 + z \, c^\top (I-z \, B)^{-1} \vec{1}.
+    \end{equation*}
+  \end{theorem}
+\end{frame}
+
+
+%---------------------------------------------------
+\section{Main Part}
+%---------------------------------------------------
+
+\begin{frame}
+  \frametitle{Overview Again}
+  \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}
+  \frametitle{A Slide in a New Section}
+	\begin{block}{An image generated using \texttt{tikz}}
+    \begin{tikzpicture}[scale=3]
+      \clip (-0.1,-0.2)
+      rectangle (1.8,1.2);
+      \draw[step=.25cm,gray,very thin]
+      (-1.4,-1.4) grid (3.4,3.4);
+      \draw (-1.5,0) -- (2.5,0);
+      \draw (0,-1.5) -- (0,1.5);
+      \draw (0,0) circle (1cm);
+      \filldraw[fill=green!20!white,
+      draw=green!50!black]
+      (0,0) -- (3mm,0mm)
+      arc (0:30:3mm) -- cycle;
+    \end{tikzpicture}
+  \end{block}
+\end{frame}
+
+\end{document}
+

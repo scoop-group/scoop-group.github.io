@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Grundlagen der Optimierung | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/teaching/2021ws/lecture-grundlagen-der-optimierung/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../../news">News</a> </li>
+			
+				<li> <a href="../../../team">Team</a> </li>
+			
+				<li> <a href="../../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../../publications">Publications</a> </li>
+			
+				<li> <a href="../../../talks">Talks</a> </li>
+			
+				<li> <a href="../../../software">Software</a> </li>
+			
+				<li> <a href="../../../projects">Projects</a> </li>
+			
+				<li> <a href="../../../events">Events</a> </li>
+			
+				<li> <a href="../../../theses">Theses</a> </li>
+			
+				<li> <a href="../../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+		
+			<h1>Grundlagen der Optimierung</h1>
+		
+		<div class="metadata">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+				
+					
+					
+					
+						
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+			
+				
+				
+				
+					<span> Semester: 2021 WS</span>
+					<br>
+				
+				
+				
+				
+					<span> Veranstaltungstyp: Vorlesung</span>
+					<br>
+				
+
+				
+				
+					<span> Sprachen: Deutsch</span>
+					<br>
+				
+
+				
+				
+					<span> Verantwortlich: <span class="teachers-list"><a href="../../../team/rherzog/">Roland Herzog</a>, <a href="../../../team/gm%C3%BCller/">Georg Müller</a></span></span>
+				<br>
+
+				
+				
+				
+					<span> AssistentInnen: <span class="assistants-list"><a href="../../../team/alumni/mhashemi/">Masoumeh Hashemi</a>, Daniela Fichiu, Max Kahl</span>
+</span>
+				<br>
+				
+				
+				
+				
+				<span> Kontakt: <a href="../../../forwards/teachingContact/scoop-teaching-GDO" >E-Mail senden</a></span>
+				<br>
+				
+				
+				
+				
+					<span> Webseiten zu diesem Kurs: </span>
+				
+
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1465">MÜSLI</a>, <a href="https://moodle.uni-heidelberg.de/course/view.php?id=9841">Moodle</a>, 
+
+
+
+
+
+
+
+
+
+	
+
+
+<a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.veranstnr=11BMAV0420%2c11BMAU0420&veranstaltung.semester=20212&P_start=0&P_anzahl=50&P.sort=veranstaltung.dtxt&_form=display">LSF</a><br>
+				
+				
+				
+					<span> Prüfungstermine: <a href="#pr%c3%bcfung"title="25.02.2022 - 17.04.2022">25.02.2022 - 17.04.2022</a> </span>
+					<br>
+				
+			
+		</div>
+	</header>
+	<hr>
+	<article>
+		<h2> Kursinformationen </h2>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#beschreibung">Beschreibung</a></li>
+    <li><a href="#vorkenntnisse">Vorkenntnisse</a></li>
+    <li><a href="#konzept">Konzept</a></li>
+    <li><a href="#termine-und-zeitplan">Termine und Zeitplan</a></li>
+    <li><a href="#übungsbetrieb">Übungsbetrieb</a></li>
+    <li><a href="#registrierung">Registrierung</a></li>
+    <li><a href="#prüfung">Prüfung</a></li>
+    <li><a href="#inhaltliches-material-zur-veranstaltung">Inhaltliches Material zur Veranstaltung</a>
+      <ul>
+        <li><a href="#skript">Skript</a></li>
+        <li><a href="#material-für-das-plenum">Material für das Plenum</a></li>
+        <li><a href="#übungsaufgaben">Übungsaufgaben</a></li>
+        <li><a href="#programmieraufgaben">Programmieraufgaben</a></li>
+        <li><a href="#literatur">Literatur</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		<h2 id="beschreibung">
+	Beschreibung
+	<a href="#beschreibung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>In dieser Lehrveranstaltung werden die grundlegenden Begriffe und Techniken für die Untersuchung und Lösung von unrestringierten, linearen sowie konvexen Optimierungsaufgaben in mehreren Variablen erarbeitet.</p>
+<h2 id="vorkenntnisse">
+	Vorkenntnisse
+	<a href="#vorkenntnisse" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Empfohlen sind der vorherige oder zeitgleiche Besuch der Veranstaltungen Analysis I und II (MA1/ MA2) und Lineare Algebra I (MA4).
+Wünschenswert sind grundlegende Programmierkenntnisse.</p>
+<h2 id="konzept">
+	Konzept
+	<a href="#konzept" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Diese Veranstaltung setzt sich aus verschiedenen Angeboten zusammen.
+Die zentralen Komponenten sind dabei:</p>
+<ul>
+<li>Das Skript zu Vorlesung</li>
+<li>Die Plenumstermine</li>
+<li>Die Übungsaufgaben</li>
+<li>Die Übungsgruppen</li>
+<li>Die Prüfung am Ende des Semesters</li>
+</ul>
+<p>Das Konzept der Veranstaltung wird an einem <strong>Vorbesprechungstermin am Montag den 18.10.2021</strong> um 14:15 (dem ersten &ldquo;Vorlesungstermin&rdquo;) im <a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=verpublish&amp;status=init&amp;vmfile=no&amp;moduleCall=webInfo&amp;publishConfFile=webInfoRaum&amp;publishSubDir=raum&amp;keep=y&amp;raum.rgid=5151"target="_blank" rel="noopener" class="external">Hörsaal, Mathematikon</a> besprochen, und die Informationen werden anschließend hier zur Verfügung gestellt.</p>
+<ul>
+<li><a href="./plenum-00.pdf"title="Plenum 00 (Informationen zur Lehrveranstaltung)">Plenum 00 (Informationen zur Lehrveranstaltung)</a></li>
+</ul>
+<h2 id="termine-und-zeitplan">
+	Termine und Zeitplan
+	<a href="#termine-und-zeitplan" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Informationen zu den &ldquo;Vorlesungsterminen&rdquo; finden Sie im 
+
+
+
+
+
+
+
+
+
+	
+
+
+<a href="https://lsf.uni-heidelberg.de/qisserver/rds?state=wsearchv&search=1&subdir=veranstaltung&veranstaltung.veranstnr=11BMAV0420%2c11BMAU0420&veranstaltung.semester=20212&P_start=0&P_anzahl=50&P.sort=veranstaltung.dtxt&_form=display">LSF</a>.
+Die Informationen für die Termine im Übungsbetrieb finden Sie im <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1465">MÜSLI</a>.</p>
+<p>Einen Überblick über den zeitlichen Ablauf können Sie sich anhand des <a href="./schedule.pdf"title="Veranstaltungskalenders">Veranstaltungskalenders</a> verschaffen.</p>
+<h2 id="übungsbetrieb">
+	Übungsbetrieb
+	<a href="#%c3%bcbungsbetrieb" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Jede Woche wird ein Übungsblatt mit Theorieaufgaben bereitgestellt, dass möglichst in Gruppen von 2 Personen innerhalb der Bearbeitungszeit bearbeitet werden soll, und dessen Lösungen Sie auf <a href="https://moodle.uni-heidelberg.de/course/view.php?id=9841">Moodle</a> einreichen können, um Feedback zu Ihren Lösungen zu erhalten.
+Nach Ablauf der Bearbeitungszeit werden wir Musterlösungen veröffentlichen.
+Bitte achten Sie darauf, dass nur eine Person je Gruppe die Lösungen einreicht, um doppelten Korrekturaufwand zu vermeiden.</p>
+<p>Über das Semester wird es zusätzlich mehrwöchige <a href="#programmieraufgaben"title="Programmierprojekte">Programmierprojekte</a> zu den in der Vorlesung vorgestellten Algorithmen geben, die bitte vorzugsweise mit <a href="https://www.python.org/"target="_blank" rel="noopener" class="external">Python</a> bearbeitet werden sollen und auf dem gleichen Weg abgegeben werden können.</p>
+<h2 id="registrierung">
+	Registrierung
+	<a href="#registrierung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Um sich für den Kurs zu registrieren, melden Sie sich bitte im <a href="https://muesli.mathi.uni-heidelberg.de/lecture/view/1465">MÜSLI</a> für eine Übungsgruppe an.
+Bitte registrieren Sie sich hier auch, wenn Sie nicht am Übungsbetrieb teilnehmen, so können wir die Teilnehmerzahlen besser abschätzen.</p>
+<p>Achtung(!): Die Registrierung im Kurs ist nicht gleichzeitig eine Anmeldung zur Prüfung.
+Mehr Informationen hierzu gibt es im Abschnitt <a href="#pr%c3%bcfung"title="Prüfung">Prüfung</a></p>
+<h2 id="prüfung">
+	Prüfung
+	<a href="#pr%c3%bcfung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Jede/r TeilnehmerIn dieses Kurses hat die Möglichkeit, sich im Anschluss prüfen zu lassen.
+Zu dieser Veranstaltung bieten wir Ihnen mündliche Prüfungen an.
+Jede Prüfung wird dabei in etwa <strong>30 min</strong> zuzüglich der Zeit für eine kurze Nachbesprechung in Anspruch nehmen.
+Sie haben die Wahl, ob Sie Ihre Prüfung virtuell (über HeiConf) oder in Person (zu dritt mit Prüfer und BeisitzerIn in einem Besprechungsraum mit Tafel) wahrnehmen möchten.</p>
+<p>Zur Verfügung stehen die folgenden <strong>Termine</strong>:</p>
+<ul>
+<li>25.02.2022 (Fr) 09:00 - 12:00 (ausgebucht)</li>
+<li>07.03.2022 (Mo) 13:00 - 16:00 (ausgebucht)</li>
+<li>08.03.2022 (Di) 09:00 - 12:00 (ausgebucht)</li>
+<li>21.03.2022 (Mo) 13:00 - 16:00 (ausgebucht)</li>
+<li>22.03.2022 (Di) 09:00 - 12:00</li>
+<li>24.03.2022 (Do) 13:00 - 16:00</li>
+<li>05.04.2022 (Di) 09:00 - 12:00</li>
+<li>07.04.2022 (Do) 09:00 - 12:00 (ausgebucht)</li>
+</ul>
+<p>In den Prüfungsblöcken werden jeweils vier Einzelprüfungen angeboten.
+Sie können sich für einen der Prüfungsblocke anmelden und werden dann von uns informiert, was Ihre konkrete Prüfungszeit ist.
+Wir bitten an der Stelle um ein bisschen Flexibilität auf Ihrer Seite, damit wir innerhalb der Prüfungsblöcke virtuelle und Präsenzprüfungen sinnvoll sortieren können.
+Echte Konflikte werden wir gelöst kriegen.
+Die Blöcke werden nach Anmeldezeitpunkt aufgefüllt (<strong>first-come-first-served</strong>) und (zeitverzögert) auf dieser Webseite als &ldquo;voll&rdquo; markiert.</p>
+<p>Sie melden Sich bei uns für eine Prüfung an, indem Sie bis zum <strong>Freitag den 11.02.2022</strong> eine <a href="../../../forwards/teachingContact/scoop-teaching-exam-registration-GDO" >E-Mail an unser Sekretariat</a> mit dem folgenden Inhalt senden:</p>
+<ul>
+<li>Ihre Anmeldung zur Prüfung</li>
+<li>Nachname</li>
+<li>Vorname</li>
+<li>Geburtsdatum</li>
+<li>Geburtsort</li>
+<li>Matrikel-Nr.</li>
+<li>Studiengang</li>
+<li>Ob Sie die Prüfung virtuell oder in Präsenz ablegen möchten</li>
+<li>Ihren Wunschtag für die Prüfung und wenn möglich einen Alternativtag</li>
+</ul>
+<p>Diese Informationen benötigen wir für die Organisation der Prüfungstermine und für die Vorbereitung der Prüfungsprotokolle.
+Ihre konkrete Prüfungszeit teilen wir Ihnen dann bis zum <strong>Mittwoch den 16.02.2022</strong> per E-Mail mit.</p>
+<h2 id="inhaltliches-material-zur-veranstaltung">
+	Inhaltliches Material zur Veranstaltung
+	<a href="#inhaltliches-material-zur-veranstaltung" class="h-anchor" aria-hidden="true">#</a>
+</h2><h3 id="skript">
+	Skript
+	<a href="#skript" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./grundlagen-der-optimierung-skript-20211018.pdf"title="Skript zur Lehrveranstaltung (2021-10-18, Kapitel 0-1)">Skript zur Lehrveranstaltung (2021-10-18, Kapitel 0-1)</a></li>
+<li><a href="./grundlagen-der-optimierung-skript-20211022.pdf"title="Skript zur Lehrveranstaltung (2021-10-22, Kapitel 0-1)">Skript zur Lehrveranstaltung (2021-10-22, Kapitel 0-1)</a>: Korrektur im Existenzsatz 1.4</li>
+<li><a href="./grundlagen-der-optimierung-skript-20211104.pdf"title="Skript zur Lehrveranstaltung (2021-11-04, Kapitel 0-2)">Skript zur Lehrveranstaltung (2021-11-04, Kapitel 0-2)</a>: Kapitel 2 hinzugefügt</li>
+<li><a href="./grundlagen-der-optimierung-skript-20211125.pdf"title="Skript zur Lehrveranstaltung (2021-11-25, Kapitel 0-2)">Skript zur Lehrveranstaltung (2021-11-25, Kapitel 0-2)</a>: Korrektur im dualen Simplex-Verfahren (§ 9)</li>
+<li><a href="./grundlagen-der-optimierung-skript-20211212.pdf"title="Skript zur Lehrveranstaltung (2021-12-12, Kapitel 0-3)">Skript zur Lehrveranstaltung (2021-12-12, Kapitel 0-3)</a>: Anfang von Kapitel 3 hinzugefügt, Korrektur zu (total) unimodularen Matrizen (§ 12)</li>
+<li><a href="./grundlagen-der-optimierung-skript-20220109.pdf"title="Skript zur Lehrveranstaltung (2022-01-09, Kapitel 0-3)">Skript zur Lehrveranstaltung (2022-01-09, Kapitel 0-3)</a>: Kapitel 3 ergänzt (Wochen 10-12)</li>
+<li><a href="./grundlagen-der-optimierung-skript-20220131.pdf"title="Skript zur Lehrveranstaltung (2022-01-31, Kapitel 0-3)">Skript zur Lehrveranstaltung (2022-01-31, Kapitel 0-3)</a>: Kapitel 3 vervollständigt</li>
+<li><a href="./grundlagen-der-optimierung-skript-20220220.pdf"title="Skript zur Lehrveranstaltung (2022-02-20, Kapitel 0-3)">Skript zur Lehrveranstaltung (2022-02-20, Kapitel 0-3)</a>: kleinere Korrekturen</li>
+</ul>
+<h3 id="material-für-das-plenum">
+	Material für das Plenum
+	<a href="#material-f%c3%bcr-das-plenum" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./plenum-01.pdf"title="Plenum 01 (Modellierung, Grundbegriffe, Existenz von Minimierern, Optimalitätsbedingungen)">Plenum 01 (Modellierung, Grundbegriffe, Existenz von Minimierern, Optimalitätsbedingungen)</a></li>
+<li><a href="./plenum-02.pdf"title="Plenum 02 (Gradientenverfahren)">Plenum 02 (Gradientenverfahren)</a></li>
+<li><a href="./plenum-02-annotated.pdf"title="Plenum 02 (Gradientenverfahren) mit Anmerkungen">Plenum 02 (Gradientenverfahren) mit Anmerkungen</a></li>
+<li><a href="./handout-plenum-02.pdf"title="Handout zum Plenum 02">Handout zum Plenum 02</a></li>
+<li><a href="./plenum-03.pdf"title="Plenum 03 (Newton-Verfahren)">Plenum 03 (Newton-Verfahren)</a></li>
+<li><a href="./plenum-04.pdf"title="Plenum 04 (Modellierung, Existenz, Basisvektoren)">Plenum 04 (Modellierung, Existenz, Basisvektoren)</a></li>
+<li><a href="./plenum-04-annotated.pdf"title="Plenum 04 (Modellierung, Existenz, Basisvektoren) mit Anmerkungen">Plenum 04 (Modellierung, Existenz, Basisvektoren) mit Anmerkungen</a></li>
+<li><a href="./plenum-05.pdf"title="Plenum 05 (Simplex-Verfahren)">Plenum 05 (Simplex-Verfahren)</a></li>
+<li><a href="./plenum-05-annotated.pdf"title="Plenum 05 (Simplex-Verfahren) mit Anmerkungen">Plenum 05 (Simplex-Verfahren) mit Anmerkungen</a></li>
+<li><a href="./plenum-06.pdf"title="Plenum 06 (Optimalitätsbedingungen der linearen Optimierung, duales Simplex-Verfahren)">Plenum 06 (Optimalitätsbedingungen der linearen Optimierung, duales Simplex-Verfahren)</a></li>
+<li><a href="./plenum-07.pdf"title="Plenum 07 (Sensitivätsanalyse)">Plenum 07 (Sensitivätsanalyse)</a></li>
+<li><a href="./plenum-08.pdf"title="Plenum 08 (LPs auf Graphen, Ganzzahligkeit)">Plenum 08 (LPs auf Graphen, Ganzzahligkeit)</a></li>
+<li><a href="./solveOptimalTransport.py"title="Python-Code für eine Aufgabe des kostenminimalen Transports">Python-Code für eine Aufgabe des kostenminimalen Transports</a></li>
+<li><a href="./plenum-09.pdf"title="Plenum 09 (konvexe Mengen, konvexe Funktionen)">Plenum 09 (konvexe Mengen, konvexe Funktionen)</a></li>
+<li><a href="./plenum-10.pdf"title="Plenum 10 (konvexe Optimierungsaufgaben, affine Unterräume, topologische Eigenschaften konvexer Mengen)">Plenum 10 (konvexe Optimierungsaufgaben, affine Unterräume, topologische Eigenschaften konvexer Mengen)</a></li>
+<li><a href="./plenum-11.pdf"title="Plenum 11 (Trennungssätze, Subdifferential)">Plenum 11 (Trennungssätze, Subdifferential)</a></li>
+<li><a href="./plenum-11-annotated.pdf"title="Plenum 11 (Trennungssätze, Subdifferential) mit Anmerkungen">Plenum 11 (Trennungssätze, Subdifferential) mit Anmerkungen</a></li>
+<li><a href="./plenum-12.pdf"title="Plenum 12 (Richtungsableitung, Zusammenhang mit Subdifferential, weitere Eigenschaften konvexer Funktionen)">Plenum 12 (Richtungsableitung, Zusammenhang mit Subdifferential, weitere Eigenschaften konvexer Funktionen)</a></li>
+<li><a href="./plenum-13.pdf"title="Plenum 13 (Kegel, Optimalitätsbedingungen, Richtung des steilsten Abstiegs)">Plenum 13 (Kegel, Optimalitätsbedingungen, Richtung des steilsten Abstiegs)</a></li>
+<li><a href="./plenum-14.pdf"title="Plenum 14 (Bundle-Teilproblem, Bundle-Verfahren)">Plenum 14 (Bundle-Teilproblem, Bundle-Verfahren)</a></li>
+</ul>
+<h3 id="übungsaufgaben">
+	Übungsaufgaben
+	<a href="#%c3%bcbungsaufgaben" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="./exercise-01.pdf"title="Übungsblatt 01">Übungsblatt 01</a></li>
+<li><a href="./exercise-02.pdf"title="Übungsblatt 02">Übungsblatt 02</a></li>
+<li><a href="./exercise-03.pdf"title="Übungsblatt 03">Übungsblatt 03</a></li>
+<li><a href="./exercise-04.pdf"title="Übungsblatt 04">Übungsblatt 04</a></li>
+<li><a href="./exercise-05.pdf"title="Übungsblatt 05">Übungsblatt 05</a></li>
+<li><a href="./exercise-06.pdf"title="Übungsblatt 06">Übungsblatt 06</a></li>
+<li><a href="./exercise-07.pdf"title="Übungsblatt 07">Übungsblatt 07</a></li>
+<li><a href="./exercise-08.pdf"title="Übungsblatt 08">Übungsblatt 08</a></li>
+<li><a href="./exercise-09.pdf"title="Übungsblatt 09">Übungsblatt 09</a></li>
+<li><a href="./exercise-10.pdf"title="Übungsblatt 10">Übungsblatt 10</a></li>
+<li><a href="./exercise-11.pdf"title="Übungsblatt 11">Übungsblatt 11</a></li>
+<li><a href="./exercise-12.pdf"title="Übungsblatt 12">Übungsblatt 12</a></li>
+<li><a href="./exercise-13.pdf"title="Übungsblatt 13">Übungsblatt 13</a></li>
+<li><a href="./exercise-14.pdf"title="Übungsblatt 14">Übungsblatt 14</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="programmieraufgaben">
+	Programmieraufgaben
+	<a href="#programmieraufgaben" class="h-anchor" aria-hidden="true">#</a>
+</h3><ul>
+<li><a href="../../../../../intro-jupyter"title="Kurzanleitung zu Jupyter notebooks">Kurzanleitung zu Jupyter notebooks</a></li>
+<li><a href="./programming_exercise_1.zip"title="Programmierübung 01 (zip)">Programmierübung 01 (zip)</a></li>
+<li><a href="./programming_exercise_2.zip"title="Programmierübung 02 (zip)">Programmierübung 02 (zip)</a></li>
+<li>Programmierübung 03 <!-- raw HTML omitted -->folgt im Januar 2022<!-- raw HTML omitted --> entfällt.</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="literatur">
+	Literatur
+	<a href="#literatur" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Die Lehrveranstaltung kommt ohne zusätzliche Literatur aus.
+Wenn Sie jedoch Begleitliteratur wünschen, so können wir folgende Bücher empfehlen:</p>
+<ul>
+<li>zu Kapitel 1: <a href="https://link.springer.com/book/10.1007/978-3-642-58582-1"target="_blank" rel="noopener" class="external">Geiger, Kanzow: Numerische Verfahren zur Lösung unrestringierter Optimierungsaufgaben</a></li>
+<li>zu Kapitel 2 &amp; 3: <a href="https://link.springer.com/book/10.1007/978-3-642-56004-0"target="_blank" rel="noopener" class="external">Geiger, Kanzow: Theorie und Numerik restringierter Optimierungsaufgaben</a></li>
+<li>zu Kapitel 1 &amp; 2: <a href="https://link.springer.com/book/10.1007/978-0-387-40065-5"target="_blank" rel="noopener" class="external">Nocedal, Wright: Numerical Optimization</a></li>
+<li>zu Kapitel 2: <a href="https://link.springer.com/book/10.1007/978-1-4614-7630-6"target="_blank" rel="noopener" class="external">Vanderbei: Linear Programming</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1137/1.9781611974997"target="_blank" rel="noopener" class="external">Beck: First-Order Methods in Optimization</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1515/9781400873173"target="_blank" rel="noopener" class="external">Rockafellar: Convex Analysis</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1007/978-3-662-58855-0"target="_blank" rel="noopener" class="external">Jarre, Stoer: Optimierung</a></li>
+<li>zu Kapitel 3: <a href="https://doi.org/10.1007/978-3-662-02796-7"target="_blank" rel="noopener" class="external">Hiriart-Urruty, Lemarécha: Convex Analysis and Minimization Algorithms Il</a></li>
+</ul>
+
+	</article>
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

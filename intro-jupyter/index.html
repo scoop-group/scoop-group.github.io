@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title>  | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/intro-jupyter/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../news">News</a> </li>
+			
+				<li> <a href="../team">Team</a> </li>
+			
+				<li> <a href="../teaching">Teaching</a> </li>
+			
+				<li> <a href="../publications">Publications</a> </li>
+			
+				<li> <a href="../talks">Talks</a> </li>
+			
+				<li> <a href="../software">Software</a> </li>
+			
+				<li> <a href="../projects">Projects</a> </li>
+			
+				<li> <a href="../events">Events</a> </li>
+			
+				<li> <a href="../theses">Theses</a> </li>
+			
+				<li> <a href="../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<h1>  </h1>
+	<article>
+		<h1 id="überblick-zu-jupyter-notebooks">
+	Überblick zu Jupyter Notebooks
+	<a href="#%c3%bcberblick-zu-jupyter-notebooks" class="h-anchor" aria-hidden="true">#</a>
+</h1><h2 id="allgemeines">
+	Allgemeines
+	<a href="#allgemeines" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>In der Lehre verwenden wir &ndash; insbesondere für die Implementierung zentraler Algorithmen und die Visualisierung ihres Verhaltens &ndash; die web-basierte, interaktive Programmierumgebung der <a href="https://jupyter.org/"target="_blank" rel="noopener" class="external">Jupyter Notebooks</a> für Programmieraufgaben in <a href="https://www.python.org/"target="_blank" rel="noopener" class="external">Python 3</a>.
+Die Notebook Dokumente besitzen die dung <code>.ipynb</code> und bestehen aus einer vorgegebenen Abfolge von Codezellen und begleitenden Textzellen.
+Während die Codezellen von NutzerInnen mittels des <em>Kernels</em> &ndash; einem Python-spezifischen Rechenprozess &ndash; ausgeführt werden können, um Rechnungen und Visualisierungen auszuführen, werden die Textzellen für begleitende Kommentare, Aufgabenstellungen und Freitextantworten von Ihnen verwendet.
+Insgesamt ergibt sich ein interaktiver Bearbeitungsprozess der Programmierübungen, welcher angeleitetes Umsetzen und Interpretieren wissenschaftlicher Algorithmen mit vergleichbar geringem Programmieraufwand und relativ niedriger Einstiegsschwelle möglich macht.</p>
+<h2 id="ausführung">
+	Ausführung
+	<a href="#ausf%c3%bchrung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Jupyter Notebooks basieren auf einer <em>server-client</em> Struktur.
+Damit die Notebook Dokumente auf der Client-Seite durch die NutzerInnen im Browser ausgeführt werden können, wird also zuerst ein Jupyter Server benötigt, der den Kernel mitbringt.
+Auf dem laufenden Server können die Zellen des Notebook Dokuments dann über die eingebaute Funktionalität interaktiv ausgeführt werden.
+Für die Verwendung von Servern gibt es verschiedene Möglichkeiten, wobei der Hauptunterschied dabei liegt, ob der Server lokal auf Ihrer Maschine läuft oder extern gestellt wird.
+Auf lange Sicht möchten wir den Server gern stellen, können das aber derzeit noch nicht leisten.
+Die Verwendung von Jupyter Notebooks ist hervorragend dokumentiert, wir bieten also im Folgenden nur einen kurzen Überblick über Ihre Optionen inklusive der Installation von den <a href="#packages"title="grundlegenden Python Paketen">grundlegenden Python Paketen</a>.
+Bevorzugt können Sie sich einen lokalen Server auf ihrem Rechner konfigurieren, alternativ gibt es externe Dienste, die solche Server kostenlos zur Verfügung stellen.</p>
+<h3 id="auf-lokalem-server-unter-linux-ubuntudebian">
+	Auf lokalem Server unter Linux (Ubuntu/Debian)
+	<a href="#auf-lokalem-server-unter-linux-ubuntudebian" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Entsprechend der Anleitung <a href="https://test-jupyter.readthedocs.io/en/latest/install.html"target="_blank" rel="noopener" class="external">hier</a>, können Sie wie folgt vorgehen:</p>
+<ol>
+<li>Installation von Python3 und einiger benötigter Pakete über die Kommandozeile:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install python3 python3-numpy python3-matplotlib python3-scipy pip
+</span></span></code></pre></div></li>
+<li>Installation der Jupyter Umgebung via <code>pip</code>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip3 install --upgrade pip
+</span></span><span style="display:flex;"><span>pip3 install jupyter
+</span></span></code></pre></div></li>
+<li>Hinzufügen des Pfads zu den ausführbaren Jupyter Binaries zum lokalen Pfad in der <code>~/.profile</code> via des Eintrags
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>$PATH:<span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>/home/&lt;user&gt;/.local/bin
+</span></span></code></pre></div></li>
+<li>Wechsel in das Verzeichnis, in dem die auszuführende Notebook Datei liegt, und Aufruf von
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jupyter-notebook
+</span></span></code></pre></div>in der Kommandozeile.</li>
+</ol>
+<p>Es sollte sich nun ein neuer Browser-Tab mit dem lokalen Notebook-Server unter <code>http://localhost:8888</code> öffnen, in dem sich die <code>.ipynb</code>-Datei öffnen und ausführen lässt.</p>
+<h3 id="auf-lokalem-server-unter-windows">
+	Auf lokalem Server unter Windows
+	<a href="#auf-lokalem-server-unter-windows" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Unter Windows ist die Paketverwaltung für Python etwas aufwändiger, wir empfehlen daher die Installation von <a href="https://www.anaconda.com/"target="_blank" rel="noopener" class="external">Anaconda</a>, welche gleich mit allen benötigten Paketen sowie der Notebook Umgebung installiert wird.
+Gehen Sie dazu wie folgt vor.</p>
+<ol>
+<li>Installation von Anaconda, indem Sie die Installationsdatei an <a href="https://www.anaconda.com/products/individual#Downloads"target="_blank" rel="noopener" class="external">dieser Stelle</a> herunterladen, ausführen und dem Installationsprozess folgen.</li>
+<li>Starten der <code>Anaconda Power Shell</code> aus dem Home Bereich. Dazu auf Windows <code>Start</code> gehen und nach <code>Anaconda Prompt</code> suchen. Dies öffnet ein neues Terminal.</li>
+<li>Wechsel in das Verzeichnis, in dem die auszuführende Notebook Datei liegt, und Aufruf von
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jupyter-notebook
+</span></span></code></pre></div>in der Kommandozeile.</li>
+</ol>
+<p>Es sollte sich nun ein neuer Browser-Tab mit dem lokalen Notebook-Server unter <code>http://localhost:8888</code> öffnen, in dem sich die <code>.ipynb</code>-Datei öffnen und ausführen lässt.</p>
+<h3 id="auf-externen-servern">
+	Auf externen Servern
+	<a href="#auf-externen-servern" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Wir empfehlen die Verwendung eines lokalen Notebook Servers, denn das Bereitstellen zusätzlicher Dateien auf den externen Servern ist aufwändiger als bei lokalen.</p>
+<!-- raw HTML omitted -->
+<p>Es gibt aber <a href="https://www.dataschool.io/cloud-services-for-jupyter-notebook/"target="_blank" rel="noopener" class="external">verschiedene Möglichkeiten</a>, einen Server von externen Anbietern ohne direkte Kosten zu nutzen.
+In den meisten Fällen, ist eine Anmeldung aber nötig.
+Wer einen Google account besitzt, kann aber <a href="https://colab.research.google.com/"target="_blank" rel="noopener" class="external">Google Colaboratory</a> mit diesem Account verwenden.</p>
+<p>Wir beschreiben hier beispielhaft kurz die Nutzung von <em>Google Colaboratoy</em> für eingeloggte Google Nutzer:</p>
+<ol>
+<li>Besuchen Sie <a href="https://colab.research.google.com/"target="_blank" rel="noopener" class="external">https://colab.research.google.com/</a>.</li>
+<li>In dem automatischen Pop-Up, wählen Sie <code>Upload</code> und dann die Notebook Datei, die Sie bearbeiten wollen.</li>
+<li>Fügen Sie die zusätzlichen <code>.py</code>-Dateien aus der <a href="#distribution"title="von uns bereitgestellten &lt;code&gt;.zip&lt;/code&gt;-Datei">von uns bereitgestellten <code>.zip</code>-Datei</a> ihrem Google-Drive hinzu.</li>
+<li><a href="https://www.marktechpost.com/2019/06/07/how-to-connect-google-colab-with-google-drive/"target="_blank" rel="noopener" class="external">Mounten</a> Sie Ihren Google-Drive in Google-Colab.</li>
+</ol>
+<h2 id="bedienung">
+	Bedienung
+	<a href="#bedienung" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Die Umsetzung numerischer Verfahren und die graphische Visualisierung typischer Ergebnisse ist ein essentieller Baustein auf dem Weg zu einem ausgereiften Verständnis der Algorithmen.
+Um programmiertechnische Schwierigkeiten weitestgehend auszuschließen, bereiten wir einiges an Code für Sie vor und verwenden den Code als eine Art <em>Lückentext</em>.
+An den Schlüsselstellen der jeweiligen Implementierungen wird der lauffähige Code durch auskommentierte Blöcke der Art</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">### TODO BEGIN ###</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compute the preconditioned gradient and the square of its (preconditioner-induced) norm </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># gradient = ...</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># norm2_gradient = ...</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### TODO END ###</span>
+</span></span></code></pre></div><p>ersetzt, in denen Sie zwischen <code>### TODO BEGIN ###</code> und <code>### TODO END ###</code> die entsprechenden Anweisungen (in diesem Beispiel die Berechnung und Initialisierung der Variablen ) entsprechend des Kommentars ausführen, um Lauffähigkeit wieder herzustellen.
+Welche Berechnungen und Auswertungen an den jeweiligen Stellen benötigt werden, ergibt sich entweder aus dem Kommentar zu dem entsprechenden <code>TODO</code>-Bereich oder können im Skript nachgelesen werden.
+Beachten Sie Folgendes:</p>
+<ul>
+<li>Wenn Variablen vorbenannt werden, wie im obigen Beispiel <code>gradient</code> und <code>norm2_gradient</code>, dann müssen Sie Variablen mit den genau diesen Namen schreiben, da sie später im Notebook weiter verwendet werden.</li>
+<li>Sie dürfen dabei natürlich jederzeit andere Variablen initialisieren (vermeiden Sie Namensdopplungen mit von uns verwendeten Variablen).</li>
+<li>Im jeweiligen <code>TODO</code>-Block sind lediglich die Variablennamen auskommentiert angegeben, die Sie schreiben müssen, damit der Code im Anschluss lauffähig wird.
+Im Allgemeinen werden Sie allerdings auch zusätzliche Zeilen schreiben müssen, beispielsweise Abfragen.</li>
+</ul>
+<p>Wenn sie den Code vervollständigt haben und der Code lauffähig ist, werden Sie an geeigneter Stelle um die Interpretation der ausgegebenen Ergebnisse gebeten.
+An den entsprechenden Stellen finden Sie Markierungen der Art &ldquo;<strong>TODO Ihre Antwort hier</strong>&rdquo;.</p>
+<h2 id="bereitstellung-der-aufgabennotebooksa-namedistributiona">
+	Bereitstellung der Aufgabennotebooks<!-- raw HTML omitted --><!-- raw HTML omitted -->
+	<a href="#bereitstellung-der-aufgabennotebooksa-namedistributiona" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Unter den jeweiligen Abschnitten zu den Programmieraufgaben Ihres Kurses finden Sie die benötigten Resourcen.
+Für gewöhnlich werden das sein:</p>
+<ul>
+<li>Eine <code>.ipynb</code>-Datei, die ein Notebook Dokument mit vorgefertigtem Lückentext enthält,</li>
+<li>Verschiedene <code>.py</code>-Dateien, die zusätzliche Funktionalitäten enthalten, welche für die Verwendung des Notebooks notwendig ist &ndash; z.B. spezielle <em>plot</em>-Befehle oder vorimplementierte Zielfunktionale.</li>
+</ul>
+<p>Bis auf Weiteres werden diese Dateien in einer <code>.zip</code>-Datei zur Verfügung gestellt.
+Das jeweilige Archiv enthält auf oberster Ebende die <code>.ipynb</code>-Datei und einen Ordner namens <code>src/</code>, der die Hilfsdateien enthält.
+Sie können das Archiv an einem beliebigen Ort entpacken und die Struktur beibehalten.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="hilfe">
+	Hilfe
+	<a href="#hilfe" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Sollten Sie bei der Konfiguration eines lokalen Servers Hilfe benötigen, können Sie sich gern in den Übungen an Ihre ÜbungsleiterInnen wenden oder uns <a href="../forwards/teachingContact/scoop-teaching-gen" >via email</a> kontaktieren.</p>
+<p>Für Hilfe bei der tatsächlichen Bearbeitung der Notebooks sind ebenfalls die Übungen der beste Zeitpunkt, sich an Ihre ÜbungsleiterInnen zu wenden.</p>
+<h2 id="grundlegende-python-pakete-a-namepackagesa">
+	Grundlegende Python Pakete <!-- raw HTML omitted --><!-- raw HTML omitted -->
+	<a href="#grundlegende-python-pakete-a-namepackagesa" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Für das wissenschaftliche Arbeiten mit Python in unseren Veranstaltungen sind einige der unzähligen Python Pakete von besonderer Relevanz.
+Die folgenden werden Sie installieren müssen, um die von uns erstellten Notebooks zu verwenden.</p>
+<h3 id="numpy">
+	NumPy
+	<a href="#numpy" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Das Paket <a href="https://numpy.org/"target="_blank" rel="noopener" class="external">NumPy</a> bezeichnet sich selbst als &ldquo;das fundamentale Paket für wissenschaftliches Rechnen mit Python&rdquo; und stellt die weit genutzten Datentypen und Funktionalitäten für den Umgang mit mehrdimensionalen Arrays wie Matrizen und Vektoren.
+Funktionalitäten der linearen Algebra werden insbesondere in <code>numpy.linalg</code> bereitgestellt, siehe insbesondere <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html#numpy.linalg.solve"target="_blank" rel="noopener" class="external">numpy.linalg.solve</a> für das Lösen von linearen Gleichungssystemen.</p>
+<p>Ist Python bereits installiert, so kann <em>NumPy</em> via <code>pip3 install numpy</code> installiert werden.</p>
+<h3 id="scipy">
+	SciPy
+	<a href="#scipy" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Das Paket <a href="https://www.scipy.org/"target="_blank" rel="noopener" class="external">SciPy</a> ist eine <em>NumPy</em>-basierte Bibliothek für mathematische Algorithmen mit einem gewissen Überlapp zu den Kernfunktionalitäten in <em>NumPy</em> &ndash; wobei die bessere Wahl der Funktionalitäten aus den Paketen situationsabhängig ist.
+Beispielsweise bietet <a href="https://docs.scipy.org/doc/scipy/reference/reference/generated/scipy.linalg.eig.html#scipy.linalg.eig"target="_blank" rel="noopener" class="external">scipy.linalg.eig</a> die Möglichkeit, verallgemeinerte Eigenwertprobleme zu lösen.</p>
+<p>Ist Python bereits installiert, so kann <em>SciPy</em> via <code>pip3 install scipy</code> installiert werden.</p>
+<h3 id="matplotlib">
+	MatPlotLib
+	<a href="#matplotlib" class="h-anchor" aria-hidden="true">#</a>
+</h3><p>Das Paket <a href="https://matplotlib.org/"target="_blank" rel="noopener" class="external">https://matplotlib.org/</a> bietet umfassende Funktionalitäten bezüglich der Erstellung von Visualisierungen in Python.
+Das Paket ist zwar Voraussetzung für die Nutzung der plot-Funktionalitäten in unseren Notebooks, wird von Ihnen aber nicht bedient werden müssen, da wir die Funktionen zur grafischen Veranschaulichung der Algorithmen voraussichtlich stellen werden.</p>
+<p>Ist Python bereits installiert, so kann <em>MatPlotLib</em> via <code>pip3 install matplotlib</code> installiert werden.</p>
+<h2 id="nützliche-python-kommandos-a-namecommandsa">
+	Nützliche Python Kommandos <!-- raw HTML omitted --><!-- raw HTML omitted -->
+	<a href="#n%c3%bctzliche-python-kommandos-a-namecommandsa" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Einige nützliche Python Kommandos sind die folgenden:</p>
+<ul>
+<li>Lösen linearer Gleichungssysteme auch mit mehreren rechten Seiten B (spaltenweise) der Form Ax=B, siehe <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html#numpy.linalg.solve"target="_blank" rel="noopener" class="external">numpy.linalg.solve</a>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X <span style="color:#f92672">=</span> numpy<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>solve( A, B )
+</span></span></code></pre></div>Dabei können durch slices einfach Untermatrizen und die dazugehörigen rechten Seiten ausgewählt werden:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X <span style="color:#f92672">=</span> numpy<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>solve( A[rows,A_columns], B[rows,B_columns] )
+</span></span></code></pre></div></li>
+<li>Berechnung der p-Norm eines Vektors x, siehe <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html"target="_blank" rel="noopener" class="external">numpy.linalg.norm</a>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> numpy<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>norm( x, p )
+</span></span></code></pre></div></li>
+<li>Aus einer Matrix A eine Matrix B erstellen, die nur die Diagonale von A auf der Diagonalen hat uns sonst Null ist, siehe <a href="https://numpy.org/doc/stable/reference/generated/numpy.diag.html"target="_blank" rel="noopener" class="external">numpy.diag</a>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>B <span style="color:#f92672">=</span> numpy<span style="color:#f92672">.</span>diag(numpy<span style="color:#f92672">.</span>diag(A))
+</span></span></code></pre></div></li>
+<li>Die verallgemeinerten Eigenwerte des Problems Ax=s Bx berechnen, siehe <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.eigh.html"target="_blank" rel="noopener" class="external">scipy.linalg.eigh</a>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> scipy<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>eigh(A, B, eigvals_only <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>)
+</span></span></code></pre></div></li>
+<li>Aus einer Liste oder einem Vektor x den (kleinsten) Index eines kleinsten/größten Elements erhalten, siehe <a href="https://numpy.org/doc/stable/reference/generated/numpy.argmin.html"target="_blank" rel="noopener" class="external">numpy.argmin/numpy.argmax</a>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>imin <span style="color:#f92672">=</span> numpy<span style="color:#f92672">.</span>argmin(x)
+</span></span><span style="display:flex;"><span>imax <span style="color:#f92672">=</span> numpy<span style="color:#f92672">.</span>argmax(x)
+</span></span></code></pre></div></li>
+<li>Auswahl oder Modifikation bestimmter Elemente aus einem Vektor x anhand einer Bedingung, siehe <a href="https://numpy.org/doc/stable/reference/generated/numpy.where.html"target="_blank" rel="noopener" class="external">numpy.where</a>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nonnegative_indices <span style="color:#f92672">=</span> numpy<span style="color:#f92672">.</span>where(x <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>nonnegative_part <span style="color:#f92672">=</span> numpy<span style="color:#f92672">.</span>where(x <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>, x, <span style="color:#ae81ff">0</span>)
+</span></span></code></pre></div></li>
+<li>Doppeleinträge aus einer Liste B entfernen:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>B <span style="color:#f92672">=</span> list(set(B))
+</span></span></code></pre></div></li>
+<li>Element x aus einer Liste B entfernen oder hinzufügen:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>B <span style="color:#f92672">=</span> list(set(B) <span style="color:#f92672">-</span> set([x]))
+</span></span><span style="display:flex;"><span>B <span style="color:#f92672">=</span> list(set(B) <span style="color:#f92672">|</span> set([x]))
+</span></span></code></pre></div></li>
+<li>Vektorpotenzen berechnen:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>power(base, exponents)
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>power(bases, exponent)
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="feedback">
+	Feedback
+	<a href="#feedback" class="h-anchor" aria-hidden="true">#</a>
+</h2><p>Wir sind daran interessiert, Ihnen den Zugang zur numerischen Umsetzung der Algorithmen möglichst reibungsfrei zu gestalten und für viele von Ihnen einen Lerneffekt bei der Bearbeitung der Notebooks zu erzielen.
+Wir sind über jede Form von Rückmeldung zu dem von uns vorgeschlagenen Prozess dankbar.
+Konstruktive Kritik können Sie also bitte <a href="../forwards/teachingContact/scoop-teaching-gen" >per mail</a> senden.</p>
+
+	</article>
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>

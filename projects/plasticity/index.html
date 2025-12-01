@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="white">
+	<title> Optimal Control in Elastoplasticity - Analysis, Algorithms, Numerical Analysis and Applications | Scientific Computing and Optimization</title>
+
+	<link rel="canonical" href="https://scoop-group.github.io/projects/plasticity/">
+  <link rel="alternate"
+        type="application/rss+xml"
+        href="https://scoop-group.github.io/index.xml"
+        title="Scientific Computing and Optimization">
+
+
+	
+	
+
+	
+	<link rel="shortcut icon" type="image/png" href="https://scoop-group.github.io/img/logo.png" />
+	
+	<link rel="stylesheet" href="https://scoop-group.github.io/scss/style.css" integrity="">
+	
+
+	 <meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021."> 
+	<meta name="description" content="The research group Scientific Computing and Optimization was founded in 2021.">
+
+	<meta name="robots" content="all,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+</head>
+<body><header id="site-header">
+	<a href="https://scoop-group.github.io">
+		<img id="site-logo" src="https://scoop-group.github.io/img/logo.png" alt="logo">
+	</a>
+	<header id="site-title">
+		<a href="https://scoop-group.github.io"> Scientific Computing and Optimization </a>
+	</header>
+	<nav id="site-menu">
+		<ul>
+			
+				<li> <a href="../../news">News</a> </li>
+			
+				<li> <a href="../../team">Team</a> </li>
+			
+				<li> <a href="../../teaching">Teaching</a> </li>
+			
+				<li> <a href="../../publications">Publications</a> </li>
+			
+				<li> <a href="../../talks">Talks</a> </li>
+			
+				<li> <a href="../../software">Software</a> </li>
+			
+				<li> <a href="../../projects">Projects</a> </li>
+			
+				<li> <a href="../../events">Events</a> </li>
+			
+				<li> <a href="../../theses">Theses</a> </li>
+			
+				<li> <a href="../../contact">Contact</a> </li>
+			
+		</ul>
+	</nav>
+</header>
+<div id="content">
+<main>
+	<header>
+
+		<h1> Optimal Control in Elastoplasticity - Analysis, Algorithms, Numerical Analysis and Applications
+		</h1>
+		<br>
+		<div class="metadata">
+		
+	<span> Start: 2009-10-01</span>
+	<br>
+
+
+
+	<span> End: 2012-09-30</span>
+	<br>
+
+
+
+	<span> Principal Investigators: <span class="pis-list"><a href="../../team/rherzog/">Roland Herzog</a>, <a href="https://wwwold.mathematik.tu-dortmund.de/lsx/cms/de/mitarbeiter/cmeyer.html"target="_blank" rel="noopener" class="external">Christian Meyer</a></span></span>
+	<br>
+
+
+
+
+
+	<span> Staff: <span class="staff-list"><a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a></span></span>
+	<br>
+
+
+
+	<span>
+	Funded by:
+	<a href="https://www.dfg.de"target="_blank" rel="noopener" class="external">DFG</a>
+			within the 
+			Priority Program funding scheme
+		
+	</span>
+	<br>
+
+
+
+	<span> Part of: Optimization with Partial Differential Equations
+	
+		(SPP 1253) </span>
+	
+	<br>
+
+</div>
+		
+			<article>
+				<h2>
+					Project Description
+				</h2>
+				<nav id="TableOfContents"></nav>
+				<p>Solid bodies depart from their rest shape under the influence of applied loads.
+In case the applied loads or stresses are sufficiently small, many solids exhibit a linearly elastic and reversible behavior.
+If, however, the stress induced by the applied loads exceeds a certain threshold (the yield stress), the material behavior switches from the elastic to the so-called plastic regime.
+In this state, the overall loading process is no longer reversible and permanent deformations remain even after the loads are withdrawn.
+Mathematically, this leads to a description involving <strong>variational inequalities</strong>.</p>
+<p>Plastic deformation is desired for instance as an <strong>industrial shaping technique</strong> of metal workpieces, as e.g. by deep-drawing of body sheets in the automotive industry.
+The task of finding appropriate time-dependent loads which effect a <strong>desired final deformation</strong> leads to <strong>optimal control problems for elastoplasticity systems</strong>.
+These are also motivated by the desire to reduce the amount of <strong>springback</strong>, i.e., the partial reversal of the final material deformation due to a release of the stored elastic energy once the loads are removed.</p>
+<p>The proposed project targets optimal control problems for <strong>static and quasi-static models of infinitesimal elastoplasticity with hardening</strong>.
+Its main goals are to investigate these optimization problems, to quantify the error due to discretization, and to develop fast algorithms for their solution.
+Models of elastoplasticity involve non-smooth features due to their description by variational inequalities and pointwise projections.
+The mathematical treatment of associated optimal control problems is therefore highly challenging and it requires a substantial extension of the established techniques.</p>
+
+			</article>
+		
+
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+				
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+			<h2> Associated Publications </h2>
+<ul class="publications-list" id="publications-ARTICLE">
+	<li class="publication-item" id="DeLosReyesHerzogMeyer:2016:1">
+	<div class="publication-author"> Juan Carlos de los Reyes, <a href="../../team/rherzog/">Roland Herzog</a> and Christian Meyer </div>
+	
+	
+	
+	<div class="publication-title"> Optimal control of static elastoplasticity in primal formulation </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Control and Optimization 54(6), p.3016-3039, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/130920861">doi:10.1137/130920861</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{DeLosReyesHerzogMeyer:2016:1,
+  AUTHOR = {de los Reyes, Juan Carlos and Herzog, Roland and Meyer, Christian},
+  DATE = {2016},
+  DOI = {10.1137/130920861},
+  JOURNALTITLE = {SIAM Journal on Control and Optimization},
+  NUMBER = {6},
+  PAGES = {3016--3039},
+  TITLE = {Optimal control of static elastoplasticity in primal formulation},
+  VOLUME = {54},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Wachsmuth:2016:2">
+	<div class="publication-author"> <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal control of quasistatic plasticity with linear kinematic hardening III: optimality conditions </div>
+	<div class="publication-ref-info">
+		
+			<span> Zeitschrift für Analysis und ihre Anwendungen 35(1), p.81-118, </span>
+		
+		<span class="publication-year"> 2016 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.4171/ZAA/1556">doi:10.4171/ZAA/1556</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{Wachsmuth:2016:2,
+  AUTHOR = {Wachsmuth, Gerd},
+  DATE = {2016},
+  DOI = {10.4171/ZAA/1556},
+  JOURNALTITLE = {Zeitschrift für Analysis und ihre Anwendungen},
+  NUMBER = {1},
+  PAGES = {81--118},
+  TITLE = {Optimal control of quasistatic plasticity with linear kinematic hardening III: optimality conditions},
+  VOLUME = {35},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Wachsmuth:2015:1">
+	<div class="publication-author"> <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal control of quasistatic plasticity with linear kinematic hardening II: regularization and differentiability </div>
+	<div class="publication-ref-info">
+		
+			<span> Zeitschrift für Analysis und ihre Anwendungen 34(4), p.391-418, </span>
+		
+		<span class="publication-year"> 2015 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.4171/ZAA/1546">doi:10.4171/ZAA/1546</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{Wachsmuth:2015:1,
+  AUTHOR = {Wachsmuth, Gerd},
+  DATE = {2015},
+  DOI = {10.4171/ZAA/1546},
+  JOURNALTITLE = {Zeitschrift für Analysis und ihre Anwendungen},
+  NUMBER = {4},
+  PAGES = {391--418},
+  TITLE = {Optimal control of quasistatic plasticity with linear kinematic hardening II: regularization and differentiability},
+  VOLUME = {34},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogMeyerWachsmuth:2014:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, Christian Meyer and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal control of elastoplastic processes: analysis, algorithms, numerical analysis and applications </div>
+	<div class="publication-ref-info">
+		
+			<span> Trends in PDE Constrained Optimization, International Series of Numerical Mathematics 165, p.27-41, </span>
+		
+		<span class="publication-year"> 2014 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1007/978-3-319-05083-6_4">doi:10.1007/978-3-319-05083-6_4</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@INCOLLECTION{HerzogMeyerWachsmuth:2014:1,
+  AUTHOR = {Herzog, Roland and Meyer, Christian and Wachsmuth, Gerd},
+  PUBLISHER = {Springer},
+  BOOKTITLE = {Trends in PDE Constrained Optimization},
+  DATE = {2014},
+  DOI = {10.1007/978-3-319-05083-6_4},
+  PAGES = {27--41},
+  SERIES = {International Series of Numerical Mathematics},
+  TITLE = {Optimal control of elastoplastic processes: analysis, algorithms, numerical analysis and applications},
+  VOLUME = {165},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Wachsmuth:2014:1">
+	<div class="publication-author"> <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Differentiability of implicit functions: beyond the implicit function theorem </div>
+	<div class="publication-ref-info">
+		
+			<span> Journal of Mathematical Analysis and Applications 414(1), p.259-272, </span>
+		
+		<span class="publication-year"> 2014 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1016/j.jmaa.2014.01.007">doi:10.1016/j.jmaa.2014.01.007</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{Wachsmuth:2014:1,
+  AUTHOR = {Wachsmuth, Gerd},
+  DATE = {2014},
+  DOI = {10.1016/j.jmaa.2014.01.007},
+  JOURNALTITLE = {Journal of Mathematical Analysis and Applications},
+  NUMBER = {1},
+  PAGES = {259--272},
+  TITLE = {Differentiability of implicit functions: beyond the implicit function theorem},
+  VOLUME = {414},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogMeyerWachsmuth:2013:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, Christian Meyer and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> B- and strong stationarity for optimal control of static plasticity with hardening </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Optimization 23(1), p.321-352, </span>
+		
+		<span class="publication-year"> 2013 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/110821147">doi:10.1137/110821147</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogMeyerWachsmuth:2013:1,
+  AUTHOR = {Herzog, Roland and Meyer, Christian and Wachsmuth, Gerd},
+  DATE = {2013},
+  DOI = {10.1137/110821147},
+  JOURNALTITLE = {SIAM Journal on Optimization},
+  NUMBER = {1},
+  PAGES = {321--352},
+  TITLE = {B- and strong stationarity for optimal control of static plasticity with hardening},
+  VOLUME = {23},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogMeyerWachsmuth:2012:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, Christian Meyer and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> C-stationarity for optimal control of static plasticity with linear kinematic hardening </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Control and Optimization 50(5), p.3052-3082, </span>
+		
+		<span class="publication-year"> 2012 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/100809325">doi:10.1137/100809325</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogMeyerWachsmuth:2012:1,
+  AUTHOR = {Herzog, Roland and Meyer, Christian and Wachsmuth, Gerd},
+  DATE = {2012},
+  DOI = {10.1137/100809325},
+  JOURNALTITLE = {SIAM Journal on Control and Optimization},
+  NUMBER = {5},
+  PAGES = {3052--3082},
+  TITLE = {C-stationarity for optimal control of static plasticity with linear kinematic hardening},
+  VOLUME = {50},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogMeyerWachsmuth:2012:2">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, Christian Meyer and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimale Steuerung in der Elastoplastizität </div>
+	<div class="publication-ref-info">
+		
+			<span> GAMM-Rundbrief(2), p.16-20, </span>
+		
+		<span class="publication-year"> 2012 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a href="https://www.gamm-ev.de/wp-content/uploads/2020/06/RB_2012_02_weba.compressed.pdf"target="_blank" rel="noopener" class="external">https://www.gamm-ev.de/wp-content/uploads/2020/06/RB_2012_02_weba.compressed.pdf</a>
+		</div>
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogMeyerWachsmuth:2012:2,
+  AUTHOR = {Herzog, Roland and Meyer, Christian and Wachsmuth, Gerd},
+  URL = {https://www.gamm-ev.de/wp-content/uploads/2020/06/RB_2012_02_weba.compressed.pdf},
+  DATE = {2012},
+  JOURNALTITLE = {GAMM-Rundbrief},
+  NUMBER = {2},
+  PAGES = {16--20},
+  TITLE = {Optimale Steuerung in der Elastoplastizität},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Wachsmuth:2012:1">
+	<div class="publication-author"> <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal control of quasistatic plasticity with linear kinematic hardening, Part I: existence and discretization in time </div>
+	<div class="publication-ref-info">
+		
+			<span> SIAM Journal on Control and Optimization 50(5), p.2836-2861, </span>
+		
+		<span class="publication-year"> 2012 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1137/110839187">doi:10.1137/110839187</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{Wachsmuth:2012:1,
+  AUTHOR = {Wachsmuth, Gerd},
+  DATE = {2012},
+  DOI = {10.1137/110839187},
+  JOURNALTITLE = {SIAM Journal on Control and Optimization},
+  NUMBER = {5},
+  PAGES = {2836--2861},
+  TITLE = {Optimal control of quasistatic plasticity with linear kinematic hardening, Part I: existence and discretization in time},
+  VOLUME = {50},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogMeyer:2011:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a> and Christian Meyer </div>
+	
+	
+	
+	<div class="publication-title"> Optimal control of static plasticity with linear kinematic hardening </div>
+	<div class="publication-ref-info">
+		
+			<span> Journal of Applied Mathematics and Mechanics 91(10), p.777-794, </span>
+		
+		<span class="publication-year"> 2011 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/zamm.200900378">doi:10.1002/zamm.200900378</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogMeyer:2011:1,
+  AUTHOR = {Herzog, Roland and Meyer, Christian},
+  DATE = {2011},
+  DOI = {10.1002/zamm.200900378},
+  JOURNALTITLE = {Journal of Applied Mathematics and Mechanics},
+  NUMBER = {10},
+  PAGES = {777--794},
+  TITLE = {Optimal control of static plasticity with linear kinematic hardening},
+  VOLUME = {91},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogMeyerWachsmuth:2011:1">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, Christian Meyer and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Integrability of displacement and stresses in linear and nonlinear elasticity with mixed boundary conditions </div>
+	<div class="publication-ref-info">
+		
+			<span> Journal of Mathematical Analysis and Applications 382(2), p.802-813, </span>
+		
+		<span class="publication-year"> 2011 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1016/j.jmaa.2011.04.074">doi:10.1016/j.jmaa.2011.04.074</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogMeyerWachsmuth:2011:1,
+  AUTHOR = {Herzog, Roland and Meyer, Christian and Wachsmuth, Gerd},
+  DATE = {2011},
+  DOI = {10.1016/j.jmaa.2011.04.074},
+  JOURNALTITLE = {Journal of Mathematical Analysis and Applications},
+  NUMBER = {2},
+  PAGES = {802--813},
+  TITLE = {Integrability of displacement and stresses in linear and nonlinear elasticity with mixed boundary conditions},
+  VOLUME = {382},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="HerzogMeyerWachsmuth:2011:2">
+	<div class="publication-author"> <a href="../../team/rherzog/">Roland Herzog</a>, Christian Meyer and <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Existence and regularity of the plastic multiplier in static and quasistatic plasticity </div>
+	<div class="publication-ref-info">
+		
+			<span> GAMM Reports 34(1), p.39-44, </span>
+		
+		<span class="publication-year"> 2011 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		<div class="publication-link">
+			<a class="link-doi external" href="https://doi.org/10.1002/gamm.201110006">doi:10.1002/gamm.201110006</a>
+		</div>
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@ARTICLE{HerzogMeyerWachsmuth:2011:2,
+  AUTHOR = {Herzog, Roland and Meyer, Christian and Wachsmuth, Gerd},
+  DATE = {2011},
+  DOI = {10.1002/gamm.201110006},
+  JOURNALTITLE = {GAMM Reports},
+  NUMBER = {1},
+  PAGES = {39--44},
+  TITLE = {Existence and regularity of the plastic multiplier in static and quasistatic plasticity},
+  VOLUME = {34},
+}</pre>
+		</details>
+	
+</li>
+<li class="publication-item" id="Wachsmuth:2011:1">
+	<div class="publication-author"> <a href="../../team/alumni/gwachsmuth/">Gerd Wachsmuth</a> </div>
+	
+	
+	
+	<div class="publication-title"> Optimal Control of Quasistatic Plasticity -- An MPCC in Function Space </div>
+	<div class="publication-ref-info">
+		
+			<span> Ph.D. thesis, Technische Universität Chemnitz, Germany, </span>
+		
+		<span class="publication-year"> 2011 </span> <br>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<details closed>
+			<summary> bibtex </summary>
+			<pre class="bibtex-cite">@THESIS{Wachsmuth:2011:1,
+  AUTHOR = {Wachsmuth, Gerd},
+  INSTITUTION = {Technische Universität Chemnitz, Germany},
+  DATE = {2011},
+  TITLE = {Optimal Control of Quasistatic Plasticity -- An MPCC in Function Space},
+  TYPE = {phdthesis},
+}</pre>
+		</details>
+	
+</li>
+
+</ul>
+
+
+		
+		
+		<br>
+		<div class="logo-container-single">
+			<div class="logo-container-single-left">
+			
+ 				
+					<img  class="logo-project-single" src="../../img/agencylogos/DFG.png" alt="Agency logo">
+				 
+			
+			</div>
+			<div class="logo-container-single-right">
+			
+			
+			</div>
+		</div>
+	</header>
+
+</main>
+
+        </div><footer>
+	<span class="footer-info">
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="footer-item">CC BY-ND</a>, Scientific Computing and Optimization, 2025
+	</span>
+	
+	<span id="built">
+		(site built 2025-12-01 07:59:06 UTC )
+	</span>
+	
+
+	<a href="https://scoop-group.github.io/index.xml" id="rss"> [rss] </a>
+</footer>
+</body>
+</html>
